@@ -4,7 +4,6 @@ title: A criação do universo (segundo a informática)
 date: 2010-02-23T14:22:10+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=62
 permalink: /2010/02/23/a-criacao-do-universo-segundo-a-informatica/
 categories:
   - Geral

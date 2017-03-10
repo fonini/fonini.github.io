@@ -14,7 +14,7 @@ tags:
 ---
 Notei há um tempo atrás que o ícone que avisa quando existem atualizações disponíveis para o Ubuntu nunca mais tinha dado as caras na minha máquina. Após uma rápida procura na internet encontrei a solução para o problema. Digite os comando abaixo no terminal:
 
-{% highlight bash %}gconftool -s --type bool /apps/update-notifier/auto_launch false
+{% highlight shell %}gconftool -s --type bool /apps/update-notifier/auto_launch false
 killall update-notifier
 update-notifier &
 disown

@@ -4,7 +4,6 @@ title: Expressões regulares para trabalhar com números
 date: 2010-02-11T13:33:25+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=46
 permalink: /2010/02/11/expressoes-regulares-para-trabalhar-com-numeros/
 categories:
   - Regex

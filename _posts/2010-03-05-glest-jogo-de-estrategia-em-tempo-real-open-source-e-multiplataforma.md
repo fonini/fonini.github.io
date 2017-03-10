@@ -1,6 +1,6 @@
 ---
 id: 75
-title: 'Glest -; Jogo de estratégia em tempo real Open Source e multiplataforma'
+title: 'Glest - Jogo de estratégia em tempo real Open Source e multiplataforma'
 date: 2010-03-05T10:23:51+00:00
 author: fonini
 layout: post
@@ -18,12 +18,11 @@ Glest. Este nome une o útil ao agradável: games + open source. Não sou jogado
 
 Outro ponto importante é que existem versões tanto para Linux como para Windows. O jogo não é uma perfeição, mas garante várias horas de diversão. Veja alguns screenshots do jogo:
 
-<a href="http://glest.org/images/galeria/pantallas/s02.jpg" rel="externo, nofollow"><img alt="" src="http://glest.org/images/galeria/pantallas/s02.jpg" style="width: 180px; height: 135px;" /></a> <a href="http://glest.org/images/galeria/pantallas/s09.jpg" rel="externo, nofollow"><img alt="" src="http://glest.org/images/galeria/pantallas/s09.jpg" style="width: 180px; height: 135px;" /></a> <a href="http://glest.org/images/galeria/pantallas/s13.jpg" rel="externo, nofollow"><img alt="" src="http://glest.org/images/galeria/pantallas/s13.jpg" style="width: 180px; height: 135px;" /></a></p> 
+<a href="http://glest.org/images/galeria/pantallas/s02.jpg" rel="externo, nofollow"><img alt="" src="http://glest.org/images/galeria/pantallas/s02.jpg" style="width: 180px; height: 135px;" /></a> <a href="http://glest.org/images/galeria/pantallas/s09.jpg" rel="externo, nofollow"><img alt="" src="http://glest.org/images/galeria/pantallas/s09.jpg" style="width: 180px; height: 135px;" /></a> <a href="http://glest.org/images/galeria/pantallas/s13.jpg" rel="externo, nofollow"><img alt="" src="http://glest.org/images/galeria/pantallas/s13.jpg" style="width: 180px; height: 135px;" /></a> 
 
-**Para instalar no Linux:  
-** </p> 
+**Para instalar no Linux:**  
 
-<pre id="terminal" user="fonini" computer="valhalla">sudo apt-get install glest</pre></p> 
+{% highlight shell %}sudo apt-get install glest{% endhighlight %}
 
 **Para instalar no Windows:**
   
@@ -31,4 +30,4 @@ Outro ponto importante é que existem versões tanto para Linux como para Window
 
 Na página do projeto no <a href="http://sourceforge.net/projects/glest/files/" rel="externo, nofollow">SourceForge</a> você pode encontrar mais downloads e também o código fonte do jogo, para também se divertir compilando :p
 
-Abraço e até a próxima!</p>
+Abraço e até a próxima!

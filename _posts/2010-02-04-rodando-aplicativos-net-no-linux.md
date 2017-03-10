@@ -4,7 +4,6 @@ title: Rodando aplicativos .NET no Linux
 date: 2010-02-04T14:50:31+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=29
 permalink: /2010/02/04/rodando-aplicativos-net-no-linux/
 categories:
   - Linux
@@ -23,10 +22,10 @@ Antes de mais nada, faça backup do arquivo system.reg, que se encontra na pasta
 
 Feito isso, digite os comandos abaixo no terminal:
 
-<pre id="terminal" user="fonini" computer="valhalla">wget http://www.kegel.com/wine/winetricks<br />
-sh winetricks corefonts vcrun6<br />
-sh winetricks dotnet20</pre>
+{% highlight shell %}wget http://www.kegel.com/wine/winetricks
+sh winetricks corefonts vcrun6
+sh winetricks dotnet20{% endhighlight %}
 
 Se tudo correr bem, aparecerá o instalador do .NET, ai é só prosseguir com a instalação em modo gráfico e finalizar o processo.
 
-Abraços e até a próxima!</p>
+Abraços e até a próxima!

@@ -16,11 +16,11 @@ Dica rápida pra quem está precisando converter um valor em varchar para time w
 
 Usando a função to_timestamp(valor, formato), o valor retornado é um **timestamp with time zone**. 
 
-Porém, basta adicionar ao final da chamada da função o tipo do retorno desejado: </p> 
+Porém, basta adicionar ao final da chamada da função o tipo do retorno desejado:
 
 {% highlight sql %}
   
-to_timestamp('23:59:59&#8242;, 'HH24:MI:SS')::time without time zone
+to_timestamp('23:59:59', 'HH24:MI:SS')::time without time zone
   
 {% endhighlight %}
 

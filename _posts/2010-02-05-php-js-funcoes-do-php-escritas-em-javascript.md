@@ -4,7 +4,6 @@ title: 'php.js:  Funções do PHP escritas em JavaScript'
 date: 2010-02-05T14:45:05+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=33
 permalink: /2010/02/05/php-js-funcoes-do-php-escritas-em-javascript/
 categories:
   - Sem categoria
@@ -17,48 +16,29 @@ Recentemente comentei com o [@edipofederle](http://www.twitter.com/edipofederle)
 
 O mais legal do projeto é que você pode "compilar" sua própria versão do php.js, escolhendo as funções que você vai usar ou usando um dos pacotes já prontos no site do projeto.
 
-Resolvi testar algumas funções e elas funcionam mesmo. Basta incluir o arquivo no seu código HTML e usar as funções. Aqui estão alguns exemplos que eu testei:</p> 
+Resolvi testar algumas funções e elas funcionam mesmo. Basta incluir o arquivo no seu código HTML e usar as funções. Aqui estão alguns exemplos que eu testei:
 
 {% highlight js %}
-  
-echo(checkdate(02, 29, 2010));
-  
 //Checa se a data é valida.
-  
+echo(checkdate(02, 29, 2010));
 //Retornou false
 
-echo(md5('Jonnas'));
-  
 //Retorna o hash MD5 de uma string.
-  
+echo(md5('Jonnas'));
 //Retornou: cbab5e5bde68b3fe1043d43ba94fef5c
 
-array = new Array('php', 'javascript', 'xhtml');
-  
-echo(count(array));
-  
 //Conta a quantidade de elementos de um array.
-  
+array = new Array('php', 'javascript', 'xhtml');
+echo(count(array));
 //Retornou: 3
 
-print_r(sort(array));
-  
 //Ordena o array e mostra todos os elemtos
-  
+print_r(sort(array));
 //Retornou: Array ( [0] => javascript [1] => php [2] => xhtml )
 
+//Arredonda um nº em ponto flutuante
 echo(round(3,14159265));
-  
-Arredonda um nº em ponto flutuante
-  
 //Retornou: 3
-
-echo(implode('/', array));
-  
-//Junta todos os elementos do array com uma barra, retornando uma string
-  
-//Retornou: php/javascript/xhtml
-  
 {% endhighlight %}
 
 Se você dispõe de tempo e vontade você pode ajudar o projeto escrevendo novas funções e melhorando as existentes.

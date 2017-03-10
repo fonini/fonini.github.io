@@ -37,7 +37,7 @@ Antigamente existia um botão que permitia alterar a barra de navegação das pa
 
 **Reiniciar o X com CTRL+ALT+Backspace**
   
-Para habilitar esta opção, vá em Sistema/Preferências/Teclado. Clique na aba Disposições e no botão Opções. Procure &#8220;Key sequence to kill the X Server&#8221; e marque a opção CTRL+ALT+Backspace.
+Para habilitar esta opção, vá em Sistema/Preferências/Teclado. Clique na aba Disposições e no botão Opções. Procure "Key sequence to kill the X Server" e marque a opção CTRL+ALT+Backspace.
 
 **Caracteres inválidos no plugin Lyrics do Rhythmbox**
   
@@ -45,6 +45,6 @@ A nova versão do Rhythmbox inclui um plugin para buscar letras de músicas no T
 
 <pre id="terminal" computer="valhalla" user="fonini">sudo gedit /usr/lib/rhythmbox/plugins/lyrics/TerraParser.py</pre>
 
-Procure por esta linha **lyrics = re.sub(&#8216;<\[Bb\]\[Rr\]/>&#8216;, &#8221;, lyrics)** e adicione a seguinte linha abaixo dela: **lyrics = lyrics.replace(&#8216;&#039;&#8217;, &#8221;&#8217;)**. Salve o arquivo e reinicie o Rhythmbox.
+Procure por esta linha **lyrics = re.sub('<\[Bb\]\[Rr\]/>', ", lyrics)** e adicione a seguinte linha abaixo dela: **lyrics = lyrics.replace('&#039;', "')**. Salve o arquivo e reinicie o Rhythmbox.
 
 Bom, esses foram os ajustes que eu precisei fazer na minha nova instalação do Ubuntu 10.04 Lucid Lynx. Espero que sejam úteis para alguém. Abraços e até a próxima!

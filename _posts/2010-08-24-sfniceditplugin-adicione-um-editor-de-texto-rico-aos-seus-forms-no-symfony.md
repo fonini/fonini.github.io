@@ -35,19 +35,19 @@ Ou baixe o plugin <a href="http://plugins.symfony-project.org/get/sfNicEditPlugi
 
 Você deve ativar o plugin, editando o arquivo config/ProjectConfiguration.class.php.
 
-[php]
+{% highlight php %}
   
 class ProjectConfiguration extends sfProjectConfiguration{
 	  
 public function setup(){
 		  
-$this->enablePlugins(array(&#8216;sfDoctrinePlugin&#8217;, &#8216;sfNicEditPlugin&#8217;, &#8216;&#8230;&#8217;));
+$this->enablePlugins(array('sfDoctrinePlugin', 'sfNicEditPlugin', '...;'));
 	  
 }
   
 }
   
-[/php]
+{% endhighlight %}
 
 Após ativar o plugin, você deve publicar os arquivos CSS e JS utilizados por ele. Rode o seguinte comando:
 
@@ -63,14 +63,14 @@ Por último, limpe o cache:
 
 Basta você editar a classe que gera o form em que você vai usar o NicEdit, por exemplo lib/form/doctrine/NewsForm.class.php.
 
-[php]
+{% highlight php %}
   
 public function configure(){
 	  
-$this->setWidget(&#8216;text&#8217;, new sfWidgetFormTextareaNicEdit(array(&#8216;fullPanel&#8217; => true), array(&#8216;cols&#8217; => 100, &#8216;rows&#8217; => 20)));
+$this->setWidget('text', new sfWidgetFormTextareaNicEdit(array('fullPanel' => true), array('cols' => 100, 'rows' => 20)));
   
 }
   
-[/php]
+{% endhighlight %}
 
 Pretendo disponibilizar uma nova versão em breve com todos os parâmetros de configuração disponíves no NicEdit. Entre em contato em caso de dúvida. Abraço!

@@ -14,9 +14,9 @@ tags:
   - PostgreSQL
   - Ubuntu
 ---
-O PostgreSQL é sem dúvidas um dos melhores SGBD&#8217;s open source da atualidade. Robusto, confiável, agrega várias características que deixam muitos SGBD&#8217;s pagos no chinelo. Eu, particularmente, uso em todos os projetos aqui na empresa, pois alguns sistemas demandam um rígido controle de consistência dos dados, integridade referencial, etc, e o PostgreSQL me dá essa segurança.
+O PostgreSQL é sem dúvidas um dos melhores SGBD's open source da atualidade. Robusto, confiável, agrega várias características que deixam muitos SGBD's pagos no chinelo. Eu, particularmente, uso em todos os projetos aqui na empresa, pois alguns sistemas demandam um rígido controle de consistência dos dados, integridade referencial, etc, e o PostgreSQL me dá essa segurança.
 
-Lembro que sofri bastante nas primeiras vezes que fui instalar e configurar o Postgres no meu Ubuntu, por isso resolvi compartilhar essa experiência que pode ser útil para mais pessoas. Let&#8217;s work!
+Lembro que sofri bastante nas primeiras vezes que fui instalar e configurar o Postgres no meu Ubuntu, por isso resolvi compartilhar essa experiência que pode ser útil para mais pessoas. Let's work!
 
 No terminal, digite:
 
@@ -38,7 +38,7 @@ Agora substitua a linha imediatamente abaixo desta, com o seguinte conteúdo:
 
 Agora vamos permitir o acesso para seus usuários. Localize a linha
   
-**\# &#8220;local&#8221; is for Unix domain socket connections only**
+**\# "local" is for Unix domain socket connections only**
   
 e substitua a linha abaixo dela com o seguinte conteúdo:
   
@@ -58,13 +58,13 @@ A primeira parte está concluída. Agora edite o arquivo postgresql.conf, que es
 
 Procure esta linha:**
   
-\# listen_addresses = &#8216;localhost&#8217;
+\# listen_addresses = 'localhost'
   
-** Descomente a linha e troque &#8216;localhost&#8217; por &#8216;*&#8217;, assim qualquer computador poderá acessar o Postgres.
+** Descomente a linha e troque 'localhost' por '*', assim qualquer computador poderá acessar o Postgres.
   
 A linha ficará assim:
   
-**listen_addresses = &#8216;*&#8217;**
+**listen_addresses = '*'**
 
 Agora é só reiniciar o servidor com o seguinte comando:
 

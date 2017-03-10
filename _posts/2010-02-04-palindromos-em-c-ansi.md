@@ -22,15 +22,15 @@ Nunca esqueço de uma prova de Programação I, do 2º semestre da faculdade, on
 
 int ehPalindromo(char *string){
 	  
-char *s2 = string + strlen(string) &#8211; 1;
+char *s2 = string + strlen(string) -; 1;
 	  
 if(!*string)
 		  
 return 1;
 	  
-while(\*string++ == \*s2&#8211; && *string);
+while(\*string++ == \*s2-; && *string);
 	  
-return !\*string && \*(&#8211;string) == *(++s2);
+return !\*string && \*(-;string) == *(++s2);
   
 }
 

@@ -18,9 +18,9 @@ tags:
   - Java Script
   - jQuery
 ---
-O jQuery é uma biblioteca fantástica. O CKEditor é o editor mais completo. Por quê não juntar os dois? Este tutorial mostra como fazer isso. Um dos grandes ganhos desta integração é que fica muito fácil manipular o &#8220;baixo nível&#8221; do CKEditor, principalmente se for salvar o conteúdo do editor com AJAX.
+O jQuery é uma biblioteca fantástica. O CKEditor é o editor mais completo. Por quê não juntar os dois? Este tutorial mostra como fazer isso. Um dos grandes ganhos desta integração é que fica muito fácil manipular o "baixo nível" do CKEditor, principalmente se for salvar o conteúdo do editor com AJAX.
 
-Pra começar, baixe a última versão do <a href="http://www.jquery.com" rel="externo nofollow">jQuery</a>. Baixe o <a href="http://www.ckeditor.com" rel="externo nofollow">CKEditor</a>. Extraia o CKEditor para uma pasta e coloque o jQuery na mesma pasta. O CKEditor já vem com um mecanismo que permite essa integração. Ele está localizado na pasta &#8220;adapters/jquery.js&#8221; e deve ser incluído no HTML da página.
+Pra começar, baixe a última versão do <a href="http://www.jquery.com" rel="externo nofollow">jQuery</a>. Baixe o <a href="http://www.ckeditor.com" rel="externo nofollow">CKEditor</a>. Extraia o CKEditor para uma pasta e coloque o jQuery na mesma pasta. O CKEditor já vem com um mecanismo que permite essa integração. Ele está localizado na pasta "adapters/jquery.js" e deve ser incluído no HTML da página.
 
 <span style="font-size: 14px;"><strong><br />Instalação básica<br /></strong></span></p> 
 
@@ -36,7 +36,7 @@ Pra começar, baixe a última versão do <a href="http://www.jquery.com" rel="ex
 	  
 $(document).ready(function(){
 		  
-$(&#8216;#editor&#8217;).ckeditor();
+$('#editor').ckeditor();
 	  
 });
 	  
@@ -61,7 +61,7 @@ $(&#8216;#editor&#8217;).ckeditor();
 </p></p> 
 
 <p>
-  [html]<br /> <script type="text/javascript"><br /> $(document).ready(function(){<br /> $(&#8216;#editor&#8217;).ckeditor(function(){<br /> $(&#8216;#resposta&#8217;).html(&#8216;<span style="color:red; font-weight: bold">CKEditor carregado!</span>&#8217;);<br /> },<br /> {<br /> width: 780,<br /> height: 350<br /> });<br /> });<br /> </script>
+  [html]<br /> <script type="text/javascript"><br /> $(document).ready(function(){<br /> $('#editor').ckeditor(function(){<br /> $('#resposta').html('<span style="color:red; font-weight: bold">CKEditor carregado!</span>');<br /> },<br /> {<br /> width: 780,<br /> height: 350<br /> });<br /> });<br /> </script>
 </p>
 
 <p>
@@ -85,15 +85,15 @@ $(&#8216;#editor&#8217;).ckeditor();
 </p></p> 
 
 <p>
-  [js]<br /> $(document).ready(function(){<br /> $(&#8216;#editor&#8217;).ckeditor(function(){<br /> $(&#8216;#resposta&#8217;).html(&#8216;<span style="color:red; font-weight: bold">CKEditor carregado!</span>&#8217;);
+  {% highlight js %}<br /> $(document).ready(function(){<br /> $('#editor').ckeditor(function(){<br /> $('#resposta').html('<span style="color:red; font-weight: bold">CKEditor carregado!</span>');
 </p>
 
 <p>
-  var editor = $(&#8216;#editor&#8217;).ckeditorGet();
+  var editor = $('#editor').ckeditorGet();
 </p>
 
 <p>
-  // Capturando o conteúdo do editor<br /> var data = $(&#8216;#editor&#8217;).val();<br /> // Adicionando conteúdo ao editor<br /> $(&#8216;#editor&#8217;).val(&#8216;<a href="http://www.fonini.net">www.fonini.net</a>&#8217;);<br /> },<br /> {<br /> width: 780,<br /> height: 350<br /> });<br /> });<br /> [/js]
+  // Capturando o conteúdo do editor<br /> var data = $('#editor').val();<br /> // Adicionando conteúdo ao editor<br /> $('#editor').val('<a href="http://www.fonini.net">www.fonini.net</a>');<br /> },<br /> {<br /> width: 780,<br /> height: 350<br /> });<br /> });<br /> {% endhighlight %}
 </p>
 
 <p>

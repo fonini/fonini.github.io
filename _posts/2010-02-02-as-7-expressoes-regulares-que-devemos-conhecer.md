@@ -17,99 +17,99 @@ Hoje vou mostrar algumas expressões regulares que podem ser muito úteis. Pra q
 
 **<span style="font-size: 14px;">Números de telefone<br /> </span>**</p> 
 
-[php]
+{% highlight php %}
   
 $telefone = "(54) 9613-4396";
   
-if (preg_match(&#8216;/^((?\[0-9]{2})?|[-. ]?)[ \]\[0-9\]{4}[-. ]?[0-9]{4}$/&#8217;, $telefone)) {
+if (preg_match('/^((?\[0-9]{2})?|[-. ]?)[ \]\[0-9\]{4}[-. ]?[0-9]{4}$/', $telefone)) {
 	  
 echo "Telefone válido";
   
 }
   
-[/php]
+{% endhighlight %}
 
 **<span style="font-size: 14px;">CEP<br /> </span>**</p> 
 
-[php]
+{% highlight php %}
   
 $cep = "99150-000";
   
-if (preg_match(&#8216;/^[0-9]{5,5}([- ]?[0-9]{4})?$/&#8217;, $cep)) {
+if (preg_match('/^[0-9]{5,5}([- ]?[0-9]{4})?$/', $cep)) {
 	  
 echo "CEP válido";
   
 }
   
-[/php]</p> 
+{% endhighlight %}</p> 
 
 **<span style="font-size: 14px;">Comentários em várias linhas<br /> </span>**</p> 
 
-[php]
+{% highlight php %}
   
 $comentario = "/\* comentario bla bla bla\*/";
   
-if (preg_match(&#8216;/^[(/\*)+.+(\*/)]$/&#8217;, $comentario)) {
+if (preg_match('/^[(/\*)+.+(\*/)]$/', $comentario)) {
 	  
 echo "Comentário válido";
   
 }
   
-[/php]
+{% endhighlight %}
 
 **<span style="font-size: 14px;"><br /> </span>**
 
 **<span style="font-size: 14px;">Datas (padrão brasileiro)<br /> </span>**</p> 
 
-[php]
+{% highlight php %}
   
 $data = "12/04/1990";
   
-if (preg_match(&#8216;/^d{1,2}/d{1,2}/d{4}$/&#8217;, $data)) {
+if (preg_match('/^d{1,2}/d{1,2}/d{4}$/', $data)) {
 	  
 echo "Data válida";
   
 }
   
-[/php]
+{% endhighlight %}
 
 **<span style="font-size: 14px;"><br /> </span>**
 
 **<span style="font-size: 14px;">Cores hexadecimais<br /> </span>**</p> 
 
-[php]
+{% highlight php %}
   
 $cor = "#666666";
   
-if (preg_match(&#8216;/^#(?:(?:[a-fd]{3}){1,2})$/i&#8217;, $cor)) {
+if (preg_match('/^#(?:(?:[a-fd]{3}){1,2})$/i', $cor)) {
   
 echo "Cor válida";
   
 }
   
-[/php]</p> 
+{% endhighlight %}</p> 
 
 **<span style="font-size: 14px;">Endereços IP<br /> </span>**</p> 
 
-[php]
+{% highlight php %}
   
 $ip = "255.255.255.0";
   
-if (preg_match(&#8216;^(?:25\[0-5]|2[0-4]d|1dd|[1-9]d|d)(?:[.\](?:25[0-5]|2[0-4]d|1dd|[1-9]d|d)){3}$&#8217;, $ip)) {
+if (preg_match('^(?:25\[0-5]|2[0-4]d|1dd|[1-9]d|d)(?:[.\](?:25[0-5]|2[0-4]d|1dd|[1-9]d|d)){3}$', $ip)) {
 	  
 echo "IP válido";
   
 }
   
-[/php]</p> 
+{% endhighlight %}</p> 
 
 **<span style="font-size: 14px;">E-mails<br /> </span>**</p> 
 
-[php]
+{% highlight php %}
   
 $email = "contato@fonini.net";
   
-if (preg\_match(&#8216;/^\[^0-9\]\[a-zA-Z0-9\_\]+(\[.\]\[a-zA-Z0-9\_\]+)\*\[@\]\[a-zA-Z0-9\_\]+(\[.\]\[a-zA-Z0-9_\]+)\*\[.\]\[a-zA-Z\]{2,4}$/&#8217;,
+if (preg\_match('/^\[^0-9\]\[a-zA-Z0-9\_\]+(\[.\]\[a-zA-Z0-9\_\]+)\*\[@\]\[a-zA-Z0-9\_\]+(\[.\]\[a-zA-Z0-9_\]+)\*\[.\]\[a-zA-Z\]{2,4}$/',
   
 $email)) {
 	  
@@ -117,4 +117,4 @@ echo "E-mail válido";
   
 }
   
-[/php]
+{% endhighlight %}

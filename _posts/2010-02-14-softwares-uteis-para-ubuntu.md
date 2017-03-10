@@ -107,7 +107,7 @@ Para instalar:
 
 **Winetricks**
   
-Complemento para o Wine. Permite que você instale facilmente dll&#8217;s e outros complementos necessários para que alguns softwares interpretados pelo Wine funcionem.
+Complemento para o Wine. Permite que você instale facilmente dll's e outros complementos necessários para que alguns softwares interpretados pelo Wine funcionem.
   
 Para instalar:
 

@@ -16,18 +16,18 @@ tags:
 ---
 Comecei a trabalhar com Java há um mês, usando o framework Hibernate. O Hibernate é uma camada de persistência que pode parecer confusa no início, mas proporciona uma grande produtividade, uma vez que gerencia todo o processo de comunicação com o banco de dados, desde criação e atualização de tabelas, até chaves estrangeiras.
 
-O NetBeans 6.8 é uma IDE que facilita muito o processo de criação, pois já vem com o Hibernate incluso. Vale lembrar que é sempre bom saber fazer o trabalho de forma braçal, para conhecer o lugar onde você está se metendo. Resolvi usar SQLite para alguns testes com o Hibernate e estou disponibilizando um exemplo básico do processo, usando o NetBeans. Let&#8217;s work!
+O NetBeans 6.8 é uma IDE que facilita muito o processo de criação, pois já vem com o Hibernate incluso. Vale lembrar que é sempre bom saber fazer o trabalho de forma braçal, para conhecer o lugar onde você está se metendo. Resolvi usar SQLite para alguns testes com o Hibernate e estou disponibilizando um exemplo básico do processo, usando o NetBeans. Let's work!
 
 Abra o NetBeans, clique em Arquivo/Novo projeto, selecione Java/Aplicativo Java e escolha um nome para seu projeto. No meu caso ficou TesteHibernate e finalize.
 
 O próximo passo é incluir a biblioteca do Hibernate no projeto. Na aba Projetos, clique com o botão direito em Bibliotecas/Adicionar biblioteca e selecione o Hibernate JPA. Para trabalhar com o SQlite você deve incluir também o driver JDBC do mesmo do projeto. Baixe-o aqui caso você não tenha. Após baixado, crie uma pasta chamada lib na pasta do projeto. Você pode adicionar todas as bibliotecas externas nessa pasta para facilitar a organização. Após colocar o driver na pasta, adicione-o ao projeto clicando novamente na aba Projetos/Bibliotecas/Adicionar JAR/Pasta e selecione o driver.
 
-Agora que já temos o Hibernate e o driver do SQLite incluídos, vamos criar a conexão com o banco de dados. Clique na aba Serviços/Banco de Dados/Drivers. Se o driver do SQLite não estiver aparecendo, clique com o botão direito em Drivers/Novo driver. Em Arquivos do driver, adicione o driver da pasta lib e clique em Localizar. Deverá aparecer &#8220;org.sqlite.JDBC&#8221; no campo Classe do Driver. Dê o nome SQLite ao driver e clique em OK.
+Agora que já temos o Hibernate e o driver do SQLite incluídos, vamos criar a conexão com o banco de dados. Clique na aba Serviços/Banco de Dados/Drivers. Se o driver do SQLite não estiver aparecendo, clique com o botão direito em Drivers/Novo driver. Em Arquivos do driver, adicione o driver da pasta lib e clique em Localizar. Deverá aparecer "org.sqlite.JDBC" no campo Classe do Driver. Dê o nome SQLite ao driver e clique em OK.
 
 <img alt="Adicionando o driver do SQLite" src="http://fonini.web2313.uni5.net/blog/wp-content/imagens/driver.jpg" style="width: 516px; height: 245px;" />
 
 Agora clique em Drivers/SQLite/Conectar utilizando.  
-Escolha um nome de usuário, uma senha e a seguinte URL JDBC: jdbc:sqlite:teste.db. O banco estará no arquivo &#8220;teste.db&#8221; na pasta raíz do projeto.
+Escolha um nome de usuário, uma senha e a seguinte URL JDBC: jdbc:sqlite:teste.db. O banco estará no arquivo "teste.db" na pasta raíz do projeto.
 
 <img alt="Conectando a um banco SQLite" src="http://fonini.web2313.uni5.net/blog/wp-content/imagens/driver.jpg" style="width: 497px; height: 291px;" />
 
@@ -35,19 +35,19 @@ O próximo passo será criar a unidade de persistência do projeto. Clique em Ar
 
 <img alt="Criando uma unidade de persistência" src="http://fonini.web2313.uni5.net/blog/wp-content/imagens/driver.jpg" style="width: 604px; height: 177px;" />
 
-O SQLite exige um dialeto SQL específico, que não vem incluído no Hibernate. Eu encontrei um no seguinte endereço: <a href="http://hibernate-sqlite.googlecode.com" rel="externo nofollow">http://hibernate-sqlite.googlecode.com</a>. Você pode baixar somente a classe necessária, [clicando aqui](http://www.fonini.net/labs/SQLiteDialect.zip). Extraia para a pasta &#8220;src&#8221; do projeto, ficando assim: &#8220;src/util/SQLiteDialect.java&#8221;. Com a camada de persistência aberta no NetBeans (persistence.xml), clique em XML e adicione a linha do dialeto do SQLite, como mostrado abaixo:</p> 
+O SQLite exige um dialeto SQL específico, que não vem incluído no Hibernate. Eu encontrei um no seguinte endereço: <a href="http://hibernate-sqlite.googlecode.com" rel="externo nofollow">http://hibernate-sqlite.googlecode.com</a>. Você pode baixar somente a classe necessária, [clicando aqui](http://www.fonini.net/labs/SQLiteDialect.zip). Extraia para a pasta "src" do projeto, ficando assim: "src/util/SQLiteDialect.java". Com a camada de persistência aberta no NetBeans (persistence.xml), clique em XML e adicione a linha do dialeto do SQLite, como mostrado abaixo:</p> 
 
-[java]
+{% highlight java %}
   
 <property name="hibernate.dialect" value="util.SQLiteDialect" />
   
-[/java]
+{% endhighlight %}
 
 A camada de persistência está pronta. Vamos a criação do model.
 
 Clique em Arquivo/Novo arquivo/Java/Classe Java e dê o nome Pessoa para a classe. O código está abaixo. Não entrarei em detalhes com as anotações utilizadas, quem sabe isso fica para um próximo post.</p> 
 
-[java]
+{% highlight java %}
   
 package net.fonini.testehibernate;
 
@@ -137,13 +137,13 @@ this.nome = nome;
   
 }
   
-[/java]
+{% endhighlight %}
 
-Agora que temos nossa classe, vamos adicioná-la a unidade de persistência. Abra a unidade de persistência, e em &#8220;Incluir classes de entidade&#8221; clique em Adicionar e selecione a classe Pessoa. Se a classe não aparecer na listagem, verifique se as anotações estão corretas.
+Agora que temos nossa classe, vamos adicioná-la a unidade de persistência. Abra a unidade de persistência, e em "Incluir classes de entidade" clique em Adicionar e selecione a classe Pessoa. Se a classe não aparecer na listagem, verifique se as anotações estão corretas.
 
 O próximo passo é criar uma classe de testes do JUnit para usá-la. Clique em Arquivo/Novo arquivo/Classe Java com o nome Teste e muda a localização para Pacotes de Testes. A classe irá possuir dois métodos: um deles persistirá 3 objetos Pessoa e o outro fará a listagem dos mesmos.</p> 
 
-[java]
+{% highlight java %}
   
 package net.fonini.testehibernate;
 
@@ -223,7 +223,7 @@ Collection <Pessoa> lista = em.createQuery("from Pessoa").getResultList();
 
 for (Pessoa p : lista){
 			  
-System.out.println(p.getId() + " &#8211; " + p.getNome() + " &#8211; " + p.getAniversario());
+System.out.println(p.getId() + " -; " + p.getNome() + " -; " + p.getAniversario());
 		  
 }
 	  
@@ -231,7 +231,7 @@ System.out.println(p.getId() + " &#8211; " + p.getNome() + " &#8211; " + p.getAn
   
 }
   
-[/java]
+{% endhighlight %}
 
 Execute os testes pressionando SHIFT+F6 e veja os resultados. Se os testes atingirem 100%, está tudo certo. Senão, procure a possível causa nas exceções. Se você usa um sistema Unix-like, verifique se a pasta raíz do projeto está com as permissões adequadas para a criação do banco de dados. Note que mesmo com os testes atingindo 100% de sucesso, ainda ocorreu uma exceção. Isso se deve ao fato do SQLite não possuir chave estrangeira.
 

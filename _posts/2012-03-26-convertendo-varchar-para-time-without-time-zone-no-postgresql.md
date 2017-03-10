@@ -18,11 +18,11 @@ Usando a função to_timestamp(valor, formato), o valor retornado é um **timest
 
 Porém, basta adicionar ao final da chamada da função o tipo do retorno desejado: </p> 
 
-[sql]
+{% highlight sql %}
   
-to_timestamp(&#8217;23:59:59&#8242;, &#8216;HH24:MI:SS&#8217;)::time without time zone
+to_timestamp('23:59:59&#8242;, 'HH24:MI:SS')::time without time zone
   
-[/sql]
+{% endhighlight %}
 
 Tive um problema com PHP, usando PDO com PostgreSQL e a função overlaps(). Precisava passar um valor time para a função e funcionou dessa maneira. 
 

@@ -17,15 +17,15 @@ Por essa nem eu esperava. Estou me aventurando no mundo do Java, depois de tudo 
 
 O SQLite é uma biblioteca escrita em C que fornece um banco de dados que dispensa configurações/ajustes. É criado um novo arquivo no disco e a biblioteca se encarrega de todas as operações sobre ele, dispensando um processo separado para o SGBD, como é comum na maioria dos bancos de dados. Para mais informações, consulte o site oficial (<a href="http://sqlite.org" rel="externo">http://sqlite.org</a>).
 
-O exemplo abaixo é extremamente básico, pois ainda estou aprendendo as manhas. Let&#8217;s work!
+O exemplo abaixo é extremamente básico, pois ainda estou aprendendo as manhas. Let's work!
 
 Para começar, baixe a biblioteca do SQLite <a href="http://www.zentus.com/sqlitejdbc" rel="externo">aqui</a>. O .jar disponível funciona tanto em Linux, como em Windows e Mac. Inclua a biblioteca em seu projeto. No caso do <a href="http://netbeans.org" rel="externo">NetBeans</a>, procure a aba Projetos, selecione seu projeto, vá em Bibliotecas, botão direito e selecione Adicionar JAR/Pasta, informando a localização do arquivo baixado.
 
-O exemplo baseia-se em um cadastro de pessoas, contendo nome e idade. São três classes: Pessoa (o &#8220;The book is on the table&#8221; da orientação a objetos, todo mundo que está aprendendo OO faz essa classe), SQLite, onde estão implementados os métodos para inserção e listagem e a classe Exemplo, a classe principal do projeto.
+O exemplo baseia-se em um cadastro de pessoas, contendo nome e idade. São três classes: Pessoa (o "The book is on the table" da orientação a objetos, todo mundo que está aprendendo OO faz essa classe), SQLite, onde estão implementados os métodos para inserção e listagem e a classe Exemplo, a classe principal do projeto.
 
 **Classe Pessoa:**</p> 
 
-[java]
+{% highlight java %}
   
 package testesqlite;
 
@@ -69,11 +69,11 @@ this.idade = idade;
   
 }
   
-[/java]
+{% endhighlight %}
 
 **Classe SQLite**</p> 
 
-[java]
+{% highlight java %}
   
 package testesqlite;
 
@@ -185,11 +185,11 @@ return lista;
   
 }
   
-[/java]
+{% endhighlight %}
 
 **Classe Exemplo (main)**</p> 
 
-[java]
+{% highlight java %}
   
 package testesqlite;
   
@@ -247,9 +247,9 @@ System.out.println("Idade:" + hs.getIdade() + "n");
   
 }
   
-[/java]
+{% endhighlight %}
 
-O código tá bem amador ainda, mas dá pra ter uma noção de como funciona o SQLite com Java. É criado um arquivo chamado &#8220;pessoas.db&#8221; que será o banco de dados. É criada uma tabela &#8220;pessoas&#8221; e inserido três registros nela. Todos os registros são listados, remove-se uma das pessoas e lista-se novamente.
+O código tá bem amador ainda, mas dá pra ter uma noção de como funciona o SQLite com Java. É criado um arquivo chamado "pessoas.db" que será o banco de dados. É criada uma tabela "pessoas" e inserido três registros nela. Todos os registros são listados, remove-se uma das pessoas e lista-se novamente.
 
 Baixe [aqui](http://www.fonini.net/labs/TesteSQLite.rar) o projeto criado no NetBeans (com a biblioteca já incluída).
 

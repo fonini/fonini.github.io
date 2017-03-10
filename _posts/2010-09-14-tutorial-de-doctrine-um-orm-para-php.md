@@ -25,41 +25,41 @@ seu_projeto/lib/vendor
 	  
 seu_projeto/lib/Doctrine.php
 
-Crie também uma pasta chamada &#8220;models&#8221; na raíz do projeto, dando permissão 777 a ela. Esta pasta irá conter o model da aplicação.
+Crie também uma pasta chamada "models" na raíz do projeto, dando permissão 777 a ela. Esta pasta irá conter o model da aplicação.
 	  
 seu_projeto/models
 
 **Configuração**
 
-Crie um arquivo na pasta raíz do projeto chamado &#8220;bootstrap.php&#8221;. Esse arquivo irá conter as configurações e parâmetros de funcionamento do Doctrine. Abaixo está o arquivo que eu uso. Você pode definir outros parâmetros consultando a <a href="http://www.doctrine-project.org/projects/orm/1.2/docs/en" rel="externo nofollow">documentação oficial</a>.
+Crie um arquivo na pasta raíz do projeto chamado "bootstrap.php". Esse arquivo irá conter as configurações e parâmetros de funcionamento do Doctrine. Abaixo está o arquivo que eu uso. Você pode definir outros parâmetros consultando a <a href="http://www.doctrine-project.org/projects/orm/1.2/docs/en" rel="externo nofollow">documentação oficial</a>.
 
-[php]// seu_projeto/bootstrap.php
+{% highlight php %}// seu_projeto/bootstrap.php
 
-require\_once(dirname(\\_\_FILE\_\_) . &#8216;/lib/Doctrine.php&#8217;);
+require\_once(dirname(\\_\_FILE\_\_) . '/lib/Doctrine.php');
 
-spl\_autoload\_register(array(&#8216;Doctrine&#8217;, &#8216;autoload&#8217;));
+spl\_autoload\_register(array('Doctrine', 'autoload'));
   
-spl\_autoload\_register(array(&#8216;Doctrine_Core&#8217;, &#8216;modelsAutoload&#8217;));
+spl\_autoload\_register(array('Doctrine_Core', 'modelsAutoload'));
 
 $manager = Doctrine_Manager::getInstance();
 
 // Configurações do banco de dados. O banco deve ser criado previamente.
   
-$user = &#8216;postgres&#8217;;
+$user = 'postgres';
   
-$password = &#8216;teste&#8217;;
+$password = 'teste';
   
-$host = &#8216;localhost&#8217;;
+$host = 'localhost';
   
-$dbname = &#8216;testdoctrine&#8217;;
+$dbname = 'testdoctrine';
   
-$driver = &#8216;pgsql&#8217;;
+$driver = 'pgsql';
 
-$conn = Doctrine_Manager::connection($driver.&#8217;://&#8217;.$user.&#8217;:&#8217;.$password.&#8217;@&#8217;.$host.&#8217;/&#8217;.$dbname);
+$conn = Doctrine_Manager::connection($driver.'://'.$user.':'.$password.'@'.$host.'/'.$dbname);
   
-$conn->setOption(&#8216;username&#8217;, $user);
+$conn->setOption('username', $user);
   
-$conn->setOption(&#8216;password&#8217;, $password);
+$conn->setOption('password', $password);
   
 $manager->setAttribute(Doctrine\_Core::ATTR\_EXPORT, Doctrine\_Core::EXPORT\_ALL);
   
@@ -75,13 +75,13 @@ $manager->setAttribute(Doctrine\_Core::ATTR\_AUTO\_ACCESSOR\_OVERRIDE, true);
 
 // Formato das sequências (uso para PostgreSQL)
   
-$manager->setAttribute(Doctrine\_Core::ATTR\_SEQNAME\_FORMAT, &#8216;%s\_seq&#8217;);
+$manager->setAttribute(Doctrine\_Core::ATTR\_SEQNAME\_FORMAT, '%s\_seq');
 
 // Carrega os models da pasta especificada, no caso "models"
   
-Doctrine_Core::loadModels(&#8216;models&#8217;);
+Doctrine_Core::loadModels('models');
   
-[/php]
+{% endhighlight %}
 
 
 
@@ -91,31 +91,31 @@ Com seu projeto configurado, o próximo passo é criar o model. Vou mostrar as 3
 
 _**Gerando as classes através das tabelas já existentes**_
 
-Crie um arquivo chamado &#8220;test.php&#8221; que será usado neste e nos próximos passos. Deverá ter o seguinte conteúdo: 
+Crie um arquivo chamado "test.php" que será usado neste e nos próximos passos. Deverá ter o seguinte conteúdo: 
 
-[php]require_once(&#8216;bootstrap.php&#8217;);
+{% highlight php %}require_once('bootstrap.php');
   
-[/php]
+{% endhighlight %}
 
-Agora, basta adicionar as linhas abaixo ao seu arquivo &#8220;test.php&#8221;. Comente-a após a geração, pois senão os models serão gerados novamente a cada execução. 
+Agora, basta adicionar as linhas abaixo ao seu arquivo "test.php". Comente-a após a geração, pois senão os models serão gerados novamente a cada execução. 
 
-[php]// seu_projeto/test.php
+{% highlight php %}// seu_projeto/test.php
   
-require_once(&#8216;bootstrap.php&#8217;);
+require_once('bootstrap.php');
 
-Doctrine_Core::generateModelsFromDb(&#8216;models&#8217;, array(&#8216;doctrine&#8217;), array(
+Doctrine_Core::generateModelsFromDb('models', array('doctrine'), array(
 	  
-&#8216;generateTableClasses&#8217; => true
+'generateTableClasses' => true
 	  
 )
   
 );
   
-[/php]
+{% endhighlight %}
 
 Você pode usar como exemplo as tabelas abaixo: 
 
-[sql]CREATE TABLE cidade (
+{% highlight sql %}CREATE TABLE cidade (
       
 id bigint NOT NULL,
       
@@ -145,7 +145,7 @@ ALTER TABLE ONLY pessoa ADD CONSTRAINT
   
 pessoa\_id\_cidade\_cidade\_id FOREIGN KEY (id_cidade) REFERENCES cidade(id);
   
-[/sql]
+{% endhighlight %}
 
 _**Gerando as classes através de um arquivo YAML**_
 
@@ -153,7 +153,7 @@ Um arquivo YAML (extensão .yml) é um arquivo semelhante a um arquivo XML e eu 
 	  
 Esta forma permite representar seus models no arquivo YAML.
 	  
-Se você ainda não tem classes definidas, crie o arquivo &#8220;schemas.yml&#8221; na raíz do projeto com o conteúdo abaixo: 
+Se você ainda não tem classes definidas, crie o arquivo "schemas.yml" na raíz do projeto com o conteúdo abaixo: 
 
 <pre>Cidade:
   connection: 0
@@ -201,18 +201,18 @@ Pessoa:
       type: one
 </pre>
 
-Caso você já tenha as classes definidas, basta remover o código de geração das classes do arquivo &#8220;test.php&#8221; e adicionar as linhas abaixo: 
+Caso você já tenha as classes definidas, basta remover o código de geração das classes do arquivo "test.php" e adicionar as linhas abaixo: 
 
 <pre class="brush:php">// seu_projeto/test.php
 require_once('bootstrap.php');
 Doctrine_Core::generateYamlFromModels('schema.yml', 'models');
 </pre>
 
-Após executar o test.php, você verá um arquivo chamado &#8220;schema.yml&#8221; na pasta raíz, com a definição do model. Crie agora um arquivo chamado &#8220;generate.php&#8221; com o código abaixo. Esse arquivo será responsável por remover as tabelas do banco de dados (se existirem) e recriá-las com base no arquivo &#8220;schema.yml&#8221;, gerando também as classes PHP. Portanto, muito cuidado, só execute quando for estritamente necessário, sob a pena de perder os dados do banco. 
+Após executar o test.php, você verá um arquivo chamado "schema.yml" na pasta raíz, com a definição do model. Crie agora um arquivo chamado "generate.php" com o código abaixo. Esse arquivo será responsável por remover as tabelas do banco de dados (se existirem) e recriá-las com base no arquivo "schema.yml", gerando também as classes PHP. Portanto, muito cuidado, só execute quando for estritamente necessário, sob a pena de perder os dados do banco. 
 
-[php]// seu_projeto/generate.php
+{% highlight php %}// seu_projeto/generate.php
   
-require_once(&#8216;bootstrap.php&#8217;);
+require_once('bootstrap.php');
 
 //Remova as próximas 2 linhas caso não queira remover e criar seu banco a cada execução.
   
@@ -220,39 +220,39 @@ Doctrine_Core::dropDatabases();
   
 Doctrine_Core::createDatabases();
   
-Doctrine_Core::generateModelsFromYaml(&#8216;schema.yml&#8217;, &#8216;models&#8217;);
+Doctrine_Core::generateModelsFromYaml('schema.yml', 'models');
   
-Doctrine_Core::createTablesFromModels(&#8216;models&#8217;);
+Doctrine_Core::createTablesFromModels('models');
   
-[/php]
+{% endhighlight %}
 
 _**Definindo manualmente suas classes PHP**_
 
-Usarei como exemplo duas classes, Pessoa e Cidade, sendo que uma pessoa pertence a uma cidade. Basta criar dois arquivos na pasta &#8220;models&#8221;, Pessoa.php e Cidade.php, com o código abaixo: 
+Usarei como exemplo duas classes, Pessoa e Cidade, sendo que uma pessoa pertence a uma cidade. Basta criar dois arquivos na pasta "models", Pessoa.php e Cidade.php, com o código abaixo: 
 
-[php]// seu_projeto/models/Cidade.php
+{% highlight php %}// seu_projeto/models/Cidade.php
 
 class Cidade extends Doctrine_Record{
 	  
 public function setTableDefinition(){
 		  
-$this->hasColumn(&#8216;id&#8217;, &#8216;integer&#8217;, null, array(
+$this->hasColumn('id', 'integer', null, array(
 			  
-&#8216;fixed&#8217; => false,
+'fixed' => false,
 			  
-&#8216;notnull&#8217; => true,
+'notnull' => true,
 			  
-&#8216;primary&#8217; => true,
+'primary' => true,
 			  
-&#8216;autoincrement&#8217; => true
+'autoincrement' => true
 			  
 )
 		  
 );
 		  
-$this->hasColumn(&#8216;nome&#8217;, &#8216;string&#8217;, 500, array(&#8216;fixed&#8217; => true, &#8216;notnull&#8217; => true));
+$this->hasColumn('nome', 'string', 500, array('fixed' => true, 'notnull' => true));
 		  
-$this->hasColumn(&#8216;uf&#8217;, &#8216;string&#8217;, 2, array(&#8216;fixed&#8217; => true, &#8216;notnull&#8217; =>; true));
+$this->hasColumn('uf', 'string', 2, array('fixed' => true, 'notnull' =>; true));
 	  
 }
   
@@ -264,35 +264,35 @@ class Pessoa extends Doctrine_Record{
 	  
 public function setTableDefinition(){
 		  
-$this->hasColumn(&#8216;id&#8217;, &#8216;integer&#8217;, null, array(
+$this->hasColumn('id', 'integer', null, array(
 			  
-&#8216;fixed&#8217; => false,
+'fixed' => false,
 			  
-&#8216;notnull&#8217; => true,
+'notnull' => true,
 			  
-&#8216;primary&#8217; => true,
+'primary' => true,
 			  
-&#8216;autoincrement&#8217; => true
+'autoincrement' => true
 			  
 )
 		  
 );
 		  
-$this->hasColumn(&#8216;nome&#8217;, &#8216;string&#8217;, 500, array(&#8216;fixed&#8217; => true, &#8216;notnull&#8217; => true));
+$this->hasColumn('nome', 'string', 500, array('fixed' => true, 'notnull' => true));
 		  
-$this->hasColumn(&#8216;data_nasc&#8217;, &#8216;date&#8217;);
+$this->hasColumn('data_nasc', 'date');
 		  
-$this->hasColumn(&#8216;id_cidade&#8217;, &#8216;integer&#8217;);
+$this->hasColumn('id_cidade', 'integer');
 	  
 }
 
 public function setUp(){
 		  
-$this->hasOne(&#8216;Cidade&#8217;, array(
+$this->hasOne('Cidade', array(
 				  
-&#8216;local&#8217; => &#8216;id_cidade&#8217;,
+'local' => 'id_cidade',
 				  
-&#8216;foreign&#8217; => &#8216;id&#8217;
+'foreign' => 'id'
 			  
 )
 		  
@@ -302,9 +302,9 @@ $this->hasOne(&#8216;Cidade&#8217;, array(
   
 }
   
-[/php]
+{% endhighlight %}
 
-Após a definição das classes, rode o arquivo &#8220;test.php&#8221; com a linha &#8220;Doctrine_Core::generateYamlFromModels(&#8216;schema.yml&#8217;, &#8216;models&#8217;);&#8221;. Após rodar esse arquivo, execute o &#8220;generate.php&#8221;, que irá apagar o banco de dados, criá-lo novamente e criar as tabelas referentes as classes.
+Após a definição das classes, rode o arquivo "test.php" com a linha "Doctrine_Core::generateYamlFromModels('schema.yml', 'models');". Após rodar esse arquivo, execute o "generate.php", que irá apagar o banco de dados, criá-lo novamente e criar as tabelas referentes as classes.
 
 **Realizando consultas**
 
@@ -312,11 +312,11 @@ Com o model pronto, vamos realizar algumas consultas.
 
 _Inserindo pessoa com uma cidade associada a ela_
 
-[php]$cidade = new Cidade();
+{% highlight php %}$cidade = new Cidade();
   
-$cidade->nome = &#8216;Marau&#8217;;
+$cidade->nome = 'Marau';
   
-$cidade->uf = &#8216;RS&#8217;;
+$cidade->uf = 'RS';
   
 $cidade->save();
 
@@ -324,49 +324,49 @@ $pessoa = new Pessoa();
   
 $pessoa->nome = "Jonnas Fonini";
   
-$pessoa->data_nasc = date(&#8216;1990-04-12&#8217;);
+$pessoa->data_nasc = date('1990-04-12');
   
 $pessoa->id_cidade = $cidade;
   
 $pessoa->save();
   
-[/php]
+{% endhighlight %}
 
 _Consultando informações de uma pessoa_
 
-[php]$pessoa = Doctrine_Core::getTable(&#8216;Pessoa&#8217;)->find(1);
+{% highlight php %}$pessoa = Doctrine_Core::getTable('Pessoa')->find(1);
   
-echo &#8216;Id: &#8216;.$pessoa->id.'<br />&#8217;;
+echo 'Id: '.$pessoa->id.'<br />';
   
-echo &#8216;Nome: &#8216;.$pessoa->nome.'<br />&#8217;;
+echo 'Nome: '.$pessoa->nome.'<br />';
   
-echo &#8216;Data Nasc.: &#8216;.$pessoa->data_nasc.'<br />&#8217;;
+echo 'Data Nasc.: '.$pessoa->data_nasc.'<br />';
   
-echo &#8216;Cidade: &#8216;.$pessoa->Cidade->nome;
+echo 'Cidade: '.$pessoa->Cidade->nome;
   
-[/php]
+{% endhighlight %}
 
 _Atualizando informações de uma pessoa_
 
-[php]$pessoa = Doctrine_Core::getTable(&#8216;Pessoa&#8217;)->find(1);
+{% highlight php %}$pessoa = Doctrine_Core::getTable('Pessoa')->find(1);
   
-$pessoa->data_nasc = date(&#8216;Y-m-d&#8217;);
+$pessoa->data_nasc = date('Y-m-d');
   
 $pessoa->save();
   
-[/php]
+{% endhighlight %}
 
 _Removendo uma pessoa_
 
-[php]$pessoa = Doctrine_Core::getTable(&#8216;Pessoa&#8217;)->find(1);
+{% highlight php %}$pessoa = Doctrine_Core::getTable('Pessoa')->find(1);
   
 $pessoa->delete();
   
-[/php]
+{% endhighlight %}
 
 **Download**
 
-[Clique aqui](http://www.fonini.net/labs/projeto-doctrine.zip) para baixar o projeto já pronto. Mude as configurações do banco de dados no arquivo &#8220;bootstrap.php&#8221;.
+[Clique aqui](http://www.fonini.net/labs/projeto-doctrine.zip) para baixar o projeto já pronto. Mude as configurações do banco de dados no arquivo "bootstrap.php".
 
 **Conclusão**
 

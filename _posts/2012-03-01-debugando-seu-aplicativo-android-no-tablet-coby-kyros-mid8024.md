@@ -22,7 +22,7 @@ Pronto. Para testar se funcionou, execute comando: **adb devices** e veja se seu
 
 Agora basta debugar seu aplicativo. 
 
-No no meu caso, eu fazia o download da app, começava a instalação, mas aparecia a mensagem: &#8220;**O aplicativo não foi instalado**&#8220;. Fiz o processo para debugar o aplicativo e descobri que o tablet não tinha a lib do Google Maps. O erro era esse: INSTALL\_FAILED\_MISSING\_SHARED\_LIBRARY. 
+No no meu caso, eu fazia o download da app, começava a instalação, mas aparecia a mensagem: "**O aplicativo não foi instalado**". Fiz o processo para debugar o aplicativo e descobri que o tablet não tinha a lib do Google Maps. O erro era esse: INSTALL\_FAILED\_MISSING\_SHARED\_LIBRARY. 
 
 O processo de debug direto no dispositivo me fez perceber o problema na hora. Se não tivesse debugado, estaria até agora tentando entender o erro. Fica a dica. 
 

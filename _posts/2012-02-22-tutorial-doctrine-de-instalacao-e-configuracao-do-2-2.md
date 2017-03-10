@@ -27,7 +27,7 @@ Ol&aacute;! Esta &eacute; a primeira vez que arrumo tempo para testar a vers&ati
 |-- Doctrine
 |-- entities</pre>
 
-Logo ap&oacute;s, crie na raiz um arquivo chamado "bootstrap.php". Este arquivo ir&aacute; conter a configura&ccedil;&atilde;o b&aacute;sica do Doctrine 2, bem como fornecer&aacute; uma inst&acirc;ncia do Entity Manager. Opa, Entity Manager? &Eacute; meu amigo, dessa vez a semelhan&ccedil;a com o Hibernate est&aacute; maior ainda. As entidades tem at&eacute; anota&ccedil;&otilde;es! Claro que voc&ecirc; pode definir as entidades com XML (argh) e YAML. Mas pelo menos pra mim, nada como definir como classes PHP! Crie tamb&eacute;m um banco de dados para testar o Doctrine 2. [php]
+Logo ap&oacute;s, crie na raiz um arquivo chamado "bootstrap.php". Este arquivo ir&aacute; conter a configura&ccedil;&atilde;o b&aacute;sica do Doctrine 2, bem como fornecer&aacute; uma inst&acirc;ncia do Entity Manager. Opa, Entity Manager? &Eacute; meu amigo, dessa vez a semelhan&ccedil;a com o Hibernate est&aacute; maior ainda. As entidades tem at&eacute; anota&ccedil;&otilde;es! Claro que voc&ecirc; pode definir as entidades com XML (argh) e YAML. Mas pelo menos pra mim, nada como definir como classes PHP! Crie tamb&eacute;m um banco de dados para testar o Doctrine 2. {% highlight php %}
   
 // bootstrap.php
 
@@ -49,19 +49,19 @@ $config = Setup::createAnnotationMetadataConfiguration(array(\_\_DIR\_\_."/entit
   
 $conn = array(
       
-&#8216;driver&#8217; => &#8216;pdo_mysql&#8217;,
+'driver' => 'pdo_mysql',
       
-&#8216;user&#8217; => &#8216;usuario&#8217;,
+'user' => 'usuario',
       
-&#8216;password&#8217; => &#8216;senha&#8217;,
+'password' => 'senha',
       
-&#8216;dbname&#8217; => &#8216;doctrine2_test&#8217;
+'dbname' => 'doctrine2_test'
   
 );
 
 // Obtendo uma instância do Entity Manager
   
-$entityManager = DoctrineORMEntityManager::create($conn, $config); [/php]
+$entityManager = DoctrineORMEntityManager::create($conn, $config); {% endhighlight %}
 
 &nbsp;
 
@@ -69,7 +69,7 @@ $entityManager = DoctrineORMEntityManager::create($conn, $config); [/php]
 
 Agora que voc&ecirc; j&aacute; configurou o bootstrap, vamos criar as entidades (classes) que ser&atilde;o usadas para a persist&ecirc;ncia no banco de dados. Na pasta "entities", criada anteriormente, crie os arquivos "Cidade.php" e "Pessoa.php" com o conte&uacute;do abaixo:
   
-[php]
+{% highlight php %}
   
 // entities/Cidade.php
 
@@ -141,9 +141,9 @@ $this->habitantesCidade[] = $pessoa;
   
 }
   
-[/php] &nbsp;
+{% endhighlight %} &nbsp;
 
-[php]
+{% highlight php %}
   
 // entities/Pessoa.php
 
@@ -211,7 +211,7 @@ $this->cidade = $cidade;
   
 }
   
-[/php]
+{% endhighlight %}
 
 &nbsp;
 
@@ -225,35 +225,35 @@ A cria&ccedil;&atilde;o das tabelas no banco de dados ser&aacute; feita atrav&ea
 
 Se voc&ecirc; deseja usar a linha de comando do Doctrine 2, fa&ccedil;a uma pequena altera&ccedil;&atilde;o no arquivo bin/doctrine, adicionando a seguinte linha antes do include: 
 
-[php] set\_include\_path(get\_include\_path() . PATH_SEPARATOR . &#8216;../&#8217;); [/php] 
+{% highlight php %} set\_include\_path(get\_include\_path() . PATH_SEPARATOR . '../'); {% endhighlight %} 
 
 Crie na raiz um arquivo chamado config-cli.php, que ir&aacute; conter a configura&ccedil;&atilde;o para rodar o Doctrine Tool atrav&eacute;s do terminal do Linux (ou prompt do Windows).
 
-[php]
+{% highlight php %}
   
 // config-cli.php
 
 require_once "bootstrap.php";
 
-$helperSet = new SymfonyComponentConsoleHelperHelperSet(array( &#8216;em&#8217; => new DoctrineORMToolsConsoleHelperEntityManagerHelper($entityManager) ));
+$helperSet = new SymfonyComponentConsoleHelperHelperSet(array( 'em' => new DoctrineORMToolsConsoleHelperEntityManagerHelper($entityManager) ));
   
-[/php] 
+{% endhighlight %} 
 
 Agora voc&ecirc; j&aacute; pode acessar a pasta "bin" atrav&eacute;s do terminal e gerar o SQL necess&aacute;rio para criar as tabelas usadas no exemplo. Para isto, basta entrar na pasta "bin" e rodar o comando:
 
 <pre id="terminal" computer="valhalla" user="fonini">./doctrine orm:schema-tool:create --dump-sql</pre>
 
-Ou se preferir, voc&ecirc; pode deixar o Doctrine conectar ao banco de dados e criar as tabelas para voc&ecirc;. Para isto, basta remover o trecho "&#8211;dump-sql" do comando. Criado o banco de dados, vamos testar a persist&ecirc;ncia de uma entidade (vulgo insert). Crie um arquivo com o nome de sua prefer&ecirc;ncia na ra&iacute;z, com o seguinte conte&uacute;do: 
+Ou se preferir, voc&ecirc; pode deixar o Doctrine conectar ao banco de dados e criar as tabelas para voc&ecirc;. Para isto, basta remover o trecho "-;dump-sql" do comando. Criado o banco de dados, vamos testar a persist&ecirc;ncia de uma entidade (vulgo insert). Crie um arquivo com o nome de sua prefer&ecirc;ncia na ra&iacute;z, com o seguinte conte&uacute;do: 
 
-[php]
+{% highlight php %}
   
 require "bootstrap.php";
 
 $cidade = new Cidade();
   
-$cidade->setNome(&#8216;Marau&#8217;);
+$cidade->setNome('Marau');
   
-$cidade->setUf(&#8216;RS&#8217;);
+$cidade->setUf('RS');
 
 $entityManager->persist($cidade);
   
@@ -261,23 +261,23 @@ $entityManager->flush();
 
 echo "Cidade criada com o ID ".$cidade->getId()."n";
   
-[/php] 
+{% endhighlight %} 
 
 Rode o arquivo. Legal, n&atilde;o? Se n&atilde;o houve nenhum erro, d&ecirc; uma olhada no banco de dados, que o seu registro estar&aacute; l&aacute;. Caso houve algum erro, debugue at&eacute; a morte para encontrar o maldito e deixar funcionando. Veja agora um exemplo de persist&ecirc;ncia de um objeto da classe Pessoa com um objeto da classe Cidade associado: 
 
-[php]
+{% highlight php %}
   
 require "bootstrap.php";
 
 $cidade = new Cidade();
   
-$cidade->setNome(&#8216;Marau&#8217;);
+$cidade->setNome('Marau');
   
-$cidade->setUf(&#8216;RS&#8217;);
+$cidade->setUf('RS');
 
 $pessoa = new Pessoa();
   
-$pessoa->setNome(&#8216;Jonnas Fonini&#8217;);
+$pessoa->setNome('Jonnas Fonini');
   
 $pessoa->setDataHoraCadastro(new DateTime("now"));
   
@@ -291,23 +291,23 @@ $entityManager->flush();
 
 echo "Pessoa criada com o ID ".$pessoa->getId()." e associada com a Cidade ".$cidade->getId();
   
-[/php]
+{% endhighlight %}
 
 &nbsp;
 
 ### Localizando uma entidade pelo ID
 
-[php]
+{% highlight php %}
   
 require "bootstrap.php";
 
 $pessoa = $entityManager->find("Pessoa", 1);
   
-print &#8216;Nome: &#8216; . $pessoa->getNome() . &#8216; &#8216;;
+print 'Nome: ' . $pessoa->getNome() . ' ';
   
-print &#8216;Cidade: &#8216; . $pessoa->getCidade()->getNome();
+print 'Cidade: ' . $pessoa->getCidade()->getNome();
   
-[/php] 
+{% endhighlight %} 
 
 Outros exemplos, como listagem, atualiza&ccedil;&atilde;o e exclus&atilde;o voc&ecirc; encontra no arquivo dispon&iacute;vel no final do post.
 

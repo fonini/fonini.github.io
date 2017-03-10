@@ -19,7 +19,7 @@ Reuni algumas expressões regulares úteis para trabalhar com HTML.
 **Encontra comentários HTML  
 ** 
 
-<!&#8211;[sS]\*?&#8211;[ tnr]\*>
+<!-;[sS]\*?-;[ tnr]\*>
   
 <a href="http://regexpal.com/?flags=&regex=%3C!--[sS]*%3F--[%20tnr]*%3E&input=%3Chtml%3E%0A%3C!--%20comentario%20--%3E%0A%3C%2Fhtml%3E" rel="externo">Testar</a></p> 
 
@@ -28,7 +28,7 @@ Reuni algumas expressões regulares úteis para trabalhar com HTML.
 **Captura o atributo href de links  
 ** 
 
-href[s]\*=[s]\*&#8221;[^n&#8221;]*&#8221;
+href[s]\*=[s]\*"[^n"]*"
   
 <a href="http://regexpal.com/?flags=&regex=href[s]*%3D[s]*%22[^n%22]*%22&input=%3Ca%20href%3D%22http%3A%2F%2Fwww.fonini.net%22%3EJonnas%20Fonini%3C%2Fa%3E" rel="externo">Testar</a></p> 
 
@@ -38,7 +38,7 @@ href[s]\*=[s]\*&#8221;[^n&#8221;]*&#8221;
   
 ** 
 
-(?:[w]\*) \*= \*&#8221;(?:(?:(?:(?:(?:\W)\*\W)\*[^&#8221;]\*)\W)\*[^&#8221;]\*&#8221;)
+(?:[w]\*) \*= \*"(?:(?:(?:(?:(?:\W)\*\W)\*[^"]\*)\W)\*[^"]\*")
   
 <a href="http://regexpal.com/?flags=&regex=%28%3F%3A[w]*%29%20*%3D%20*%22%28%3F%3A%28%3F%3A%28%3F%3A%28%3F%3A%28%3F%3A\W%29*\W%29*[^%22]*%29\W%29*[^%22]*%22%29&input=%3Cimg%20src%3D%22imagem.jpg%22%20alt%3D%22Teste%22%20width%3D%2210px%22%20height%3D%2250px%22%20%2F%3E" rel="externo">Testar</a></p> 
 
@@ -56,13 +56,13 @@ href[s]\*=[s]\*&#8221;[^n&#8221;]*&#8221;
 **Encontra tags <a> válidas  
 ** 
 
-^<a[^>]\*([^&#8221;]\*)[^>]*>([ 0-9a-zA-Z]+)</a>$
+^<a[^>]\*([^"]\*)[^>]*>([ 0-9a-zA-Z]+)</a>$
   
 <a href="http://regexpal.com/?flags=&regex=^%3Ca[^%3E]*%28[^%22]*%29[^%3E]*%3E%28[%200-9a-zA-Z]%2B%29%3C%2Fa%3E%24&input=%3Ca%20href%3D%22http%3A%2F%2Fwww.fonini.net%22%3EJonnas%20Fonini%3C%2Fa%3E" rel="externo">Testar</a></p> 
 
 
 
-**Encontra todas as URL&#8217;s de um texto  
+**Encontra todas as URL's de um texto  
 ** 
 
 (http://|https://)([a-zA-Z0-9]+.[a-zA-Z0-9-]+|[a-zA-Z0-9-]+).[a-zA-Z.]{2,6}(/[a-zA-Z0-9.?=/#%&+-]+|/|)
@@ -74,7 +74,7 @@ href[s]\*=[s]\*&#8221;[^n&#8221;]*&#8221;
 **Encontra todas as imagens  
 ** 
 
-<\[iI\]\[mM\]\[gG\]\[a-zA-Z0-9s=&#8221;.\]\*((src)=s\*(?:&#8221;(\[^&#8221;]\*)&#8221;|'[^&#8217;]\*&#8217;))[a-zA-Z0-9s=&#8221;.]\*/\*>(?:</[iI\]\[mM\][gG]>)*
+<\[iI\]\[mM\]\[gG\]\[a-zA-Z0-9s=".\]\*((src)=s\*(?:"(\[^"]\*)"|'[^']\*'))[a-zA-Z0-9s=".]\*/\*>(?:</[iI\]\[mM\][gG]>)*
   
 <a href="http://regexpal.com/?flags=&regex=%3C[iI][mM][gG][a-zA-Z0-9s%3D%22.]*%28%28src%29%3Ds*%28%3F%3A%22%28[^%22]*%29%22|%27[^%27]*%27%29%29[a-zA-Z0-9s%3D%22.]*%2F*%3E%28%3F%3A%3C%2F[iI][mM][gG]%3E%29*&input=%3Cimg%20src%3D%22teste.jpg%22%20%2F%3E" rel="externo">Testar</a></p> 
 

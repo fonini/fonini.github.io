@@ -30,7 +30,7 @@ Exemplo:
 
 Fácil, não? 
 
-Essa solução também é util para ser usada em conjunto com o android:inputType=&#8221;numberDecimal&#8221;. Nesse caso, é apresentado o teclado numérico, permitindo que vírgulas também sejam incluídas. 
+Essa solução também é util para ser usada em conjunto com o android:inputType="numberDecimal". Nesse caso, é apresentado o teclado numérico, permitindo que vírgulas também sejam incluídas. 
 
 Exemplo: </p> 
 

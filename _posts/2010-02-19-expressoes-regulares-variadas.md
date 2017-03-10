@@ -41,7 +41,7 @@ Mais um post da série sobre expressões regulares. Os outros posts de regex pod
 
 **
   
-Valida nomes de dispositivos no Linux (mude a parte do &#8220;eth&#8221; para validar outros dispositivos)
+Valida nomes de dispositivos no Linux (mude a parte do "eth" para validar outros dispositivos)
   
 ** 
 
@@ -59,7 +59,7 @@ Valida nomes de dispositivos no Linux (mude a parte do &#8220;eth&#8221; para va
 
 &nbsp;
 
-Valida e-mails de TLD&#8217;s (Top Level Domains) específicos
+Valida e-mails de TLD's (Top Level Domains) específicos
 
 ^[A-Z0-9._%+-]+@[A-Z0-9.-]+.(?:|com|org|net|gov|[A-Z]{2})$
   

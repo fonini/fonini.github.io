@@ -23,7 +23,7 @@ O comando acima cria um módulo vazio, localizado em **apps/frontend/modules/con
 	  
 Crie um arquivo chamado ContatoForm.class.php em lib/form, com o conteúdo abaixo:
 
-[php]// lib/form/ContatoForm.class.php
+{% highlight php %}// lib/form/ContatoForm.class.php
   
 class ContactForm extends BaseForm
   
@@ -35,55 +35,55 @@ public function configure()
       
 $this->setWidgets(array(
         
-&#8216;nome&#8217; => new sfWidgetFormInputText(),
+'nome' => new sfWidgetFormInputText(),
         
-&#8216;email&#8217; => new sfWidgetFormInputText(),
+'email' => new sfWidgetFormInputText(),
         
-&#8216;assunto&#8217; => new sfWidgetFormInputText(),
+'assunto' => new sfWidgetFormInputText(),
         
-&#8216;mensagem&#8217; => new sfWidgetFormTextarea(),
+'mensagem' => new sfWidgetFormTextarea(),
       
 ));
 
 $this->widgetSchema->setLabels(array(
         
-&#8216;nome&#8217; => &#8216;Nome&#8217;,
+'nome' => 'Nome',
         
-&#8216;email&#8217; => &#8216;Email&#8217;,
+'email' => 'Email',
         
-&#8216;assunto&#8217; => &#8216;Assunto&#8217;,
+'assunto' => 'Assunto',
         
-&#8216;mensagem&#8217; => &#8216;Mensagem&#8217;
+'mensagem' => 'Mensagem'
       
 ));
 
 $this->setValidators(array(
         
-&#8216;nome&#8217; => new sfValidatorString(array(&#8216;required&#8217; => true)),
+'nome' => new sfValidatorString(array('required' => true)),
         
-&#8216;email&#8217; => new sfValidatorEmail(),
+'email' => new sfValidatorEmail(),
         
-&#8216;assunto&#8217; => new sfValidatorString(array(&#8216;required&#8217; => true)),
+'assunto' => new sfValidatorString(array('required' => true)),
         
-&#8216;mensagem&#8217; => new sfValidatorString(array(&#8216;min_length&#8217; => 10)),
+'mensagem' => new sfValidatorString(array('min_length' => 10)),
       
 ));
 
 // se esta opção não for setada, serão geradas tabelas no HTML
       
-$this->widgetSchema->setFormFormatterName(&#8216;list&#8217;);
+$this->widgetSchema->setFormFormatterName('list');
 
-$this->widgetSchema->setNameFormat(&#8216;contato[%s]&#8217;);
+$this->widgetSchema->setNameFormat('contato[%s]');
     
 }
   
 }
   
-[/php]
+{% endhighlight %}
 
 Com a classe do formulário pronta, basta passar uma instância dela para o template. Edite o arquivo apps/frontend/modules/contato/actions/actions.class.php e adapte-o para o código que segue:
 
-[php]// apps/frontend/modules/contato/actions/actions.class.php
+{% highlight php %}// apps/frontend/modules/contato/actions/actions.class.php
   
 class contatoActions extends sfActions
   
@@ -95,17 +95,17 @@ public function executeIndex(sfWebRequest $request)
       
 $this->form = new ContatoForm();
 
-if ($request->isMethod(&#8216;post&#8217;))
+if ($request->isMethod('post'))
       
 {
         
-$this->form->bind($request->getParameter(&#8216;contato&#8217;));
+$this->form->bind($request->getParameter('contato'));
 
 if ($this->form->isValid())
         
 {
           
-$this->redirect(&#8216;contato/enviar?&#8217;.http\_build\_query($this->form->getValues()));
+$this->redirect('contato/enviar?'.http\_build\_query($this->form->getValues()));
         
 }
       
@@ -115,13 +115,13 @@ $this->redirect(&#8216;contato/enviar?&#8217;.http\_build\_query($this->form->ge
   
 }
   
-[/php]
+{% endhighlight %}
 
 Agora definiremos o template que irá receber a instância da classe ContatoForm, gerando os campos do formulário. Edite o arquivo apps/frontend/modules/contato/templates/indexSucess.php. Faço um parentêses aqui. Para cada action que você definir (no arquivo de actions, obviamente), você pode criar um arquivo nomedaactionSuccess.php. O conteúdo desse arquivo será exibido ao executar a action (a menos que ela redirecione para outra action). Exemplo: uma action enviaemail deve possuir um template enviaemailSuccess.php.
 
 [html]// apps/frontend/modules/contato/templates/indexSuccess.php
 
-<form action="<?php echo url_for(&#8216;contato/index&#8217;) ?>" method="post">
+<form action="<?php echo url_for('contato/index') ?>" method="post">
 	  
 <ul>
                   
@@ -141,35 +141,35 @@ Agora definiremos o template que irá receber a instância da classe ContatoForm
 
 Você deve ter percebido que a action do formulário está apontando para contato/enviar. Ou seja, ao ser submetido, o método enviar da classe contatoActions será invocado, logo teremos que criá-lo. Volte para o arquivo apps/frontend/modules/contato/actions/actions.class.php e adicione os métodos abaixo, o método que enviará o email e o método que será chamado se o envio for bem sucedido. Mude as configurações para seu servidor de envio. Outros parâmetros na <a href="http://www.swiftmailer.org" rel="externo nofollow">documentação da Swift Mailer</a>.</p> 
 
-[php]// apps/frontend/modules/contato/actions/actions.class.php
+{% highlight php %}// apps/frontend/modules/contato/actions/actions.class.php
 
 public function executeEnviar(sfWebRequest $request)
   
 {
     
-$transport = Swift_SmtpTransport::newInstance(&#8216;smtp.seudominio.com&#8217;, 25)
+$transport = Swift_SmtpTransport::newInstance('smtp.seudominio.com', 25)
       
-->setUsername(&#8216;seuemail@dominio.com&#8217;)
+->setUsername('seuemail@dominio.com')
       
-->setPassword(&#8216;senha&#8217;);
+->setPassword('senha');
 
 $mailer = Swift_Mailer::newInstance($transport);
 
 $message = Swift_Message::newInstance()
       
-->setSubject( $request->getParameter(&#8216;assunto&#8217;) )
+->setSubject( $request->getParameter('assunto') )
       
-->setFrom(array( $request->getParameter(&#8216;email&#8217;) => $request->getParameter(&#8216;nome&#8217;) ))
+->setFrom(array( $request->getParameter('email') => $request->getParameter('nome') ))
       
-->setTo(array(&#8216;email_contato@seudominio.com.br&#8217;))
+->setTo(array('email_contato@seudominio.com.br'))
       
-->setReplyTo( $request->;getParameter(&#8216;email&#8217;) )
+->setReplyTo( $request->;getParameter('email') )
       
-->setBody( $request->getParameter(&#8216;mensagem&#8217;) );
+->setBody( $request->getParameter('mensagem') );
 
 if ($mailer->send($message)){
       
-$this->redirect(&#8216;contato/feito&#8217;);
+$this->redirect('contato/feito');
     
 }
   
@@ -181,11 +181,11 @@ public function executeFeito()
   
 }
   
-[/php]
+{% endhighlight %}
 
 Agora basta criar um template para o método executeFeito, mostrando uma mensagem de envio bem sucedido.
 
-[html]<!&#8211; apps/frontend/modules/contato/templates/feitoSuccess.php &#8211;>
+[html]<!-; apps/frontend/modules/contato/templates/feitoSuccess.php -;>
   
 <span style="font-weight: bold; font-size: 14px;">Contato enviado com sucesso. Obrigado!</span>
   

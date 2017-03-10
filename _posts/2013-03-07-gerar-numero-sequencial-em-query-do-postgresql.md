@@ -14,28 +14,28 @@ tags:
 ---
 Dica rápida para quem precisa gerar um número sequencial para cada registro retornado por uma query no PostgreSQL:
 
-[sql]
+{% highlight sql %}
   
-SELECT row\_number() OVER (PARTITION by 0) as \_seq, id, FROM pessoa
+SELECT row_number() OVER (PARTITION by 0) as _seq, id, FROM pessoa
   
-[/sql]
+{% endhighlight %}
 
 A sequência retornada começa em 1. Se quiser que ela comece em 0, basta adaptar a consulta:
 
-[sql]
+{% highlight sql %}
   
-SELECT row\_number() OVER (PARTITION by 0) &#8211; 1 as \_seq, id, nome FROM pessoa
+SELECT row_number() OVER (PARTITION by 0) - 1 as _seq, id, nome FROM pessoa
   
-[/sql]
+{% endhighlight %}
 
 Caso você utilize uma cláusula ORDER BY, os números gerados provavelmente estarão fora de ordem. Para corrigir este problema, basta repetir a cláusula ORDER BY dentro da função OVER, ficando como no exemplo abaixo:
 
-[sql]
+{% highlight sql %}
   
-SELECT row\_number() OVER (PARTITION by 0 ORDER BY data) &#8211; 1 as \_seq,
+SELECT row_number() OVER (PARTITION by 0 ORDER BY data) - 1 as _seq,
   
 id, nome FROM pessoa
   
 ORDER BY data
   
-[/sql]
+{% endhighlight %}

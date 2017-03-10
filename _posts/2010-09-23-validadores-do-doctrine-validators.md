@@ -17,33 +17,33 @@ Neste post mostrarei os validadores presentes no <a href="http://www.doctrine-pr
 
 <span style="color: rgb(255, 0, 0);"><strong>Importante</strong></span>
 	  
-Para que seus dados sejam validados, cheque se seu &#8220;bootstrap.php&#8221; contém a diretiva abaixo. Caso contrário, seus dados não serão validados.
+Para que seus dados sejam validados, cheque se seu "bootstrap.php" contém a diretiva abaixo. Caso contrário, seus dados não serão validados.
 
-[php]$manager->setAttribute(Doctrine\_Core::ATTR\_VALIDATE, Doctrine\_Core::VALIDATE\_ALL);
+{% highlight php %}$manager->setAttribute(Doctrine\_Core::ATTR\_VALIDATE, Doctrine\_Core::VALIDATE\_ALL);
   
-[/php]
+{% endhighlight %}
 
 **notnull**
 	  
 Garante que o valor não seja nulo na aplicação e no banco de dados.
 
-[php]// models/SuaClasse.php
+{% highlight php %}// models/SuaClasse.php
 
 class SuaClasse extends BaseSuaClasse
   
 {
       
-// &#8230;
+// ...;
 
 public function setTableDefinition(){
 		  
 parent::setTableDefinition();
 
-// &#8230;
+// ...;
 
-$this->hasColumn(&#8216;nome&#8217;, &#8216;string&#8217;, 70, array(
+$this->hasColumn('nome', 'string', 70, array(
 				  
-&#8216;notnull&#8217; => true
+'notnull' => true
 			  
 )
 		  
@@ -53,7 +53,7 @@ $this->hasColumn(&#8216;nome&#8217;, &#8216;string&#8217;, 70, array(
   
 }
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>teste, jonnas
 	  
@@ -63,15 +63,15 @@ $this->hasColumn(&#8216;nome&#8217;, &#8216;string&#8217;, 70, array(
 	  
 Checa se o valor é um endereço de email válido.
 
-[php] $this->hasColumn(&#8216;email&#8217;, &#8216;string&#8217;, 100, array(
+{% highlight php %} $this->hasColumn('email', 'string', 100, array(
 				  
-&#8216;email&#8217; => true
+'email' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>contato@fonini.net
 	  
@@ -81,33 +81,33 @@ Checa se o valor é um endereço de email válido.
 	  
 Este validador é semelhante ao validador notnull, exceto que além de não validar valores nulos, também não valida strings vazias.
 
-[php] $this->hasColumn(&#8216;nome&#8217;, &#8216;string&#8217;, 100, array(
+{% highlight php %} $this->hasColumn('nome', 'string', 100, array(
 				  
-&#8216;notblank&#8217; => true
+'notblank' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>teste, jonnas
 	  
-<span style="color: rgb(255, 0, 0);"><strong>Inválido: </strong></span>valores nulos, &#8221;</p> 
+<span style="color: rgb(255, 0, 0);"><strong>Inválido: </strong></span>valores nulos, "</p> 
 
 **nospace**
 	  
 Checa se o valor não contém espaços.
 
-[php] $this->hasColumn(&#8216;campo\_sem\_espacos&#8217;, &#8216;string&#8217;, 100, array(
+{% highlight php %} $this->hasColumn('campo\_sem\_espacos', 'string', 100, array(
 				  
-&#8216;nospace&#8217; => true
+'nospace' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>JonnasFonini
 	  
@@ -117,15 +117,15 @@ Checa se o valor não contém espaços.
 	  
 Checa se o valor é uma data que já ocorreu, o dia de ontem, por exemplo.
 
-[php] $this->hasColumn(&#8216;data&#8217;, &#8216;timestamp&#8217;, null, array(
+{% highlight php %} $this->hasColumn('data', 'timestamp', null, array(
 				  
-&#8216;past&#8217; => true
+'past' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>Sendo hoje 14/09/2010, 01/01/2010 é válida
 	  
@@ -135,15 +135,15 @@ Checa se o valor é uma data que já ocorreu, o dia de ontem, por exemplo.
 	  
 Checa se o valor é uma data que ainda não aconteceu, amanhã, por exemplo.
 
-[php] $this->hasColumn(&#8216;data&#8217;, &#8216;timestamp&#8217;, null, array(
+{% highlight php %} $this->hasColumn('data', 'timestamp', null, array(
 				  
-&#8216;future&#8217; => true
+'future' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>Sendo hoje 14/09/2010, 15/09/2010 é válida
 	  
@@ -153,15 +153,15 @@ Checa se o valor é uma data que ainda não aconteceu, amanhã, por exemplo.
 	  
 Checa se o valor passado tem o tamanho mínimo necessário.
 
-[php] $this->hasColumn(&#8216;senha&#8217;, &#8216;string&#8217;, 32, array(
+{% highlight php %} $this->hasColumn('senha', 'string', 32, array(
 				  
-&#8216;minlength&#8217; => 6
+'minlength' => 6
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>abcdef, abcdefg
 	  
@@ -171,15 +171,15 @@ Checa se o valor passado tem o tamanho mínimo necessário.
 	  
 Checa se o valor passado é um endereço IP válido.
 
-[php] $this->hasColumn(&#8216;endereco_ip&#8217;, &#8216;string&#8217;, 15, array(
+{% highlight php %} $this->hasColumn('endereco_ip', 'string', 15, array(
 				  
-&#8216;ip&#8217; => true
+'ip' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>192.168.250.222, 201.10.34.21
 	  
@@ -189,15 +189,15 @@ Checa se o valor passado é um endereço IP válido.
 	  
 Checa se o valor passado é uma cor HTML em hexadecimal.
 
-[php] $this->hasColumn(&#8216;cor&#8217;, &#8216;string&#8217;, 7, array(
+{% highlight php %} $this->hasColumn('cor', 'string', 7, array(
 				  
-&#8216;htmlcolor&#8217; => true
+'htmlcolor' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>#000FFF, FF0000
 	  
@@ -207,15 +207,15 @@ Checa se o valor passado é uma cor HTML em hexadecimal.
 	  
 Checa se o valor numérico está contido no intervalo especificado.
 
-[php] $this->hasColumn(&#8216;idade&#8217;, &#8216;integer&#8217;, null, array(
+{% highlight php %} $this->hasColumn('idade', 'integer', null, array(
 				  
-&#8216;range&#8217; => array(18, 70)
+'range' => array(18, 70)
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>19, 50, 69
 	  
@@ -225,29 +225,29 @@ Checa se o valor numérico está contido no intervalo especificado.
 	  
 Checa se o valor já existe no banco de dados.
 
-[php] $this->hasColumn(&#8216;rg&#8217;, &#8216;string&#8217;, 15, array(
+{% highlight php %} $this->hasColumn('rg', 'string', 15, array(
 				  
-&#8216;unique&#8217; => true
+'unique' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 **regexp**
 	  
 Checa se o valor casa com a expressão regular passada.
 
-[php] $this->hasColumn(&#8216;somente_letras&#8217;, &#8216;string&#8217;, 15, array(
+{% highlight php %} $this->hasColumn('somente_letras', 'string', 15, array(
 				  
-&#8216;regexp&#8217; => &#8216;/^[a-zA-Z]+$/&#8217;
+'regexp' => '/^[a-zA-Z]+$/'
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>flex
 	  
@@ -257,15 +257,15 @@ Checa se o valor casa com a expressão regular passada.
 	  
 Checa se o valor é um número de cartão de crédito válido.
 
-[php] $this->hasColumn(&#8216;cartao&#8217;, &#8216;integer&#8217;, 16, array(
+{% highlight php %} $this->hasColumn('cartao', 'integer', 16, array(
 				  
-&#8216;creditcard&#8217; => true
+'creditcard' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>Cartões Visa, Master Card, American Express, Discover e Diners
 	  
@@ -275,29 +275,29 @@ Checa se o valor é um número de cartão de crédito válido.
 	  
 Evita que o valor de uma coluna da tabela seja alterado.
 
-[php] $this->hasColumn(&#8216;coluna\_que\_nao\_pode\_ser_alterada&#8217;, &#8216;string&#8217;, 25, array(
+{% highlight php %} $this->hasColumn('coluna\_que\_nao\_pode\_ser_alterada', 'string', 25, array(
 				  
-&#8216;readonly&#8217; => true
+'readonly' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 **unsigned**
 	  
 Checa se o valor númerico passado possui sinal, de menos, por exemplo.
 
-[php] $this->hasColumn(&#8216;idade&#8217;, &#8216;integer&#8217;, 3, array(
+{% highlight php %} $this->hasColumn('idade', 'integer', 3, array(
 				  
-&#8216;unsigned&#8217; => true
+'unsigned' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>70, 100
 	  
@@ -307,15 +307,15 @@ Checa se o valor númerico passado possui sinal, de menos, por exemplo.
 	  
 Checa se a string passada é a sigla válida de um estado americano. Confira a lista completa <a href="http://en.wikipedia.org/wiki/Us_states" rel="externo nofollow">aqui</a>.
 
-[php] $this->hasColumn(&#8216;estado_americano&#8217;, &#8216;string&#8217;, 2, array(
+{% highlight php %} $this->hasColumn('estado_americano', 'string', 2, array(
 				  
-&#8216;usstate&#8217; => true
+'usstate' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>AL, CA
 	  
@@ -325,20 +325,20 @@ Checa se a string passada é a sigla válida de um estado americano. Confira a l
 	  
 Checa se a string passada é a sigla válida de um país. Confira a lista completa <a href="http://en.wikipedia.org/wiki/ISO_3166-1" rel="externo nofollow">aqui</a>.
 
-[php] $this->hasColumn(&#8216;pais&#8217;, &#8216;string&#8217;, 2, array(
+{% highlight php %} $this->hasColumn('pais', 'string', 2, array(
 				  
-&#8216;country&#8217; => true
+'country' => true
 			  
 )
 	  
 );
   
-[/php]
+{% endhighlight %}
 
 <span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>br, BR, ar
 	  
 <span style="color: rgb(255, 0, 0);"><strong>Inválido: </strong></span>xx
 
-No próximo post mostrarei como fazer um validador de estados brasileiros e outro de CEP&#8217;s.
+No próximo post mostrarei como fazer um validador de estados brasileiros e outro de CEP's.
 
 Grande abraço e até a próxima!

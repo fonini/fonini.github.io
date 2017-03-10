@@ -39,7 +39,7 @@ sudo wget -O - http://deb.opera.com/archive.key | sudo apt-key add -</pre>
 
 <pre id="terminal" user="fonini" computer="valhalla">sudo sh -c "echo "deb http://www.pvv.ntnu.no/~knuta/xmms/karmic ./" &gt;&gt; /etc/apt/sources.list"</pre></p> 
 
-<span style="font-size: 14px;"><strong><br /> Cafuego (SecondLife, firmwares Broadcom, Inkscape&#8230;)</strong></span></p> 
+<span style="font-size: 14px;"><strong><br /> Cafuego (SecondLife, firmwares Broadcom, Inkscape...;)</strong></span></p> 
 
 <pre id="terminal" user="fonini" computer="valhalla">wget -q -O - http://ubuntu.cafuego.net/cafuego.gpg | sudo apt-key add -
 sudo sh -c "echo "deb http://ubuntu.cafuego.net/ jaunty-cafuego all" &gt;&gt; /etc/apt/sources.list"</pre>

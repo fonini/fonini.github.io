@@ -18,7 +18,7 @@ Você deve ter o Gerenciador de Configurações do CompizConfig instalado. Se n�
 
 <pre id="terminal" user="fonini" computer="valhalla">sudo apt-get install compizconfig-settings-manager</pre></p> 
 
-Após isso, vá em Sistema/Preferências/Gerenciador de Configurações do CompizConfig. Procure por &#8220;Cubo da Área de Trabalho&#8221; , ative caso não esteja ativo, clique sobre ele, vá até a aba Aparência. Procure por Skydome. Localize a imagem que você vai usar como fundo, marque a opção Skydome e a opção Animar Skydome.
+Após isso, vá em Sistema/Preferências/Gerenciador de Configurações do CompizConfig. Procure por "Cubo da Área de Trabalho" , ative caso não esteja ativo, clique sobre ele, vá até a aba Aparência. Procure por Skydome. Localize a imagem que você vai usar como fundo, marque a opção Skydome e a opção Animar Skydome.
 
 Agora é só girar o cubo (CTRL+ALT+Setas para o lado) e visualizar o seu skydome.
 

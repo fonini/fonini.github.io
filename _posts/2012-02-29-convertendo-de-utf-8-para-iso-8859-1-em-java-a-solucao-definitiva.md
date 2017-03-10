@@ -21,7 +21,7 @@ Depois de algumas tentativas, cheguei até a seguinte solução:
 
 
 
-[java]
+{% highlight java %}
   
 public static String convertUTF8toISO(String str) {
 	  
@@ -43,7 +43,7 @@ return ret;
   
 }
   
-[/java]
+{% endhighlight %}
 
 Adicione o método acima ? sua classe de utilidades e acabe com os seus problemas. 
 

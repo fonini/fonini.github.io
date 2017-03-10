@@ -50,11 +50,11 @@ Sou fã de carteirinha do Firefox, uso nos dois ambientes. No trabalho, também 
 
 Não disponho de entretenimento no trabalho. Em casa, o player de vídeos padrão do Ubuntu, o Totem, me serve muito bem. Para áudio, também uso o player padrão, o Rhythmbox, com alguns plugins bacanas. Tentei usar o Banshee, mas o mesmo trava com a minha imensa biblioteca de músicas, então voltei para o Rhythmbox. Tenho uma estranha mania de remover a voz das músicas, só para ouvir o instrumental. Para isso uso o Audacity. BTW, segue um tutorial rápido de como fazer isso sem precisar de plugins.
 
-&#8211; Abra a música no Audacity
+-; Abra a música no Audacity
 	  
-&#8211; Na barra de título da faixa da música, que fica no meio do programa, existe um menu suspenso. Clique e selecione a opção &#8220;Faixa Estéreo para Mono&#8221;. Isso irá dividir a faixa em 2 pistas mono.
+-; Na barra de título da faixa da música, que fica no meio do programa, existe um menu suspenso. Clique e selecione a opção "Faixa Estéreo para Mono". Isso irá dividir a faixa em 2 pistas mono.
 	  
-&#8211; Por último, selecione a pista de baixo e clique em Efeitos/Inverter Verticalmente. Feito!
+-; Por último, selecione a pista de baixo e clique em Efeitos/Inverter Verticalmente. Feito!
 
 **7) Comunicação
 	  

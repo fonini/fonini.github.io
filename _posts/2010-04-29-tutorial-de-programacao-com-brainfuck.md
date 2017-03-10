@@ -49,7 +49,7 @@ Brainfuck é uma linguagem de programação esotérica, praticamente sem fins pr
   
   <tr>
     <td>
-      &#8211;
+      -;
     </td>
     
     <td>
@@ -104,7 +104,7 @@ Existem diversos compiladores para a linguagem, inclusive existe um nos reposit�
 
 **<span style="font-size: 14px;"><br /> Codificando<br /> </span>**
 
-O brainfuck trabalha com células de memória, ou seja, cada caracter que você usar deverá estar armazenado em uma célula (ou não, no caso de usar sempre a mesma célula, mostrar o valor e sobrescrever, como eu faço no exemplo abaixo). Suponha que você queira mostrar a letra &#8220;j&#8221; em brainfuck. Você deverá armazenar 106 na célula (digitando 106 sinais de + ou criando um laço de repetição), que é o valor equivalente a &#8220;j&#8221; em ASCII. O código abaixo escreve &#8220;jonnas&#8221; na tela:</p> 
+O brainfuck trabalha com células de memória, ou seja, cada caracter que você usar deverá estar armazenado em uma célula (ou não, no caso de usar sempre a mesma célula, mostrar o valor e sobrescrever, como eu faço no exemplo abaixo). Suponha que você queira mostrar a letra "j" em brainfuck. Você deverá armazenar 106 na célula (digitando 106 sinais de + ou criando um laço de repetição), que é o valor equivalente a "j" em ASCII. O código abaixo escreve "jonnas" na tela:</p> 
 
 <pre>+++++++++++ Posição 1 recebe 11 e será a controladora do laço abaixo<br />
 	Enquanto o valor da primeira posição for maior que 0
@@ -125,7 +125,7 @@ O brainfuck trabalha com células de memória, ou seja, cada caracter que você 
 
 Apesar de parecer complicado, o processo é simples. A primeira linha armazena 11 na célula 1, que será o número de vezes que o loop executará. Enquanto a posição 1 não for 0, decrementamos a posição 1, avançamos para a posição 2, incrementamos seu valor em 11 e voltamos para a posição 1. Ao final do loop, o valor da posição 1 será 0 e da posição 2 será 121.
   
-Como o valor da letra &#8220;j&#8221; em ASCII é 106, decrementamos 15 da posição 2 e mostramos. Para mostrar a letra &#8220;o&#8221;, cujo valor é 111, devemos incrementar 5 na posição 2 e mostrar e assim sucessivamente até mostrar o nome inteiro. Veja abaixo uma versão do código sem comentários:</p> 
+Como o valor da letra "j" em ASCII é 106, decrementamos 15 da posição 2 e mostramos. Para mostrar a letra "o", cujo valor é 111, devemos incrementar 5 na posição 2 e mostrar e assim sucessivamente até mostrar o nome inteiro. Veja abaixo uma versão do código sem comentários:</p> 
 
 <pre>+++++++++++
 [

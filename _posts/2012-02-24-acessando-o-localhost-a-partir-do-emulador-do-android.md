@@ -14,7 +14,7 @@ tags:
 ---
 Um requisito muito comum de um aplicativo desenvolvido para a plataforma Android é que o mesmo acesse um web service para troca de informações. No momento do desenvolvimento do aplicativo, geralmente o web service fica na mesma máquina em que se encontra o emulador. 
 
-Como faço pra acessar o localhost da máquina através do emulador? Usando &#8220;localhost&#8221; na string de conexão? Não funciona. 
+Como faço pra acessar o localhost da máquina através do emulador? Usando "localhost" na string de conexão? Não funciona. 
 
 Uso o IP da minha máquina para conectar? Pode até funcionar, mas e se você estiver desconectado? 
 

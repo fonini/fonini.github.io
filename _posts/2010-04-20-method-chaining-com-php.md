@@ -14,7 +14,7 @@ tags:
 ---
 Method Chaining (encadeamento de métodos) é uma técnica de programação que permite reduzir o tamanho de seus códigos. Em determinadas classes, você precisa chamar vários métodos diferentes em diversas linhas. Com method chaining, você poderá chamar esses métodos em cadeia, em somente uma linha. Por exemplo, veja a seguinte classe de formatação de strings:
 
-[php]
+{% highlight php %}
   
 class String{
 	  
@@ -40,7 +40,7 @@ $this->str = ucfirst($this->str);
 
 public function bold(){
 		  
-$this->str = &#8216;<strong>&#8217;.$this->str.'</strong>&#8217;;
+$this->str = '<strong>'.$this->str.'</strong>';
 	  
 }
 
@@ -62,11 +62,11 @@ $string->bold();
   
 echo $string->getStr();
   
-[/php]
+{% endhighlight %}
 
 Essa é forma que grande parte dos programadores escrevem seus códigos. Com method chaining, nossa classe ficaria assim:
 
-[php]
+{% highlight php %}
   
 class String{
 	  
@@ -96,7 +96,7 @@ return $this;
 
 public function bold(){
 		  
-$this->str = &#8216;<strong>&#8217;.$this->str.'</strong>&#8217;;
+$this->str = '<strong>'.$this->str.'</strong>';
 		  
 return $this;
 	  
@@ -116,7 +116,7 @@ echo $string->toLower()->capitalize()->bold()->getStr();
   
 //Retornará <strong>Texto de exemplo</strong>;
   
-[/php]
+{% endhighlight %}
 
 Bem mais simples, não? A diferença da outra classe, é que você retorna a instância do objeto a cada método chamado, permitindo o encadeamento.
 

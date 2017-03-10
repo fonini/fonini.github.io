@@ -15,11 +15,11 @@ tags:
 ---
 Recentemente comentei com o [@edipofederle](http://www.twitter.com/edipofederle) no Twitter que gostaria que existisse algo similar a função include() do PHP no JavaScript. Foi ai que eu descobri o [php.js](http://www.phpjs.org). O php.js é um projeto onde vários programadores (atualmente 254) estão escrevendo funções do PHP (atualmente 438) em JavaScript, facilitando muito a vida de quem conhece PHP mas não conhece bem JavaScript. As funções possuem sintaxes idênticas as do PHP, tornando o trabalho ainda mais fácil.
 
-O mais legal do projeto é que você pode &#8220;compilar&#8221; sua própria versão do php.js, escolhendo as funções que você vai usar ou usando um dos pacotes já prontos no site do projeto.
+O mais legal do projeto é que você pode "compilar" sua própria versão do php.js, escolhendo as funções que você vai usar ou usando um dos pacotes já prontos no site do projeto.
 
 Resolvi testar algumas funções e elas funcionam mesmo. Basta incluir o arquivo no seu código HTML e usar as funções. Aqui estão alguns exemplos que eu testei:</p> 
 
-[js]
+{% highlight js %}
   
 echo(checkdate(02, 29, 2010));
   
@@ -27,13 +27,13 @@ echo(checkdate(02, 29, 2010));
   
 //Retornou false
 
-echo(md5(&#8216;Jonnas&#8217;));
+echo(md5('Jonnas'));
   
 //Retorna o hash MD5 de uma string.
   
 //Retornou: cbab5e5bde68b3fe1043d43ba94fef5c
 
-array = new Array(&#8216;php&#8217;, &#8216;javascript&#8217;, &#8216;xhtml&#8217;);
+array = new Array('php', 'javascript', 'xhtml');
   
 echo(count(array));
   
@@ -53,13 +53,13 @@ Arredonda um nº em ponto flutuante
   
 //Retornou: 3
 
-echo(implode(&#8216;/&#8217;, array));
+echo(implode('/', array));
   
 //Junta todos os elementos do array com uma barra, retornando uma string
   
 //Retornou: php/javascript/xhtml
   
-[/js]
+{% endhighlight %}
 
 Se você dispõe de tempo e vontade você pode ajudar o projeto escrevendo novas funções e melhorando as existentes.
 

@@ -14,7 +14,7 @@ tags:
   - Flex
   - Função
 ---
-Final de ano, projetos da empresa indo a milhão, últimas provas do semestre&#8230;é, não tá fácil, a correria tá desgraçada. Passei aqui pra remover as teias de aranha do blog e compartilhar esta função que pode ser útil para alguém. Infelizmente perdi a fonte de onde encontrei esta função, mas lembro que ela tinha um erro no retorno (já corrigido por mim). A função original só retornava os dias úteis da semana, mas o que eu precisava era dos dias da semana inteira, começando no domingo. Com algumas modificações, aí está o resultado.  
+Final de ano, projetos da empresa indo a milhão, últimas provas do semestre...;é, não tá fácil, a correria tá desgraçada. Passei aqui pra remover as teias de aranha do blog e compartilhar esta função que pode ser útil para alguém. Infelizmente perdi a fonte de onde encontrei esta função, mas lembro que ela tinha um erro no retorno (já corrigido por mim). A função original só retornava os dias úteis da semana, mas o que eu precisava era dos dias da semana inteira, começando no domingo. Com algumas modificações, aí está o resultado.  
 Essa função é bastante útil para se colocar num helper (que sabe numa dessas crio um e publico o código).
 
 
@@ -29,7 +29,7 @@ var formattedDate:String;
 	  
 var date:Date = new Date();
 
-date.setDate(date.getDate() &#8211; date.getDay() &#8211; 1);
+date.setDate(date.getDate() -; date.getDay() -; 1);
 
 for (var i:int = 0; i < 7; i++) {
 		  

@@ -25,7 +25,7 @@ No terminal, digite:</p>
 
 <pre id="terminal" user="fonini" computer="valhalla">grep -R fuck /usr/src/linux-headers-2.6.31-20/*</pre></p> 
 
-Substitua a palavra &#8220;fuck&#8221; por outras e também lembre de substituir a versão do kernel pela versão que você está usando. Você pode fazer isso pressionando TAB após digitar até linux-headers ou através do comando &#8220;uname -r&#8221;.
+Substitua a palavra "fuck" por outras e também lembre de substituir a versão do kernel pela versão que você está usando. Você pode fazer isso pressionando TAB após digitar até linux-headers ou através do comando "uname -r".
 
 
 
@@ -113,7 +113,7 @@ yes 1234567890</pre></p>
           </p>
           
           <p>
-            Quantas vezes na correria acabamos errando e ditando &#8220;sl&#8221; ao invés de &#8220;ls&#8221;. Podemos instalar o programa sl e ao digitar errado seremos avisados por meio de animações no terminal, e segundo a man page desse aplicativo a função dele é alertar os desatentos que erram o comando &#8220;ls&#8221;.
+            Quantas vezes na correria acabamos errando e ditando "sl" ao invés de "ls". Podemos instalar o programa sl e ao digitar errado seremos avisados por meio de animações no terminal, e segundo a man page desse aplicativo a função dele é alertar os desatentos que erram o comando "ls".
           </p></p> 
           
           <pre id="terminal" user="fonini" computer="valhalla">sudo apt-get install sl
@@ -160,7 +160,7 @@ man sl  //manual do programa</pre></p>
               </p>
               
               <p>
-                =GAME(A2:C4;&#8221;TicTacToe&#8221;)
+                =GAME(A2:C4;"TicTacToe")
               </p></p> 
               
               <p>
@@ -168,7 +168,7 @@ man sl  //manual do programa</pre></p>
               </p>
               
               <p>
-                =ANTWORT(&#8220;Das Leben, das Universum und der ganze Rest&#8221;)
+                =ANTWORT("Das Leben, das Universum und der ganze Rest")
               </p></p> 
               
               <p>
@@ -176,7 +176,7 @@ man sl  //manual do programa</pre></p>
               </p>
               
               <p>
-                =GAME(&#8220;StarWars&#8221;)
+                =GAME("StarWars")
               </p></p> 
               
               <p>
@@ -203,13 +203,13 @@ man sl  //manual do programa</pre></p>
                 </p>
                 
                 <p>
-                  Pressione ALT+F2 e digite &#8220;free the fish&#8221; (sem aspas) na tela que irá aparecer. Você verá um peixe passeando pela sua tela. No início eu achei legal, mas chegou uma hora que eu fiquei com muita raiva do peixe ? Para matá-lo, abra o terminal e digite:
+                  Pressione ALT+F2 e digite "free the fish" (sem aspas) na tela que irá aparecer. Você verá um peixe passeando pela sua tela. No início eu achei legal, mas chegou uma hora que eu fiquei com muita raiva do peixe ? Para matá-lo, abra o terminal e digite:
                 </p></p> 
                 
                 <pre id="terminal" user="fonini" computer="valhalla">pkill gnome-panel</pre></p> 
                 
                 <p>
-                  Você também pode jogar com o peixinho. Tecle novamente ALT+F2 e digite &#8220;gegls from outer space&#8221; (sem aspas).
+                  Você também pode jogar com o peixinho. Tecle novamente ALT+F2 e digite "gegls from outer space" (sem aspas).
                 </p>
                 
                 <p>

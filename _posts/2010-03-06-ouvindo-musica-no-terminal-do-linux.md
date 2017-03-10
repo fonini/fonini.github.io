@@ -92,7 +92,7 @@ fg 1 //traz o processo de volta. Mude o número pelo do seu processo</pre></p>
     </p>
     
     <p>
-      Se você tiver problemas ao tocar alguma música ou receber a mensagem &#8220;<strong>Failed to open sound device</strong>&#8220;, experimente fechar todos os aplicativos que estiverem usando o dispositivo de áudio no momento.
+      Se você tiver problemas ao tocar alguma música ou receber a mensagem "<strong>Failed to open sound device</strong>", experimente fechar todos os aplicativos que estiverem usando o dispositivo de áudio no momento.
     </p>
     
     <p>

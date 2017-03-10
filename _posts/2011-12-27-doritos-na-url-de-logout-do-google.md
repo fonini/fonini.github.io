@@ -12,7 +12,7 @@ categories:
 tags:
   - Easter Egg
 ---
-Há algum tempo atrás pensei estar vendo coisas. Uma dessas coisas me pareceu ser a palavra &#8220;doritos&#8221; na URL de logout do Google. Mas o logout acontece tão rápido que nunca consegui tirar um print pra confirmar. E outra, não é sempre que aparece. Hoje pela manhã consegui! Veja na imagem abaixo:
+Há algum tempo atrás pensei estar vendo coisas. Uma dessas coisas me pareceu ser a palavra "doritos" na URL de logout do Google. Mas o logout acontece tão rápido que nunca consegui tirar um print pra confirmar. E outra, não é sempre que aparece. Hoje pela manhã consegui! Veja na imagem abaixo:
 
 <img class="alignnone  wp-image-319" src="wp-content/imagens/google-doritos-url-get-param.png" alt="FINALMENTE CAPTUREI O PRINT!" width="813" height="27" />
 

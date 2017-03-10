@@ -18,7 +18,7 @@ tags:
 ---
 Atendendo a sugestão do amigo <a href="http://twitter.com/Eldius" rel="externo">@Eldius</a>, da galera do <a href="http://search.twitter.com/search?q=%23soudev" rel="externo">#soudev</a> do <a href="http://twitter.com/fonini" rel="externo">Twitter</a>, criei uma função que converte texto em BBCode para XHTML, usando PHP e Regex. A função não é lá das mais elegantes, mas cumpre o prometido, lembrando que o BBCode deve estar escrito corretamente para que ela funcione.
 
-[php]
+{% highlight php %}
   
 function bbcode($str){
 	  
@@ -62,7 +62,7 @@ $str = preg_replace("@\[quote=(.+?)\](.+?)[/quote]@i", "$1 disse: <blockquote>$2
 	  
 $str = preg_replace("@\[quote\](.+?)[/quote]@i", "Citação: <blockquote>$1</blockquote>", $str);
 	  
-$str = str_replace("n", &#8216;<br />&#8217;, $str);
+$str = str_replace("n", '<br />', $str);
 	  
 $str = preg_replace("@\[align=(.+?)\](.+?)[/align]@i", "<div style="text-align:$1">$2</div>", $str);
 	  
@@ -76,11 +76,11 @@ return($str);
   
 }
 
-$string = &#8216;\[b]Texto em negrito[/b\]\[br\]\[quote=Jonnas]Isso é BBCode[/quote\] \[br\] \[url=http://www.php.net\]\[img\]http://static.php.net/www.php.net/images/php.gif\[/img\]\[/url\]&#8217;;
+$string = '\[b]Texto em negrito[/b\]\[br\]\[quote=Jonnas]Isso é BBCode[/quote\] \[br\] \[url=http://www.php.net\]\[img\]http://static.php.net/www.php.net/images/php.gif\[/img\]\[/url\]';
 	  
 echo bbcode($string);
   
-[/php]
+{% endhighlight %}
 
 Essa função engloba os BBCodes mais conhecidos. Segue a lista abaixo:
 
@@ -120,19 +120,19 @@ Essa função engloba os BBCodes mais conhecidos. Segue a lista abaixo:
   
 <p></p>
   
-[php]
+{% highlight php %}
 	  
-$str = preg_replace("@\[code=(.+?)\](.+?)[/code]@i&#8221;, &#8220;</p> 
+$str = preg_replace("@\[code=(.+?)\](.+?)[/code]@i", "</p> 
 
 <pre class="brush: $1">$2</pre>
 
-&#8220;, $str);
+", $str);
   
-[/php]
+{% endhighlight %}
 
 Aí é usar de acordo com a nomenclatura do próprio script. Um código em PHP ficaria assim:
 
-[code language=&#8221;php&#8221;]$nome = "Jonnas";[/code]
+[code language="php"]$nome = "Jonnas";[/code]
 
 Caso você encontre algum bug ou tem alguma sugestão, não deixe de entrar em contato.
 

@@ -21,7 +21,7 @@ O FISL11 será realizado no Centro de Eventos da Pontifícia Universidade Catól
 
 Para mais informações, consulte o site oficial do evento (<a href="http://www.fisl.org.br" rel="externo nofollow">http://www.fisl.org.br</a>).
 
-![](http://fonini.web2313.uni5.net/blog/wp-content/imagens/FISL11_big.png)
+![](/images/FISL11_big.png)
 
 É isso ai galera, participem, vale muito a pena e quem sabe a gente não se encontra por lá para bater um papo.
 

@@ -4,7 +4,6 @@ title: Tutorial de programação com Brainfuck
 date: 2010-04-29T09:32:42+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=98
 permalink: /2010/04/29/tutorial-de-programacao-com-brainfuck/
 categories:
   - Geral

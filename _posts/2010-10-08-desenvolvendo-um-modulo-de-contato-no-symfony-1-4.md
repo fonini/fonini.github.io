@@ -132,6 +132,6 @@ http://localhost/seuprojeto/index.php/contato.
 
 Caso algo tenha dado errado, baixe os arquivos utilizados e coloque-os em suas devidas pastas. Melhor ainda que substituir os arquivos é tentar encontrar a causa do problema e quem sabe melhorar o módulo, que está bem básico.
 
-[Download dos arquivos](http://www.fonini.net/labs/modulo-contato-symfony.zip)
+[Download dos arquivos](https://www.dropbox.com/s/t08161cjvovmaow/modulo-contato-symfony.zip?dl=0)
 
 Grande abraço e até a próxima!

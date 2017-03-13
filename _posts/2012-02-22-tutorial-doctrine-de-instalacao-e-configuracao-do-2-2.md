@@ -231,4 +231,4 @@ Apesar de ser a primeira vez que uso o Doctrine 2, posso dizer que está demais!
 
 ### Download
 
-[Baixe aqui](http://www.fonini.net/labs/doctrine2.zip) os arquivos usados no exemplo. Grande abraço a todos e até a próxima.
+[Baixe aqui](https://www.dropbox.com/s/gvl4c5mjjekm74r/doctrine2.zip?dl=0) os arquivos usados no exemplo. Grande abraço a todos e até a próxima.

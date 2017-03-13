@@ -72,7 +72,7 @@ Dentro desta mesma pasta ficará a página PHP que receberá os dados. Então, c
 echo $_POST['texto'];
 {% endhighlight %}
 
-Nesta mesma pasta deve ter a imagem que será usada no botão. Eu coloquei essa aqui: ![](/blog/wp-content/imagens/ajaxsave.png). O nome dela deve ser "ajaxsave.png".
+Nesta mesma pasta deve ter a imagem que será usada no botão. Eu coloquei essa aqui: ![](/images/ajaxsave.png). O nome dela deve ser "ajaxsave.png".
 
 O plugin já está instalado. Agora vamos configurar o CKEditor para utilizar o plugin. Na pasta raíz do CKEditor existe um arquivo chamado "config.js". Este arquivo é utilizado para definir as configurações globais do CKEditor. O conteúdo do meu está assim:
 

@@ -56,7 +56,7 @@ $this->hasColumn('email', 'string', 100, array(
 )); 
 {% endhighlight %}
 
-<span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>contato@fonini.net
+<span style="color: rgb(22, 188, 42);"><strong>Válido: </strong></span>contato@email.net
 <span style="color: rgb(255, 0, 0);"><strong>Inválido: </strong></span>fulano!#@server 
 
 **notblank**

@@ -4,7 +4,6 @@ title: Wikipédia no terminal do Linux
 date: 2010-04-29T10:32:37+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=100
 permalink: /2010/04/29/wikipedia-no-terminal-do-linux/
 categories:
   - Linux

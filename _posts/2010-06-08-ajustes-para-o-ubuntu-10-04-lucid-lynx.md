@@ -4,7 +4,6 @@ title: Ajustes para o Ubuntu 10.04 Lucid Lynx
 date: 2010-06-08T10:50:39+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=102
 permalink: /2010/06/08/ajustes-para-o-ubuntu-10-04-lucid-lynx/
 categories:
   - Linux
@@ -23,7 +22,7 @@ O novo padrão adotado pela Canonical é posicionar os botões de fechar, maximi
 
 Na janela que irá abrir, navegue em **apps/metacity/general** e altere o valor do campo **button_layout** para o mesmo que está na imagem abaixo e feche o programa para efetivar as alterações.
 
-![](http://fonini.web2313.uni5.net/blog/wp-content/imagens/gconf-editor.png)
+![](/images/gconf-editor.png)
 
 **Applet de volume**
 

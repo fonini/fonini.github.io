@@ -4,7 +4,6 @@ title: Acessando o localhost a partir do emulador do Android
 date: 2012-02-24T09:06:41+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=394
 permalink: /2012/02/24/acessando-o-localhost-a-partir-do-emulador-do-android/
 categories:
   - Android

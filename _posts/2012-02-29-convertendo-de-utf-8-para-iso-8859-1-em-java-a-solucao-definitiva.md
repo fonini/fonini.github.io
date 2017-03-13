@@ -4,7 +4,6 @@ title: 'Convertendo de UTF-8 para ISO-8859-1 em Java: A solução definitiva'
 date: 2012-02-29T14:54:19+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=404
 permalink: /2012/02/29/convertendo-de-utf-8-para-iso-8859-1-em-java-a-solucao-definitiva/
 categories:
   - Sem categoria
@@ -20,33 +19,21 @@ Os dados eram gravados de forma errada, muitas vezes truncavam e as vezes aparec
 Depois de algumas tentativas, cheguei até a seguinte solução: 
 
 
-
 {% highlight java %}
-  
 public static String convertUTF8toISO(String str) {
-	  
-String ret = null;
-	  
-try {
-		  
-ret = new String(str.getBytes("ISO-8859-1"), "UTF-8");
-	  
+	String ret = null;
+
+	try {
+		ret = new String(str.getBytes("ISO-8859-1"), "UTF-8");
+	}
+	catch (java.io.UnsupportedEncodingException e) {
+		return null;
+	}
+
+	return ret;
 }
-	  
-catch (java.io.UnsupportedEncodingException e) {
-		  
-return null;
-	  
-}
-	  
-return ret;
-  
-}
-  
 {% endhighlight %}
 
-Adicione o método acima ? sua classe de utilidades e acabe com os seus problemas. 
+Adicione o método acima à sua classe de utilidades e acabe com os seus problemas. 
 
-Abraço. 
-
-&nbsp;
+Abraço.

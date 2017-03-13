@@ -4,7 +4,6 @@ title: Restringindo caracteres digitados no EditText do Android
 date: 2012-03-02T10:51:24+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=420
 permalink: /2012/03/02/restringindo-caracteres-digitados-no-edittext-do-android/
 categories:
   - Android
@@ -20,48 +19,34 @@ Para tarefas como essa, o atributo **android:digits** está aí para salvar a p�
 
 Exemplo: 
 
-**Permitir somente números, tanto com . como , como separadores decimais:** </p> 
+**Permitir somente números, tanto com . como , como separadores decimais:**
 
-[xml]
-  
-<EditText android:digits="1234567890.," android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" />
-  
-[/xml]
+{% highlight xml %}
+<EditText android:digits="1234567890.," android:layout_width="wrap_content" android:layout_height="wrap_content" />
+{% endhighlight %}
 
 Fácil, não? 
 
 Essa solução também é util para ser usada em conjunto com o android:inputType="numberDecimal". Nesse caso, é apresentado o teclado numérico, permitindo que vírgulas também sejam incluídas. 
 
-Exemplo: </p> 
+Exemplo:
 
-[xml]
-  
-<EditText android:digits="1234567890.," android:inputType="numberDecimal" android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" />
-  
-[/xml]
-
-&nbsp; 
+{% highlight xml %} 
+<EditText android:digits="1234567890.," android:inputType="numberDecimal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+{% endhighlight %}
 
 ### Outros exemplos
-  
 
+**Números hexadecimais:**
 
-**Números hexadecimais:** </p> 
+{% highlight xml %}
+<EditText android:digits="abcdef1234567890" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+{% endhighlight %}
 
-[xml]
-  
-<EditText android:digits="abcdef1234567890" android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" />
-  
-[/xml]
+**Somente números pares:**
 
-**Somente números pares:** </p> 
-
-[xml]
-  
-<EditText android:digits=02468" android:inputType="number" android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" />
-  
-[/xml]
-
-&nbsp; 
+{% highlight xml %}
+<EditText android:digits=02468" android:inputType="number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+{% endhighlight %}
 
 Abraço!

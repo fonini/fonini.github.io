@@ -12,7 +12,7 @@ tags:
   - Expressão Regular
   - Regex
 ---
-Mais um post da série sobre expressões regulares. Os outros posts de regex podem ser encontrados [aqui](http://www.fonini.net/regex/15-expressoes-regulares-para-trabalhar-com-data-hora), [aqui](http://www.fonini.net/regex/13-expressoes-regulares-para-trabalhar-com-numeros) e [aqui](http://www.fonini.net/regex/10-expressoes-regulares-para-trabalhar-com-html).
+Mais um post da série sobre expressões regulares. Os outros posts de regex podem ser encontrados [aqui](/2010/02/12/expressoes-regulares-para-trabalhar-com-datahora/), [aqui](/2010/02/11/expressoes-regulares-para-trabalhar-com-numeros/) e [aqui](/2010/02/09/expressoes-regulares-para-trabalhar-com-html/).
 
 **Valida número do ISBN (International Standard Book Number)**
 {% highlight regex %}
@@ -55,7 +55,7 @@ d{2}.?d{3}.?d{3}/?d{4}-?d{2}
 ^(a-zA-Z0-9([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?.)+[a-zA-Z]{2,6}$
 {% endhighlight %}
   
-<a href="http://regexpal.com/?flags=&regex=^%28[a-zA-Z0-9]%28[a-zA-Z0-9-]{0%2C61}[a-zA-Z0-9]%29%3F.%29%2B[a-zA-Z]{2%2C6}%24&input=www.fonini.net" rel="externo">Testar</a>
+<a href="http://regexpal.com/?flags=&regex=^%28[a-zA-Z0-9]%28[a-zA-Z0-9-]{0%2C61}[a-zA-Z0-9]%29%3F.%29%2B[a-zA-Z]{2%2C6}%24&input=fonini.github.io" rel="externo">Testar</a>
 
 
 **Valida e-mails de TLD's (Top Level Domains) específicos**
@@ -63,7 +63,7 @@ d{2}.?d{3}.?d{3}/?d{4}-?d{2}
 ^[A-Z0-9._%+-]+@[A-Z0-9.-]+.(?:|com|org|net|gov|[A-Z]{2})$
 {% endhighlight %}
   
-<a href="http://regexpal.com/?flags=im&regex=^[A-Z0-9._%25%2B-]%2B%40[A-Z0-9.-]%2B.%28%3F%3A|com|org|net|gov|[A-Z]{2}%29%24&input=contato%40fonini.net%0Ateste%40teste.biz" rel="externo">Testar</a>
+<a href="http://regexpal.com/?flags=im&regex=^[A-Z0-9._%25%2B-]%2B%40[A-Z0-9.-]%2B.%28%3F%3A|com|org|net|gov|[A-Z]{2}%29%24&input=contato%email.net%0Ateste%40teste.biz" rel="externo">Testar</a>
 
 **Localiza tags HTML vazias**
 {% highlight regex %}

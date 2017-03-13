@@ -19,6 +19,6 @@ Apesar da falta de café de hoje a tarde aqui na empresa (devidamente solucionad
 
 Como não tinha tempo suficiente para adicionar uma funcionalidade a mais, sobrescrevi uma existente (lang), já que não uso esse atributo.
 
-Arquivo: [mod\_link\_ckeditor.zip](http://www.fonini.net/labs/mod_link_ckeditor.zip)
+Arquivo: [mod_link_ckeditor.zip](https://www.dropbox.com/s/2dxyo5jyxif7475/mod_link_ckeditor.zip?dl=0)
 
 Abraço e até a próxima

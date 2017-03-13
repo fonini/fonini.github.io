@@ -20,7 +20,7 @@ Você pode encontrar versões mais atualizadas daqui a algum tempo no <a href="h
 
 **Instalação**
 
-Baixe a extensão <a href="http://www.fonini.net/labs/vagalume-parser.zip">aqui</a> e extraia para uma pasta de sua preferência. Depois é só substituir (como root) os arquivos da pasta /usr/lib/rhythmbox/plugins/lyrics por esses que você acabou de baixar.
+Baixe a extensão <a href="https://www.dropbox.com/s/yvw5qt1fjr1b5sq/vagalume-parser.zip?dl=0">aqui</a> e extraia para uma pasta de sua preferência. Depois é só substituir (como root) os arquivos da pasta /usr/lib/rhythmbox/plugins/lyrics por esses que você acabou de baixar.
 
 Feito isso, entre no Rhythmbox, vá em Editar/Plugins, encontre o plugin Letras de Músicas, ative caso esteja desativado e selecione o site vagalume.com.br na listagem.
 

@@ -4,7 +4,6 @@ title: Repositórios úteis para Ubuntu
 date: 2010-02-23T11:15:32+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=60
 permalink: /2010/02/23/repositorios-uteis-para-ubuntu/
 categories:
   - Linux

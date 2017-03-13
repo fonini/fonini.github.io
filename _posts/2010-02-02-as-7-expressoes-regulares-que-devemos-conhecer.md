@@ -19,7 +19,7 @@ Hoje vou mostrar algumas expressões regulares que podem ser muito úteis. Pra q
 {% highlight php %}<?php
 $telefone = "(54) 9613-4396";
 
-if (preg_match('/^((?\[0-9]{2})?|[-. ]?)[ \]\[0-9\]{4}[-. ]?[0-9]{4}$/', $telefone)) {	  
+if (preg_match('/^((?[0-9]{2})?|[-. ]?)[ ][0-9]{4}[-. ]?[0-9]{4}$/', $telefone)) {	  
 	echo "Telefone válido";
 }
 {% endhighlight %}
@@ -39,7 +39,7 @@ if (preg_match('/^[0-9]{5,5}([- ]?[0-9]{4})?$/', $cep)) {
 {% highlight php %}<?php
 $comentario = "/*comentario bla bla bla*/";
 
-if (preg_match('/^[(/\*)+.+(\*/)]$/', $comentario)) {	  
+if (preg_match('/^[(/*)+.+(*/)]$/', $comentario)) {	  
 	echo "Comentário válido";
 }
 {% endhighlight %}
@@ -70,7 +70,7 @@ if (preg_match('/^#(?:(?:[a-fd]{3}){1,2})$/i', $cor)) {
 {% highlight php %}<?php
 $ip = "255.255.255.0";
 
-if (preg_match('^(?:25\[0-5]|2[0-4]d|1dd|[1-9]d|d)(?:[.\](?:25[0-5]|2[0-4]d|1dd|[1-9]d|d)){3}$', $ip)) {	  
+if (preg_match('^(?:25[0-5]|2[0-4]d|1dd|[1-9]d|d)(?:[.](?:25[0-5]|2[0-4]d|1dd|[1-9]d|d)){3}$', $ip)) {	  
 	echo "IP válido";
 }
 {% endhighlight %} 
@@ -78,9 +78,9 @@ if (preg_match('^(?:25\[0-5]|2[0-4]d|1dd|[1-9]d|d)(?:[.\](?:25[0-5]|2[0-4]d|1dd|
 **E-mails** 
 
 {% highlight php %}<?php  
-$email = "contato@fonini.net";
+$email = "contato@email.net";
 
-if (preg\_match('/^\[^0-9\]\[a-zA-Z0-9\_\]+(\[.\]\[a-zA-Z0-9\_\]+)\*\[@\]\[a-zA-Z0-9\_\]+(\[.\]\[a-zA-Z0-9_\]+)\*\[.\]\[a-zA-Z\]{2,4}$/', $email)) {
+if (preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $email)) {
 	echo "E-mail válido";
 }
 {% endhighlight %}

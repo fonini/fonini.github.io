@@ -12,7 +12,7 @@ tags:
   - Expressão Regular
   - Regex
 ---
-Mais um post da série sobre regex (Veja os anteriores aqui: [Expressões regulares para trabalhar com HTML](http://www.fonini.net/regex/10-expressoes-regulares-para-trabalhar-com-html) e [Expressões regulares para trabalhar com números](http://www.fonini.net/regex/13-expressoes-regulares-para-trabalhar-com-numeros)). Reuni algumas expressões regulares úteis para trabalhar com data e hora.
+Mais um post da série sobre regex (Veja os anteriores aqui: [Expressões regulares para trabalhar com HTML](/2010/02/09/expressoes-regulares-para-trabalhar-com-html/) e [Expressões regulares para trabalhar com números](/2010/02/11/expressoes-regulares-para-trabalhar-com-numeros/)). Reuni algumas expressões regulares úteis para trabalhar com data e hora.
 
 **Valida data no formato HH:MM** 
 {% highlight regex %}

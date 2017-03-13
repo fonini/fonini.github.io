@@ -12,7 +12,7 @@ tags:
   - Expressão Regular
   - Regex
 ---
-Continuando a série sobre expressões regulares iniciada [aqui](http://www.fonini.net/regex/10-expressoes-regulares-para-trabalhar-com-html), reuni algumas expressões regulares úteis para trabalhar com números. 
+Continuando a série sobre expressões regulares iniciada [aqui](/2010/02/09/expressoes-regulares-para-trabalhar-com-html/), reuni algumas expressões regulares úteis para trabalhar com números. 
 
 **Encontra números inteiros, incluindo negativos**
 {% highlight regex %}

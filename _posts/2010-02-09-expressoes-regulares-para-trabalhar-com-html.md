@@ -29,7 +29,7 @@ Reuni algumas expressões regulares úteis para trabalhar com HTML.
 href[s]\*=[s]\*"[^n"]*"
 {% endhighlight %}
   
-<a href="http://regexpal.com/?flags=&regex=href[s]*%3D[s]*%22[^n%22]*%22&input=%3Ca%20href%3D%22http%3A%2F%2Fwww.fonini.net%22%3EJonnas%20Fonini%3C%2Fa%3E" rel="externo">Testar</a> 
+<a href="http://regexpal.com/?flags=&regex=href[s]*%3D[s]*%22[^n%22]*%22&input=%3Ca%20href%3D%22http%3A%2F%2Ffonini.github.io%22%3EJonnas%20Fonini%3C%2Fa%3E" rel="externo">Testar</a> 
 
 
 
@@ -56,7 +56,7 @@ href[s]\*=[s]\*"[^n"]*"
 ^<a[^>]\*([^"]\*)[^>]*>([ 0-9a-zA-Z]+)</a>$
 {% endhighlight %}
   
-<a href="http://regexpal.com/?flags=&regex=^%3Ca[^%3E]*%28[^%22]*%29[^%3E]*%3E%28[%200-9a-zA-Z]%2B%29%3C%2Fa%3E%24&input=%3Ca%20href%3D%22http%3A%2F%2Fwww.fonini.net%22%3EJonnas%20Fonini%3C%2Fa%3E" rel="externo">Testar</a> 
+<a href="http://regexpal.com/?flags=&regex=^%3Ca[^%3E]*%28[^%22]*%29[^%3E]*%3E%28[%200-9a-zA-Z]%2B%29%3C%2Fa%3E%24&input=%3Ca%20href%3D%22http%3A%2F%2Ffonini.github.io%22%3EJonnas%20Fonini%3C%2Fa%3E" rel="externo">Testar</a> 
 
 
 
@@ -65,7 +65,7 @@ href[s]\*=[s]\*"[^n"]*"
 (http://|https://)([a-zA-Z0-9]+.[a-zA-Z0-9-]+|[a-zA-Z0-9-]+).[a-zA-Z.]{2,6}(/[a-zA-Z0-9.?=/#%&+-]+|/|)
 {% endhighlight %}
   
-<a href="http://regexpal.com/?flags=&regex=%28http%3A%2F%2F|https%3A%2F%2F%29%28[a-zA-Z0-9]%2B.[a-zA-Z0-9-]%2B|[a-zA-Z0-9-]%2B%29.[a-zA-Z.]{2%2C6}%28%2F[a-zA-Z0-9.%3F%3D%2F%23%25%26%2B-]%2B|%2F|%29&input=http%3A%2F%2Fwww.fonini.net%0Ahttp%3A%2F%2Fwww.pmvilamaria.com.br" rel="externo">Testar</a> 
+<a href="http://regexpal.com/?flags=&regex=%28http%3A%2F%2F|https%3A%2F%2F%29%28[a-zA-Z0-9]%2B.[a-zA-Z0-9-]%2B|[a-zA-Z0-9-]%2B%29.[a-zA-Z.]{2%2C6}%28%2F[a-zA-Z0-9.%3F%3D%2F%23%25%26%2B-]%2B|%2F|%29&input=http%3A%2F%2Ffonini.github.io%0Ahttp%3A%2F%2Fwww.pmvilamaria.com.br" rel="externo">Testar</a> 
 
 
 

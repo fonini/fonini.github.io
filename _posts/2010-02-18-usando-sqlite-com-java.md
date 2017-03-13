@@ -181,6 +181,6 @@ public class Exemplo {
 
 O código tá bem amador ainda, mas dá pra ter uma noção de como funciona o SQLite com Java. É criado um arquivo chamado "pessoas.db" que será o banco de dados. É criada uma tabela "pessoas" e inserido três registros nela. Todos os registros são listados, remove-se uma das pessoas e lista-se novamente.
 
-Baixe [aqui](http://www.fonini.net/labs/TesteSQLite.rar) o projeto criado no NetBeans (com a biblioteca já incluída).
+Baixe [aqui](https://www.dropbox.com/s/87c3ax23ljrwztw/TesteSQLite.rar?dl=0) o projeto criado no NetBeans (com a biblioteca já incluída).
 
 Abraço e até a próxima!

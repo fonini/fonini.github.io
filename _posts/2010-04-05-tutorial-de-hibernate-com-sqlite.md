@@ -23,18 +23,18 @@ O próximo passo é incluir a biblioteca do Hibernate no projeto. Na aba Projeto
 
 Agora que já temos o Hibernate e o driver do SQLite incluídos, vamos criar a conexão com o banco de dados. Clique na aba Serviços/Banco de Dados/Drivers. Se o driver do SQLite não estiver aparecendo, clique com o botão direito em Drivers/Novo driver. Em Arquivos do driver, adicione o driver da pasta lib e clique em Localizar. Deverá aparecer "org.sqlite.JDBC" no campo Classe do Driver. Dê o nome SQLite ao driver e clique em OK.
 
-<img alt="Adicionando o driver do SQLite" src="http://fonini.web2313.uni5.net/blog/wp-content/imagens/driver.jpg" style="width: 516px" />
+<img alt="Adicionando o driver do SQLite" src="/images/driver.jpg" style="width: 516px" />
 
 Agora clique em Drivers/SQLite/Conectar utilizando.  
 Escolha um nome de usuário, uma senha e a seguinte URL JDBC: jdbc:sqlite:teste.db. O banco estará no arquivo "teste.db" na pasta raíz do projeto.
 
-<img alt="Conectando a um banco SQLite" src="http://fonini.web2313.uni5.net/blog/wp-content/imagens/driver.jpg" style="width: 497px" />
+<img alt="Conectando a um banco SQLite" src="/images/conexao.jpg" style="width: 497px" />
 
 O próximo passo será criar a unidade de persistência do projeto. Clique em Arquivo/Novo arquivo/Persistence/Unidade de persistência. Em biblioteca de persistência, selecione o Hibernate, selecione sua conexão criada anteriormente e selecione a estratégia Criar e finalize.
 
-<img alt="Criando uma unidade de persistência" src="http://fonini.web2313.uni5.net/blog/wp-content/imagens/driver.jpg" style="width: 604px" />
+<img alt="Criando uma unidade de persistência" src="/images/persistence.jpg" style="width: 604px" />
 
-O SQLite exige um dialeto SQL específico, que não vem incluído no Hibernate. Eu encontrei um no seguinte endereço: <a href="http://hibernate-sqlite.googlecode.com" rel="externo nofollow">http://hibernate-sqlite.googlecode.com</a>. Você pode baixar somente a classe necessária, [clicando aqui](http://www.fonini.net/labs/SQLiteDialect.zip). Extraia para a pasta "src" do projeto, ficando assim: "src/util/SQLiteDialect.java". Com a camada de persistência aberta no NetBeans (persistence.xml), clique em XML e adicione a linha do dialeto do SQLite, como mostrado abaixo: 
+O SQLite exige um dialeto SQL específico, que não vem incluído no Hibernate. Eu encontrei um no seguinte endereço: <a href="http://hibernate-sqlite.googlecode.com" rel="externo nofollow">http://hibernate-sqlite.googlecode.com</a>. Você pode baixar somente a classe necessária, [clicando aqui](https://www.dropbox.com/s/jyeksq57uy82emk/SQLiteDialect.zip?dl=0). Extraia para a pasta "src" do projeto, ficando assim: "src/util/SQLiteDialect.java". Com a camada de persistência aberta no NetBeans (persistence.xml), clique em XML e adicione a linha do dialeto do SQLite, como mostrado abaixo: 
 
 {% highlight java %}
 	<property name="hibernate.dialect" value="util.SQLiteDialect" />
@@ -169,7 +169,7 @@ public class Teste {
 
 Execute os testes pressionando SHIFT+F6 e veja os resultados. Se os testes atingirem 100%, está tudo certo. Senão, procure a possível causa nas exceções. Se você usa um sistema Unix-like, verifique se a pasta raíz do projeto está com as permissões adequadas para a criação do banco de dados. Note que mesmo com os testes atingindo 100% de sucesso, ainda ocorreu uma exceção. Isso se deve ao fato do SQLite não possuir chave estrangeira.
 
-Você pode [baixar o projeto completo](http://www.fonini.net/labs/HibernateSQLite.zip), com todas as bibliotecas necessárias incluídas.
+Você pode [baixar o projeto completo](https://www.dropbox.com/s/tz9hg5xpvg7xrdw/HibernateSQLite.zip?dl=0), com todas as bibliotecas necessárias incluídas.
 
 Esse foi um tutorial bem básico, apesar de longo. Agora é com você. Bom estudos.  
 Abraço e até a próxima!

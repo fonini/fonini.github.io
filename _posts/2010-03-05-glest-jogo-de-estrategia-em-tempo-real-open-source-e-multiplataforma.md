@@ -4,7 +4,6 @@ title: 'Glest - Jogo de estratégia em tempo real Open Source e multiplataforma'
 date: 2010-03-05T10:23:51+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=75
 permalink: /2010/03/05/glest-jogo-de-estrategia-em-tempo-real-open-source-e-multiplataforma/
 categories:
   - Linux

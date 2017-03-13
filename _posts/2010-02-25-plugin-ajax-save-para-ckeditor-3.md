@@ -120,8 +120,8 @@ Abra o index.html, digite alguma coisa no editor e clique no botão do canto esq
 
 **Download dos arquivos**
 
-[Plugin Ajax Save](http://www.fonini.net/labs/AjaxSave.plugin.zip)
+[Plugin Ajax Save](https://www.dropbox.com/s/i98z3yr77o8u6j1/AjaxSave.plugin.zip?dl=0)
 
-[CKEditor, com jQuery 1.4.2 e plugin já integrado](http://www.fonini.net/labs/ckeditor.zip)
+[CKEditor, com jQuery 1.4.2 e plugin já integrado](https://www.dropbox.com/s/k38wrwn0mihnipn/ckeditor.zip?dl=0)
 
 Abraço e até a próxima!

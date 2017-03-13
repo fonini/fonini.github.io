@@ -75,7 +75,7 @@ $(document).ready(function(){
     var data = $('#editor').val();
 
     // Adicionando conteúdo ao editor
-    $('#editor').val('<a href="http://www.fonini.net">www.fonini.net</a>');
+    $('#editor').val('<a href="https://fonini.github.io">fonini.github.io</a>');
   }, {
     width: 780,
     height: 350

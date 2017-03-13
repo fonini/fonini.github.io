@@ -19,7 +19,7 @@ Vou dar algumas dicas de como fazer isso. O tutorial abrange dois softwares: mpg
 
 Um dos softwares utilizados é o mpg123. Se você não tiver instalado na máquina, instale com o seguinte comando. 
 
-{% highlight shell %}sudo apt-get install mpg123{% endhighlight %} 
+{% highlight shell %}sudo apt-get install mpg123{% endhighlight %}
 
 Para ouvir a sua música, navegue até a pasta onde ela está e rode o seguinte comando: 
 

@@ -135,8 +135,4 @@ CKEDITOR.plugins.add( 'youtube', {
 });
 {% endhighlight %}
 
-**Demo**
-
-Você pode ver um demo do sistema funcionando clicando <a href="http://www.fonini.net/labs/ckeditor" rel="externo nofollow">aqui</a>.
-
 Abraço e até a próxima!

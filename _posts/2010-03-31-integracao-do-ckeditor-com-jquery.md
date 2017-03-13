@@ -82,8 +82,4 @@ $(document).ready(function(){
   });
 });{% endhighlight %}
 
-**Demo**
-
-Veja um demo online, clicando <a href="http://www.fonini.net/labs/ckeditor/jquery" rel="externo nofollow">aqui</a>.
-
 Abraço e até a próxima!

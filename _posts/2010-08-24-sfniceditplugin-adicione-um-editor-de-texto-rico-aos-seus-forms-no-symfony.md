@@ -4,7 +4,6 @@ title: 'sfNicEditPlugin: Adicione um editor de texto rico aos seus forms no Symf
 date: 2010-08-24T10:11:30+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=116
 permalink: /2010/08/24/sfniceditplugin-adicione-um-editor-de-texto-rico-aos-seus-forms-no-symfony/
 categories:
   - Sem categoria
@@ -22,40 +21,33 @@ Você pode encontrar o plugin no meu <a href="http://github.com/fonini/sfNicEdit
 
 **Instalação**  
 
+***Instalação (via pacote PEAR)***
 
-Instalação (via pacote PEAR)
-
-<pre id="terminal" user="fonini" computer="valhalla">symfony plugin:install sfNicEditPlugin</pre>
+{% highlight shell %}symfony plugin:install sfNicEditPlugin{% endhighlight %}
 
 Instalação via Git
 
-<pre id="terminal" user="fonini" computer="valhalla">git clone git://github.com/fonini/sfNicEditPlugin.git</pre>
+{% highlight shell %}git clone git://github.com/fonini/sfNicEditPlugin.git{% endhighlight %}
 
 Ou baixe o plugin <a href="http://plugins.symfony-project.org/get/sfNicEditPlugin/sfNicEditPlugin-1.0.1.tgz" rel="nofollow externo">aqui</a> e extraia para a pasta plugins.
 
 Você deve ativar o plugin, editando o arquivo config/ProjectConfiguration.class.php.
 
-{% highlight php %}
-  
+{% highlight php %}<?php  
 class ProjectConfiguration extends sfProjectConfiguration{
-	  
-public function setup(){
-		  
-$this->enablePlugins(array('sfDoctrinePlugin', 'sfNicEditPlugin', '...;'));
-	  
+	public function setup(){
+		$this->enablePlugins(array('sfDoctrinePlugin', 'sfNicEditPlugin', '...;'));
+	}
 }
-  
-}
-  
 {% endhighlight %}
 
 Após ativar o plugin, você deve publicar os arquivos CSS e JS utilizados por ele. Rode o seguinte comando:
 
-<pre id="terminal" user="fonini" computer="valhalla">symfony plugin:publish-assets</pre>
+{% highlight shell %}symfony plugin:publish-assets{% endhighlight %}
 
 Por último, limpe o cache:
 
-<pre id="terminal" user="fonini" computer="valhalla">symfony cc</pre>
+{% highlight shell %}symfony cc{% endhighlight %}
 
 
 
@@ -63,14 +55,10 @@ Por último, limpe o cache:
 
 Basta você editar a classe que gera o form em que você vai usar o NicEdit, por exemplo lib/form/doctrine/NewsForm.class.php.
 
-{% highlight php %}
-  
+{% highlight php %}<?php
 public function configure(){
-	  
-$this->setWidget('text', new sfWidgetFormTextareaNicEdit(array('fullPanel' => true), array('cols' => 100, 'rows' => 20)));
-  
+	$this->setWidget('text', new sfWidgetFormTextareaNicEdit(array('fullPanel' => true), array('cols' => 100, 'rows' => 20)));
 }
-  
 {% endhighlight %}
 
 Pretendo disponibilizar uma nova versão em breve com todos os parâmetros de configuração disponíves no NicEdit. Entre em contato em caso de dúvida. Abraço!

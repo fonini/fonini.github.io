@@ -12,22 +12,22 @@ categories:
 tags:
   - Terminal
 ---
-Tem louco pra tudo. É possível ver trechos de artigos da Wikipedia através de um lookup DNS em um servidor criado por <a href="https://dgl.cx/" rel="externo nofollow">David Leadbeater</a>. Por exemplo, para ler um trecho do artigo sobre Linux, digite o comando abaixo no terminal:</p> 
+Tem louco pra tudo. É possível ver trechos de artigos da Wikipedia através de um lookup DNS em um servidor criado por <a href="https://dgl.cx/" rel="externo nofollow">David Leadbeater</a>. Por exemplo, para ler um trecho do artigo sobre Linux, digite o comando abaixo no terminal:
 
-<pre id="terminal" computer="valhalla" user="fonini">dig +short txt Linux.wp.dg.cx</pre></p> 
+{% highlight shell %}dig +short txt Linux.wp.dg.cx{% endhighlight %}
 
-Se você não tiver o dig pode fazer a consulta através do host:</p> 
+Se você não tiver o dig pode fazer a consulta através do host:
 
-<pre id="terminal" computer="valhalla" user="fonini">host -t txt Linux.wp.dg.cx</pre></p> 
+{% highlight shell %}host -t txt Linux.wp.dg.cx{% endhighlight %}
 
 Claro que isso não possui muita utilidade, pois somente são retornados 430 bytes. Outro problema é que, para consultas como por exemplo Power Metal, você deve inserir um underline entre as palavras, como é feito na Wikipédia.
 
-Você também pode fazer um alias através do seguinte comando:</p> 
+Você também pode fazer um alias através do seguinte comando:
 
-<pre id="terminal" computer="valhalla" user="fonini">wiki() { dig +short txt $1.wp.dg.cx; }</pre></p> 
+{% highlight shell %}wiki() { dig +short txt $1.wp.dg.cx; }{% endhighlight %}
 
-E procurar da seguinte maneira:</p> 
+E procurar da seguinte maneira:
 
-<pre id="terminal" computer="valhalla" user="fonini">wiki Power_metal</pre></p> 
+{% highlight shell %}wiki Power_metal{% endhighlight %}
 
-Abraço e até a próxima!</p>
+Abraço e até a próxima!

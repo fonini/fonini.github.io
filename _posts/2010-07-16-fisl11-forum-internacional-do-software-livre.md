@@ -1,10 +1,9 @@
 ---
 id: 106
-title: 'FISL11 -; Fórum Internacional do Software Livre'
+title: 'FISL11: Fórum Internacional do Software Livre'
 date: 2010-07-16T11:19:14+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=106
 permalink: /2010/07/16/fisl11-forum-internacional-do-software-livre/
 categories:
   - Geral
@@ -22,7 +21,7 @@ O FISL11 será realizado no Centro de Eventos da Pontifícia Universidade Catól
 
 Para mais informações, consulte o site oficial do evento (<a href="http://www.fisl.org.br" rel="externo nofollow">http://www.fisl.org.br</a>).
 
-![](/blog/wp-content/imagens/FISL11_big.png)
+![](http://fonini.web2313.uni5.net/blog/wp-content/imagens/FISL11_big.png)
 
 É isso ai galera, participem, vale muito a pena e quem sabe a gente não se encontra por lá para bater um papo.
 

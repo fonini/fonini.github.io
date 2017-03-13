@@ -4,7 +4,6 @@ title: Enviando emails autenticados do Gmail com PHP usando Swift Mailer
 date: 2010-09-30T08:42:41+00:00
 author: fonini
 layout: post
-guid: http://www.fonini.net/blog/?p=122
 permalink: /2010/09/30/enviando-emails-autenticados-do-gmail-com-php-usando-swift-mailer/
 categories:
   - Sem categoria
@@ -16,130 +15,94 @@ O <a href="http://www.swiftmailer.org" rel="externo nofollow">Swift Mailer</a> �
 
 Tenho notado que muitas empresas estão adotando cada vez mais o uso do Google Apps como serviço de webmail, dada a facilidade de uso e configuração do sistema. O primeiro exemplo mostra como enviar emails autenticados a partir de uma conta de email do Google (Gmail ou Apps) e os outros tratam do envio de mensagens com anexo. Usei a versão 4.0.6 para o exemplo.
 
-<span style="font-size: 14px;"><strong>Enviando emails com autenticação no Gmail (incluindo Google Apps)</strong></span>
+**Enviando emails com autenticação no Gmail (incluindo Google Apps)**
 
-{% highlight php %}require('lib/swift_required.php');
+{% highlight php %}<?php
+require('lib/swift_required.php');
 
-$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
-	  
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')	  
 ->setUsername('usuario@gmail.com')
-	  
 ->setPassword('senha');
 
 $mailer = Swift_Mailer::newInstance($transport);
 
 $message = Swift_Message::newInstance('Assunto')
-	  
 ->setFrom(array('seuemail@dominio.com.br' => 'Seu Nome'))
-	  
 ->setTo(array('fulano@teste.com.br'))
-	  
 ->setReplyTo('seuemail@dominio.com.br')
-	  
 ->setBody('Conteudo da mensagem');
 
 if ($mailer->send($message)){
-	  
-echo 'Mensagem enviada com sucesso';
-  
+	echo 'Mensagem enviada com sucesso';
 }
-  
-else{
-	  
-echo 'Problema ao enviar mensagem. Tente novamente mais tarde';
-  
+else{	  
+	echo 'Problema ao enviar mensagem. Tente novamente mais tarde';
 }
-  
 {% endhighlight %}
 
-<span style="font-size: 14px;"><br /> <strong>Enviando emails com imagens embutidas (inline)</strong></span>
-  
+**Enviando emails com imagens embutidas (inline)**
+
 Útil para enviar emails com imagens que não serão bloqueadas pelos softwares leitores de email, já que estão embutidas no código e não em servidores remotos.
 
-{% highlight php %}require('lib/swift_required.php');
+{% highlight php %}<?php
+require('lib/swift_required.php');
 
-$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
-	  
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')	  
 ->setUsername('usuario@gmail.com')
-	  
 ->setPassword('senha');
 
 $mailer = Swift_Mailer::newInstance($transport);
 
 $message = Swift_Message::newInstance('Assunto')
-	  
 ->setFrom(array('seuemail@dominio.com.br' => 'Seu Nome'))
-	  
 ->setTo(array('fulano@teste.com.br'))
-	  
 ->setReplyTo('seuemail@dominio.com.br');
 
-$imagem\_inline = $message->embed(Swift\_Image::fromPath('logotipo.png'));
+$imagem_inline = $message->embed(Swift_Image::fromPath('logotipo.png'));
 
 $message->setBody(
-	  
-'<html>'.
-	  
-' <head></head>'.
-	  
-' <body>' .
-	  
-' <img src="'.$imagem_inline.'" alt="Imagem embutida na mensagem" />'.
-	  
-' <br /><br />Texto da mensagem'.
-	  
-' </body>'.
-	  
-'</html>',
-    
-'text/html' //Definimos o tipo da mensagem para text/html, ao invés de texto puro
-  
+	'<html>'.  
+	' <head></head>'.
+	' <body>' .
+	' <img src="'.$imagem_inline.'" alt="Imagem embutida na mensagem" />'.
+	' <br /><br />Texto da mensagem'.
+	' </body>'.  
+	'</html>',
+	'text/html' //Definimos o tipo da mensagem para text/html, ao invés de texto puro
 );
 
 if ($mailer->send($message)){
-	  
-echo 'Mensagem enviada com sucesso';
-  
+	echo 'Mensagem enviada com sucesso';
 }
-  
-else{
-	  
-echo 'Problema ao enviar mensagem. Tente novamente mais tarde';
-  
+else{	  
+	echo 'Problema ao enviar mensagem. Tente novamente mais tarde';
 }
-  
 {% endhighlight %}
 
-<span style="font-size: 14px;"><br /> <strong>Enviando emails com anexo</strong></span>
+**Enviando emails com anexo**
 
-{% highlight php %}require\_once 'lib/swift\_required.php';
+{% highlight php %}<?php
+require('lib/swift_required.php)';
 
-$transport = Swift_SmtpTransport::newInstance('smtp.seudominio.com', 25)
-	  
+$transport = Swift_SmtpTransport::newInstance('smtp.seudominio.com', 25)	  
 ->setUsername('seuemail@dominio.com')
-	  
 ->setPassword('senha');
 
 $mailer = Swift_Mailer::newInstance($transport);
 
 $message = Swift_Message::newInstance()
-	  
 ->setSubject('Email com PDF anexado')
-	  
 ->setFrom(array('seuemail@seudominio.com' => 'Seu nome'))
-	  
 ->setTo(array('contato1@teste.org', 'contato2@teste.org'))
-	  
 ->setBody('Leia a apostila em anexo')
-	  
-->attach(Swift\_Attachment::fromPath('apostilas/apostila\_inicial.pdf'));
+->attach(Swift_Attachment::fromPath('apostilas/apostila_inicial.pdf'));
 
-if ( ! $mailer->send($message)){
-	  
-echo 'Erro ao enviar email';
-  
+if ($mailer->send($message)){
+	echo 'Mensagem enviada com sucesso';
 }
-  
+else{	  
+	echo 'Problema ao enviar mensagem. Tente novamente mais tarde';
+}
 {% endhighlight %}
 
 Bom, esses foram alguns exemplos bem básicos do uso da biblioteca Swift Mailer. Consulte a <a href="http://swiftmailer.org/docs/introduction" rel="externo nofollow">documentação oficial</a> para mais informações e um guia de referência completo.

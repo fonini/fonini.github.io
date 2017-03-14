@@ -5,7 +5,7 @@ date: 2013-04-30T16:27:05+00:00
 author: fonini
 layout: page
 ---
-CKEditor Plugin which allows to embed Youtube videos.
+CKEditor Plugin to embed Youtube videos.
 
 ## Download
 

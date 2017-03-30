@@ -18,7 +18,8 @@ Compartilho aqui alguns snippets e comandos úteis do Zend Framework, para refer
 
 #### Retornar o código de resposta 404 (Not found).
 
-{% highlight php %} $this->_response->clearBody()->clearHeaders()->setHttpResponseCode(404)->sendResponse(); {% endhighlight %}
+{% highlight php %}<?php
+$this->_response->clearBody()->clearHeaders()->setHttpResponseCode(404)->sendResponse(); {% endhighlight %}
 
 
 

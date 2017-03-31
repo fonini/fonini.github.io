@@ -1,5 +1,4 @@
 ---
-id: 112
 title: Terceiro dia de palestras no FISL11
 date: 2010-07-24T00:24:09+00:00
 author: fonini

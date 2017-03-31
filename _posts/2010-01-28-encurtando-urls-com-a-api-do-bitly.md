@@ -1,5 +1,4 @@
 ---
-id: 9
 title: Encurtando URLs com PHP usando a API do Bit.ly
 date: 2010-01-28T14:34:02+00:00
 author: fonini

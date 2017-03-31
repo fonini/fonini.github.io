@@ -1,5 +1,4 @@
 ---
-id: 48
 title: 'Adicionando o atributo "rel" ao CKEditor 3'
 date: 2010-02-11T16:14:40+00:00
 author: fonini

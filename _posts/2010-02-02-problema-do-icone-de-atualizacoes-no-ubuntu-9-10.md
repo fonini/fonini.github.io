@@ -1,5 +1,4 @@
 ---
-id: 23
 title: Problema do ícone de atualizações no Ubuntu 9.10
 date: 2010-02-02T09:18:23+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 449
 title: Gerar número sequencial em query do PostgreSQL
 date: 2013-03-07T17:20:08+00:00
 author: fonini

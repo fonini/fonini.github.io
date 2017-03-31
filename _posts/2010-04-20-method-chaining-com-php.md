@@ -1,5 +1,4 @@
 ---
-id: 96
 title: Method Chaining com PHP
 date: 2010-04-20T08:18:49+00:00
 author: fonini

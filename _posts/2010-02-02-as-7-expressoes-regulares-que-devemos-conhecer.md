@@ -1,5 +1,4 @@
 ---
-id: 25
 title: As 7 expressões regulares que devemos conhecer
 date: 2010-02-02T10:23:16+00:00
 author: fonini

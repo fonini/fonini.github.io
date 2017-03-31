@@ -1,5 +1,4 @@
 ---
-id: 120
 title: Validadores do Doctrine (validators)
 date: 2010-09-23T08:48:24+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 29
 title: Rodando aplicativos .NET no Linux
 date: 2010-02-04T14:50:31+00:00
 author: fonini

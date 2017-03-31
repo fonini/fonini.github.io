@@ -1,5 +1,4 @@
 ---
-id: 39
 title: Transformando BBCode em XHTML com PHP e Regex
 date: 2010-02-10T10:51:28+00:00
 author: fonini

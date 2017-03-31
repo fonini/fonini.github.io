@@ -1,5 +1,4 @@
 ---
-id: 79
 title: 17 dicas para otimizar seus códigos JavaScript
 date: 2010-03-08T09:11:12+00:00
 author: fonini

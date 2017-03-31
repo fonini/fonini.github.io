@@ -1,5 +1,4 @@
 ---
-id: 77
 title: Ouvindo música no terminal do Linux
 date: 2010-03-06T08:39:37+00:00
 author: fonini

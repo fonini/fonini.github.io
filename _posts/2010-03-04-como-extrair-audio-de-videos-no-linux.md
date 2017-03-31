@@ -1,5 +1,4 @@
 ---
-id: 73
 title: Como extrair áudio de vídeos no Linux
 date: 2010-03-04T09:55:41+00:00
 author: fonini

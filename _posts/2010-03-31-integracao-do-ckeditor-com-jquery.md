@@ -1,5 +1,4 @@
 ---
-id: 91
 title: Integração do CKEditor com jQuery
 date: 2010-03-31T08:39:08+00:00
 author: fonini

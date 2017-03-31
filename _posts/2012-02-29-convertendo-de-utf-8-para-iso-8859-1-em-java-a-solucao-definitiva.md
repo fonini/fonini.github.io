@@ -1,5 +1,4 @@
 ---
-id: 404
 title: 'Convertendo de UTF-8 para ISO-8859-1 em Java: A solução definitiva'
 date: 2012-02-29T14:54:19+00:00
 author: fonini

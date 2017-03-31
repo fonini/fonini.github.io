@@ -1,5 +1,4 @@
 ---
-id: 126
 title: Retornando os dias da semana atual em ActionScript 3 / Flex
 date: 2010-12-09T09:51:35+00:00
 author: fonini

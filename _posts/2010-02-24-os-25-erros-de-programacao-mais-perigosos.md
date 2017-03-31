@@ -1,5 +1,4 @@
 ---
-id: 64
 title: Os 25 erros de programação mais perigosos
 date: 2010-02-24T10:58:55+00:00
 author: fonini

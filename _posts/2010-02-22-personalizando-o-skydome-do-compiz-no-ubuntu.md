@@ -1,5 +1,4 @@
 ---
-id: 58
 title: Personalizando o Skydome do Compiz no Ubuntu
 date: 2010-02-22T10:45:52+00:00
 author: fonini

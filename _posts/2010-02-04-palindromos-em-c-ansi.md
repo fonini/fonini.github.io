@@ -1,5 +1,4 @@
 ---
-id: 27
 title: Palíndromos em C ANSI
 date: 2010-02-04T13:53:48+00:00
 author: fonini

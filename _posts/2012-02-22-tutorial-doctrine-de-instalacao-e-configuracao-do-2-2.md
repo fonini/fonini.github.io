@@ -1,5 +1,4 @@
 ---
-id: 346
 title: Tutorial de Instalação e Configuração do Doctrine 2.2
 date: 2012-02-22T23:46:33+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 340
 title: Snippets úteis do Zend Framework
 date: 2013-05-09T10:30:50+00:00
 author: fonini

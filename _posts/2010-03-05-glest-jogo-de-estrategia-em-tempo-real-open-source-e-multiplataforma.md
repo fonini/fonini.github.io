@@ -1,5 +1,4 @@
 ---
-id: 75
 title: 'Glest - Jogo de estratégia em tempo real Open Source e multiplataforma'
 date: 2010-03-05T10:23:51+00:00
 author: fonini

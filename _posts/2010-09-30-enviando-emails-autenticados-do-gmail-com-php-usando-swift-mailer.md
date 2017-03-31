@@ -1,5 +1,4 @@
 ---
-id: 122
 title: Enviando emails autenticados do Gmail com PHP usando Swift Mailer
 date: 2010-09-30T08:42:41+00:00
 author: fonini

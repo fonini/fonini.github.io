@@ -1,5 +1,4 @@
 ---
-id: 108
 title: Primeiro dia de palestras no FISL11
 date: 2010-07-21T22:52:52+00:00
 author: fonini

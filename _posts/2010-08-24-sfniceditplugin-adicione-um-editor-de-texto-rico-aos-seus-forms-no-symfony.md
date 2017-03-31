@@ -1,5 +1,4 @@
 ---
-id: 116
 title: 'sfNicEditPlugin: Adicione um editor de texto rico aos seus forms no Symfony'
 date: 2010-08-24T10:11:30+00:00
 author: fonini

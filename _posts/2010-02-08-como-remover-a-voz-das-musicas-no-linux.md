@@ -1,5 +1,4 @@
 ---
-id: 35
 title: Como remover a voz das músicas no Linux
 date: 2010-02-08T13:32:06+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 114
 title: Quarto e último dia de palestras no FISL11
 date: 2010-07-26T09:13:12+00:00
 author: fonini

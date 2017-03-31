@@ -1,5 +1,4 @@
 ---
-id: 106
 title: 'FISL11: Fórum Internacional do Software Livre'
 date: 2010-07-16T11:19:14+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 130
 title: HTTPRequest, classe PHP para retornar conteúdo remoto em servidores sem cURL
 date: 2011-03-01T19:49:14+00:00
 author: fonini

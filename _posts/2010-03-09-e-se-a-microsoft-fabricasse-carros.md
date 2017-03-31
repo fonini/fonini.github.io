@@ -1,5 +1,4 @@
 ---
-id: 81
 title: E se a Microsoft fabricasse carros?
 date: 2010-03-09T09:04:30+00:00
 author: fonini

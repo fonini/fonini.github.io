@@ -1,5 +1,4 @@
 ---
-id: 62
 title: A criação do universo (segundo a informática)
 date: 2010-02-23T14:22:10+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 56
 title: Expressões regulares variadas
 date: 2010-02-19T09:55:00+00:00
 author: fonini

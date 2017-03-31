@@ -1,5 +1,4 @@
 ---
-id: 104
 title: 'PHP: Trabalhando com PDO (PHP Data Objects)'
 date: 2010-06-29T08:07:57+00:00
 author: fonini

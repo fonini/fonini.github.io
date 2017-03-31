@@ -1,5 +1,4 @@
 ---
-id: 46
 title: Expressões regulares para trabalhar com números
 date: 2010-02-11T13:33:25+00:00
 author: fonini

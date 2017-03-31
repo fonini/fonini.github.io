@@ -1,5 +1,4 @@
 ---
-id: 93
 title: Tutorial de Hibernate com SQLite
 date: 2010-04-05T09:26:08+00:00
 author: fonini

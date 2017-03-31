@@ -1,5 +1,4 @@
 ---
-id: 71
 title: Como copiar um site inteiro para seu computador no Linux
 date: 2010-03-03T09:16:03+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 87
 title: Plugin para Rhythmbox para buscar letras de músicas no Vagalume
 date: 2010-03-17T08:53:14+00:00
 author: fonini

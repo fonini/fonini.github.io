@@ -1,5 +1,4 @@
 ---
-id: 66
 title: Plugin Ajax Save para CKEditor 3
 date: 2010-02-25T13:56:31+00:00
 author: fonini

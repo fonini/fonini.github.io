@@ -1,5 +1,4 @@
 ---
-id: 100
 title: Wikipédia no terminal do Linux
 date: 2010-04-29T10:32:37+00:00
 author: fonini

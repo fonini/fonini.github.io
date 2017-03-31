@@ -1,5 +1,4 @@
 ---
-id: 128
 title: Meu ambiente de trabalho em 7 itens
 date: 2010-12-27T19:52:09+00:00
 author: fonini

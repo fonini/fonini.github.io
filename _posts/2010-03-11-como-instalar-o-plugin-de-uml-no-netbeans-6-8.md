@@ -1,5 +1,4 @@
 ---
-id: 83
 title: Como instalar o plugin de UML no NetBeans 6.8
 date: 2010-03-11T09:00:46+00:00
 author: fonini

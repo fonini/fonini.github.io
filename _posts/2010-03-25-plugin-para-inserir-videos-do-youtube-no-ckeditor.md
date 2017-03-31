@@ -1,5 +1,4 @@
 ---
-id: 89
 title: Plugin para inserir vídeos do YouTube no CKEditor
 date: 2010-03-25T08:55:17+00:00
 author: fonini
@@ -134,5 +133,8 @@ CKEDITOR.plugins.add( 'youtube', {
 	}
 });
 {% endhighlight %}
+
+Update:
+Uma versão mais completa do [plugin](http://ckeditor.com/addon/youtube) está disponível no site do CKEditor.
 
 Abraço e até a próxima!

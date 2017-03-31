@@ -1,5 +1,4 @@
 ---
-id: 433
 title: Convertendo varchar para time without time zone no PostgreSQL
 date: 2012-03-26T14:56:51+00:00
 author: fonini

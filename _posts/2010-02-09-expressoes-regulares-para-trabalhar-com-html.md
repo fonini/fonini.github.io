@@ -1,5 +1,4 @@
 ---
-id: 37
 title: Expressões regulares para trabalhar com HTML
 date: 2010-02-09T10:37:20+00:00
 author: fonini

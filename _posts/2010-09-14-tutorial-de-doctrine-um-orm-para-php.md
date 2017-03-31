@@ -1,5 +1,4 @@
 ---
-id: 118
 title: Tutorial de Doctrine, um ORM para PHP
 date: 2010-09-14T08:04:30+00:00
 author: fonini

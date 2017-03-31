@@ -1,5 +1,4 @@
 ---
-id: 50
 title: Expressões regulares para trabalhar com data/hora
 date: 2010-02-12T10:37:20+00:00
 author: fonini

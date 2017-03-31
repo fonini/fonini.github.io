@@ -1,5 +1,4 @@
 ---
-id: 124
 title: Desenvolvendo um módulo de contato no Symfony 1.4
 date: 2010-10-08T08:35:11+00:00
 author: fonini

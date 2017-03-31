@@ -1,5 +1,4 @@
 ---
-id: 33
 title: 'php.js:  Funções do PHP escritas em JavaScript'
 date: 2010-02-05T14:45:05+00:00
 author: fonini

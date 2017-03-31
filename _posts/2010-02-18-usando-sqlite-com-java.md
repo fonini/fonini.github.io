@@ -1,5 +1,4 @@
 ---
-id: 54
 title: Usando SQLite com Java
 date: 2010-02-18T08:57:32+00:00
 author: fonini

@@ -1,5 +1,4 @@
 ---
-id: 110
 title: Segundo dia de palestras no FISL11
 date: 2010-07-22T21:44:24+00:00
 author: fonini

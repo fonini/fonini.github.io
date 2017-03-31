@@ -1,5 +1,4 @@
 ---
-id: 411
 title: Debugando seu aplicativo Android no tablet Coby Kyros Mid8024
 date: 2012-03-01T13:53:20+00:00
 author: fonini

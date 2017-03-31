@@ -1,5 +1,4 @@
 ---
-id: 52
 title: Softwares úteis para Ubuntu
 date: 2010-02-14T14:23:49+00:00
 author: fonini

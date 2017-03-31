@@ -1,5 +1,4 @@
 ---
-id: 420
 title: Restringindo caracteres digitados no EditText do Android
 date: 2012-03-02T10:51:24+00:00
 author: fonini

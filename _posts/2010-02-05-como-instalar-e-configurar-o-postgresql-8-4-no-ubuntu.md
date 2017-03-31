@@ -1,5 +1,4 @@
 ---
-id: 31
 title: Como instalar e configurar o PostgreSQL 8.4 no Ubuntu
 date: 2010-02-05T10:28:04+00:00
 author: fonini

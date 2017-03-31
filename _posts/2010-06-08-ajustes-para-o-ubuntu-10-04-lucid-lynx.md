@@ -1,5 +1,4 @@
 ---
-id: 102
 title: Ajustes para o Ubuntu 10.04 Lucid Lynx
 date: 2010-06-08T10:50:39+00:00
 author: fonini

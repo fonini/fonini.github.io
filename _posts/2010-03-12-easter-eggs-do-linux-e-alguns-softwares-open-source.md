@@ -1,5 +1,4 @@
 ---
-id: 85
 title: Easter Eggs do Linux (e alguns softwares Open Source)
 date: 2010-03-12T09:22:07+00:00
 author: fonini

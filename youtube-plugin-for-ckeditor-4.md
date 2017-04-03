@@ -1,7 +1,5 @@
 ---
-id: 453
 title: Youtube Plugin for CKEditor 4
-date: 2013-04-30T16:27:05+00:00
 author: fonini
 layout: page
 ---

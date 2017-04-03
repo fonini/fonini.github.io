@@ -16,6 +16,7 @@ Isso também pode ser feito no iptables (quem sabe num post em breve).
 
 Além de liberar somente acessos oriundos da Cloudflare, o script restaura o IP real do visitante.
 Como o Cloudflare funciona como um proxy, o IP que chega nos headers da requisição é um dos IPs do Cloudflare e não o IP real do visitante.
+
 Porém, o IP real é enviado em um header diferente, o CF-Connecting-IP. O script lê esse header, quando for proveniente da Cloudflare e atualiza o header 
 do IP real.
 
@@ -60,4 +61,7 @@ server {
 	include /etc/nginx/conf.d/cloudflare-real-ips.conf;
 
 	...
+}
 {% endhighlight %}
+
+Coloque o script no cron para ser executado periodicamente, pois é possível que os IPs da Cloudflare mudem.

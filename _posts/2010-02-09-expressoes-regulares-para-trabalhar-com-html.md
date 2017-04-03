@@ -12,55 +12,55 @@ Reuni algumas expressões regulares úteis para trabalhar com HTML.
 
 **Encontra comentários HTML**
 {% highlight regex %}
-<!-;[sS]\*?-;[ tnr]\*>
+/<!--(.*?)-->/
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&regex=%3C!--[sS]*%3F--[%20tnr]*%3E&input=%3Chtml%3E%0A%3C!--%20comentario%20--%3E%0A%3C%2Fhtml%3E) 
+[Testar](https://regex101.com/r/y0kBAz/1) 
 
 
 
 **Captura o atributo href de links**
 {% highlight regex %}
-href[s]\*=[s]\*"[^n"]*"
+/href="([^\'\"]+)/g
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&regex=href[s]*%3D[s]*%22[^n%22]*%22&input=%3Ca%20href%3D%22http%3A%2F%2Ffonini.github.io%22%3EJonnas%20Fonini%3C%2Fa%3E) 
+[Testar](https://regex101.com/r/MQttC7/1/) 
 
 
 
 **Encontra todos os atributos de uma tag. Ex: src, name, value.**
 {% highlight regex %}
-(?:[w]\*) \*= \*"(?:(?:(?:(?:(?:\W)\*\W)\*[^"]\*)\W)\*[^"]\*")
+/(?:[\w]*) *= *"(?:(?:(?:(?:(?:\\\W)*\\\W)*[^"]*)\\\W)*[^"]*")/gim
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&regex=%28%3F%3A[w]*%29%20*%3D%20*%22%28%3F%3A%28%3F%3A%28%3F%3A%28%3F%3A%28%3F%3A\W%29*\W%29*[^%22]*%29\W%29*[^%22]*%22%29&input=%3Cimg%20src%3D%22imagem.jpg%22%20alt%3D%22Teste%22%20width%3D%2210px%22%20height%3D%2250px%22%20%2F%3E) 
+[Testar](https://regex101.com/r/WLBAqV/1) 
 
 
 
 **Encontra tags <h1> até <h6>**
 {% highlight regex %}
-<h([1-6])>([^<]*)</h([1-6])>
+<h([1-6])>([^<]*)<\/h([1-6])>
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&regex=%3Ch%28[1-6]%29%3E%28[^%3C]*%29%3C%2Fh%28[1-6]%29%3E&input=%3Ch1%3ETitulo%3C%2Fh1%3E%0Abla%20bla%20bla%0A%3Ch3%3EOutro%20titulo%3C%2Fh3%3E) 
+[Testar](https://regex101.com/r/hzXKOm/1/) 
 
 
 
 **Encontra tags &lt;a&gt; válidas**
 {% highlight regex %}
-^<a[^>]\*([^"]\*)[^>]*>([ 0-9a-zA-Z]+)</a>$
+<a[^>]*([^"]*)[^>]*>([ 0-9a-zA-Z]+)<\/a>
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&regex=^%3Ca[^%3E]*%28[^%22]*%29[^%3E]*%3E%28[%200-9a-zA-Z]%2B%29%3C%2Fa%3E%24&input=%3Ca%20href%3D%22http%3A%2F%2Ffonini.github.io%22%3EJonnas%20Fonini%3C%2Fa%3E) 
+[Testar](https://regex101.com/r/LxDpGQ/1) 
 
 
 
 **Encontra todas as URLs de um texto**
 {% highlight regex %}
-(http://|https://)([a-zA-Z0-9]+.[a-zA-Z0-9-]+|[a-zA-Z0-9-]+).[a-zA-Z.]{2,6}(/[a-zA-Z0-9.?=/#%&+-]+|/|)
+(http:\/\/|https:\/\/)([a-zA-Z0-9]+.[a-zA-Z0-9-]+|[a-zA-Z0-9-]+).[a-zA-Z.]{2,6}(\/[a-zA-Z0-9.?=\/#%&+-]+|\/|)
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&regex=%28http%3A%2F%2F|https%3A%2F%2F%29%28[a-zA-Z0-9]%2B.[a-zA-Z0-9-]%2B|[a-zA-Z0-9-]%2B%29.[a-zA-Z.]{2%2C6}%28%2F[a-zA-Z0-9.%3F%3D%2F%23%25%26%2B-]%2B|%2F|%29&input=http%3A%2F%2Ffonini.github.io%0Ahttp%3A%2F%2Fwww.pmvilamaria.com.br) 
+[Testar](https://regex101.com/r/DH8zYx/1) 
 
 
 

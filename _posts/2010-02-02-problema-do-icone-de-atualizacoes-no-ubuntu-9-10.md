@@ -4,9 +4,6 @@ date: 2010-02-02T09:18:23+00:00
 author: fonini
 layout: post
 permalink: /2010/02/02/problema-do-icone-de-atualizacoes-no-ubuntu-9-10/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Ubuntu

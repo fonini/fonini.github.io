@@ -4,10 +4,6 @@ date: 2010-02-10T10:51:28+00:00
 author: fonini
 layout: post
 permalink: /2010/02/10/transformando-bbcode-em-xhtml-com-php-e-regex/
-categories:
-  - Regex
-  - Sem categoria
-  - Web
 tags:
   - Expressão Regular
   - Função

@@ -4,8 +4,10 @@ date: 2017-04-03T14:00:00+00:00
 author: fonini
 layout: post
 permalink: /2017/04/03/formula-haversine-postgresql
-categories:
+tags:
   - PostgreSQL
+  - Haversine
+  - Geo
 ---
 
 A [Fórmula de Haversine](https://pt.wikipedia.org/wiki/Fórmula_de_Haversine) é usada para encontrar a distância entre 2 pontos geográficos.

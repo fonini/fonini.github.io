@@ -4,9 +4,6 @@ date: 2010-06-29T08:07:57+00:00
 author: fonini
 layout: post
 permalink: /2010/06/29/php-trabalhando-com-pdo-php-data-objects/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
 ---

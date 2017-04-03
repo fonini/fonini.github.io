@@ -4,9 +4,6 @@ date: 2010-07-21T22:52:52+00:00
 author: fonini
 layout: post
 permalink: /2010/07/21/primeiro-dia-de-palestras-no-fisl11/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Evento
   - FISL11

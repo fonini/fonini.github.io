@@ -4,10 +4,6 @@ date: 2010-02-09T10:37:20+00:00
 author: fonini
 layout: post
 permalink: /2010/02/09/expressoes-regulares-para-trabalhar-com-html/
-categories:
-  - Regex
-  - Sem categoria
-  - Web
 tags:
   - Expressão Regular
   - Regex

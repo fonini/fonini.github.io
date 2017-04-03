@@ -4,9 +4,6 @@ date: 2010-04-05T09:26:08+00:00
 author: fonini
 layout: post
 permalink: /2010/04/05/tutorial-de-hibernate-com-sqlite/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Hibernate
   - Java

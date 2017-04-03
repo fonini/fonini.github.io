@@ -4,9 +4,6 @@ date: 2010-02-18T08:57:32+00:00
 author: fonini
 layout: post
 permalink: /2010/02/18/usando-sqlite-com-java/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Java
   - SQLite

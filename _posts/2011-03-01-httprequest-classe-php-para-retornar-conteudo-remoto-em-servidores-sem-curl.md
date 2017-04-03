@@ -4,9 +4,6 @@ date: 2011-03-01T19:49:14+00:00
 author: fonini
 layout: post
 permalink: /2011/03/01/httprequest-classe-php-para-retornar-conteudo-remoto-em-servidores-sem-curl/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
 ---

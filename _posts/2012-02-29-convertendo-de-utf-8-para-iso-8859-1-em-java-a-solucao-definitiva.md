@@ -4,9 +4,6 @@ date: 2012-02-29T14:54:19+00:00
 author: fonini
 layout: post
 permalink: /2012/02/29/convertendo-de-utf-8-para-iso-8859-1-em-java-a-solucao-definitiva/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Charset
   - Java

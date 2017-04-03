@@ -4,9 +4,6 @@ date: 2010-12-27T19:52:09+00:00
 author: fonini
 layout: post
 permalink: /2010/12/27/meu-ambiente-de-trabalho-em-7-itens/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Soudev
 ---

@@ -4,9 +4,6 @@ date: 2010-03-11T09:00:46+00:00
 author: fonini
 layout: post
 permalink: /2010/03/11/como-instalar-o-plugin-de-uml-no-netbeans-6-8/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Plugins
 ---

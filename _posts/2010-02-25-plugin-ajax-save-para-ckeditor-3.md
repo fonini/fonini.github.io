@@ -4,9 +4,6 @@ date: 2010-02-25T13:56:31+00:00
 author: fonini
 layout: post
 permalink: /2010/02/25/plugin-ajax-save-para-ckeditor-3/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - CKEditor
   - Java Script

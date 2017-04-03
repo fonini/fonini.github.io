@@ -4,9 +4,6 @@ date: 2010-02-26T09:02:58+00:00
 author: fonini
 layout: post
 permalink: /2010/02/26/integracao-do-ckeditor-com-o-ckfinder-upload-de-imagens/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - CKEditor
   - Java Script

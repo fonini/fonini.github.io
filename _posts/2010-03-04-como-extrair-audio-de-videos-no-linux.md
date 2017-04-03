@@ -4,9 +4,6 @@ date: 2010-03-04T09:55:41+00:00
 author: fonini
 layout: post
 permalink: /2010/03/04/como-extrair-audio-de-videos-no-linux/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
 ---
@@ -27,5 +24,3 @@ ou
 {% highlight shell %}mplayer -vo null -hardframedrop -ao pcm:file=audio.wav video.mp4{% endhighlight %}
 
 No primeiro caso a extração é extremamente rápida, quase instantânea, mas pelo menos aqui o áudio extraído de um arquivo .mp4 ficou corrompido. No segundo caso demorou, mas funcionou. Porém, o arquivo resultante ficou com 60 MB, necessitando mais uma conversão para MP3 :S
-
-Grande abraço e até a próxima!

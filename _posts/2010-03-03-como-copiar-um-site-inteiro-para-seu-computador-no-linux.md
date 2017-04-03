@@ -4,9 +4,6 @@ date: 2010-03-03T09:16:03+00:00
 author: fonini
 layout: post
 permalink: /2010/03/03/como-copiar-um-site-inteiro-para-seu-computador-no-linux/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
 ---

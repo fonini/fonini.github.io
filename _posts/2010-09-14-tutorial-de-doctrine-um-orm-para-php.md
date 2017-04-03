@@ -4,9 +4,6 @@ date: 2010-09-14T08:04:30+00:00
 author: fonini
 layout: post
 permalink: /2010/09/14/tutorial-de-doctrine-um-orm-para-php/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Doctrine
   - PHP

@@ -4,9 +4,6 @@ date: 2010-07-16T11:19:14+00:00
 author: fonini
 layout: post
 permalink: /2010/07/16/fisl11-forum-internacional-do-software-livre/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Evento
   - FISL11

@@ -4,11 +4,9 @@ date: 2010-03-05T10:23:51+00:00
 author: fonini
 layout: post
 permalink: /2010/03/05/glest-jogo-de-estrategia-em-tempo-real-open-source-e-multiplataforma/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
+  - Game
 ---
 Glest. Este nome une o útil ao agradável: games + open source. Não sou jogador assíduo, jogo uma vez a cada dois meses, quando não tenho nada para fazer mesmo. Acabei encontrando este game no repositório e resolvi testar.
 

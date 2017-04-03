@@ -4,9 +4,6 @@ date: 2010-02-14T14:23:49+00:00
 author: fonini
 layout: post
 permalink: /2010/02/14/softwares-uteis-para-ubuntu/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Repositório

@@ -4,9 +4,9 @@ date: 2017-03-31T08:09:10+00:00
 author: fonini
 layout: post
 permalink: /2017/03/31/converter-ts-para-mp4-linux
-categories:
-  - Sem categoria
+tags:
   - Linux
+  - Videos
 ---
 
 Essa dica é para converter arquivos .ts para .mp4 no Linux.

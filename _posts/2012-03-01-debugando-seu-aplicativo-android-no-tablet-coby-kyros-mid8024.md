@@ -4,9 +4,6 @@ date: 2012-03-01T13:53:20+00:00
 author: fonini
 layout: post
 permalink: /2012/03/01/debugando-seu-aplicativo-android-no-tablet-coby-kyros-mid8024/
-categories:
-  - Android
-  - Sem categoria
 tags:
   - Android
   - Driver

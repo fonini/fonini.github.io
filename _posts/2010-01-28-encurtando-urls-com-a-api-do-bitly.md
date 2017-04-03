@@ -4,9 +4,6 @@ date: 2010-01-28T14:34:02+00:00
 author: fonini
 layout: post
 permalink: /2010/01/28/encurtando-urls-com-a-api-do-bitly/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
 ---

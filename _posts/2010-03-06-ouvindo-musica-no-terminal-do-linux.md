@@ -4,10 +4,8 @@ date: 2010-03-06T08:39:37+00:00
 author: fonini
 layout: post
 permalink: /2010/03/06/ouvindo-musica-no-terminal-do-linux/
-categories:
-  - Linux
-  - Sem categoria
 tags:
+  - Linux
   - Terminal
 ---
 Se tem uma coisa que eu gosto no Linux é o terminal. Não existem palavras pra descrever o terminal. As liberdades e funcionalidades que ele nos proporciona são imensas. Uma coisa que eu particularmente acho muito massa é a possibilidade de ouvir música através do terminal.

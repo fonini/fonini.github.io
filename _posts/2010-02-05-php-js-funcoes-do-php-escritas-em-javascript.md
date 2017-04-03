@@ -4,9 +4,6 @@ date: 2010-02-05T14:45:05+00:00
 author: fonini
 layout: post
 permalink: /2010/02/05/php-js-funcoes-do-php-escritas-em-javascript/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Java Script
   - PHP

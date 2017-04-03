@@ -4,9 +4,6 @@ date: 2010-02-08T13:32:06+00:00
 author: fonini
 layout: post
 permalink: /2010/02/08/como-remover-a-voz-das-musicas-no-linux/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Ubuntu

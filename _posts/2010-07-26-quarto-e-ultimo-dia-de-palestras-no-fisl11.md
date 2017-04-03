@@ -4,9 +4,6 @@ date: 2010-07-26T09:13:12+00:00
 author: fonini
 layout: post
 permalink: /2010/07/26/quarto-e-ultimo-dia-de-palestras-no-fisl11/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Evento
   - FISL11

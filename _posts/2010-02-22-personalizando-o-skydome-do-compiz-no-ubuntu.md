@@ -4,9 +4,6 @@ date: 2010-02-22T10:45:52+00:00
 author: fonini
 layout: post
 permalink: /2010/02/22/personalizando-o-skydome-do-compiz-no-ubuntu/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Ubuntu
 ---

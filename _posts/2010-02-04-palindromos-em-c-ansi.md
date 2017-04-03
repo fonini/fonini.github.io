@@ -4,9 +4,6 @@ date: 2010-02-04T13:53:48+00:00
 author: fonini
 layout: post
 permalink: /2010/02/04/palindromos-em-c-ansi/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - C
 ---

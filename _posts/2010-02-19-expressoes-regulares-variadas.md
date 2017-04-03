@@ -4,9 +4,6 @@ date: 2010-02-19T09:55:00+00:00
 author: fonini
 layout: post
 permalink: /2010/02/19/expressoes-regulares-variadas/
-categories:
-  - Regex
-  - Sem categoria
 tags:
   - Expressão Regular
   - Regex

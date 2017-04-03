@@ -4,9 +4,6 @@ date: 2010-06-08T10:50:39+00:00
 author: fonini
 layout: post
 permalink: /2010/06/08/ajustes-para-o-ubuntu-10-04-lucid-lynx/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Ubuntu

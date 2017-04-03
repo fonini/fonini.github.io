@@ -4,9 +4,6 @@ date: 2012-02-22T23:46:33+00:00
 author: fonini
 layout: post
 permalink: /2012/02/22/tutorial-doctrine-de-instalacao-e-configuracao-do-2-2/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Doctrine
   - ORM

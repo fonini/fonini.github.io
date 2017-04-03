@@ -4,9 +4,6 @@ date: 2010-03-12T09:22:07+00:00
 author: fonini
 layout: post
 permalink: /2010/03/12/easter-eggs-do-linux-e-alguns-softwares-open-source/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Terminal

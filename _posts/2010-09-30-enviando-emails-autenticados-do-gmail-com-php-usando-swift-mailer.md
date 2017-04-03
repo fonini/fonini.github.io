@@ -4,9 +4,6 @@ date: 2010-09-30T08:42:41+00:00
 author: fonini
 layout: post
 permalink: /2010/09/30/enviando-emails-autenticados-do-gmail-com-php-usando-swift-mailer/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
 ---

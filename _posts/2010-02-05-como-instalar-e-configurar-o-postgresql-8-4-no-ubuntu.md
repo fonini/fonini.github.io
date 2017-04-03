@@ -4,9 +4,6 @@ date: 2010-02-05T10:28:04+00:00
 author: fonini
 layout: post
 permalink: /2010/02/05/como-instalar-e-configurar-o-postgresql-8-4-no-ubuntu/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - PostgreSQL

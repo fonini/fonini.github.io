@@ -4,9 +4,6 @@ date: 2010-02-23T11:15:32+00:00
 author: fonini
 layout: post
 permalink: /2010/02/23/repositorios-uteis-para-ubuntu/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Repositório

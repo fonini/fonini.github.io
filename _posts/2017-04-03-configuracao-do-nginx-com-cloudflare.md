@@ -4,9 +4,10 @@ date: 2017-04-03T08:09:50+00:00
 author: fonini
 layout: post
 permalink: /2017/04/03/configuracao-do-nginx-com-cloudflare
-categories:
-  - Sem categoria
+tags:
   - Linux
+  - nginx
+  - Cloudflare
 ---
 
 Se você utiliza [Cloudflare](https://cloudflare.com) com nginx em seus sites/sistemas, o script abaixo permite que você libere somente os IPs da Cloudflare

@@ -4,9 +4,6 @@ date: 2010-10-08T08:35:11+00:00
 author: fonini
 layout: post
 permalink: /2010/10/08/desenvolvendo-um-modulo-de-contato-no-symfony-1-4/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
   - Symfony

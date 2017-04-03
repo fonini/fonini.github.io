@@ -4,9 +4,6 @@ date: 2010-09-23T08:48:24+00:00
 author: fonini
 layout: post
 permalink: /2010/09/23/validadores-do-doctrine-validators/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Doctrine
   - PHP

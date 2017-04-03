@@ -4,9 +4,6 @@ date: 2010-02-12T10:37:20+00:00
 author: fonini
 layout: post
 permalink: /2010/02/12/expressoes-regulares-para-trabalhar-com-datahora/
-categories:
-  - Regex
-  - Sem categoria
 tags:
   - Expressão Regular
   - Regex

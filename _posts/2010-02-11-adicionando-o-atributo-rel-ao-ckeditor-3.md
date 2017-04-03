@@ -4,9 +4,6 @@ date: 2010-02-11T16:14:40+00:00
 author: fonini
 layout: post
 permalink: /2010/02/11/adicionando-o-atributo-rel-ao-ckeditor-3/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - CKEditor
   - Java Script

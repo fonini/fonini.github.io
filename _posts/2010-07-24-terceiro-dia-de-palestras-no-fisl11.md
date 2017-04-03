@@ -4,9 +4,6 @@ date: 2010-07-24T00:24:09+00:00
 author: fonini
 layout: post
 permalink: /2010/07/24/terceiro-dia-de-palestras-no-fisl11/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Evento
   - FISL11

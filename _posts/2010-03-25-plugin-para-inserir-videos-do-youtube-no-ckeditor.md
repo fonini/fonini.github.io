@@ -4,9 +4,6 @@ date: 2010-03-25T08:55:17+00:00
 author: fonini
 layout: post
 permalink: /2010/03/25/plugin-para-inserir-videos-do-youtube-no-ckeditor/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - CKEditor
   - Java Script

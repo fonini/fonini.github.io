@@ -4,9 +4,6 @@ date: 2010-03-31T08:39:08+00:00
 author: fonini
 layout: post
 permalink: /2010/03/31/integracao-do-ckeditor-com-jquery/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - CKEditor
   - Java Script

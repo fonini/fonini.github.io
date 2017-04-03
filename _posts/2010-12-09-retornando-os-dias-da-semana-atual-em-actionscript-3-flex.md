@@ -4,9 +4,6 @@ date: 2010-12-09T09:51:35+00:00
 author: fonini
 layout: post
 permalink: /2010/12/09/retornando-os-dias-da-semana-atual-em-actionscript-3-flex/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Action Script 3
   - Flex

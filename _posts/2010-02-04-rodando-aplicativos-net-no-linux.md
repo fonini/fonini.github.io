@@ -4,9 +4,6 @@ date: 2010-02-04T14:50:31+00:00
 author: fonini
 layout: post
 permalink: /2010/02/04/rodando-aplicativos-net-no-linux/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Ubuntu

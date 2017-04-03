@@ -4,9 +4,6 @@ date: 2010-07-22T21:44:24+00:00
 author: fonini
 layout: post
 permalink: /2010/07/22/segundo-dia-de-palestras-no-fisl11/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Evento
   - FISL11

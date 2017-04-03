@@ -4,9 +4,6 @@ date: 2010-03-09T09:04:30+00:00
 author: fonini
 layout: post
 permalink: /2010/03/09/e-se-a-microsoft-fabricasse-carros/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Humor
 ---

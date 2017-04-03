@@ -4,9 +4,6 @@ date: 2010-02-24T10:58:55+00:00
 author: fonini
 layout: post
 permalink: /2010/02/24/os-25-erros-de-programacao-mais-perigosos/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - Programação
 ---

@@ -4,9 +4,6 @@ date: 2012-03-26T14:56:51+00:00
 author: fonini
 layout: post
 permalink: /2012/03/26/convertendo-varchar-para-time-without-time-zone-no-postgresql/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - PostgreSQL
 ---

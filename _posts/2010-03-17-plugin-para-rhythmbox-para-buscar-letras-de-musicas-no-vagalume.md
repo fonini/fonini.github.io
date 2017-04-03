@@ -4,9 +4,6 @@ date: 2010-03-17T08:53:14+00:00
 author: fonini
 layout: post
 permalink: /2010/03/17/plugin-para-rhythmbox-para-buscar-letras-de-musicas-no-vagalume/
-categories:
-  - Linux
-  - Sem categoria
 tags:
   - Linux
   - Plugins

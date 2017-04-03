@@ -4,9 +4,6 @@ date: 2013-03-07T17:20:08+00:00
 author: fonini
 layout: post
 permalink: /2013/03/07/gerar-numero-sequencial-em-query-do-postgresql/
-categories:
-  - Geral
-  - Sem categoria
 tags:
   - PostgreSQL
 ---

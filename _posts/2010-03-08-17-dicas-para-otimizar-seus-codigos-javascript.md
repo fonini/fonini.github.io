@@ -4,9 +4,6 @@ date: 2010-03-08T09:11:12+00:00
 author: fonini
 layout: post
 permalink: /2010/03/08/17-dicas-para-otimizar-seus-codigos-javascript/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - Java Script
 ---

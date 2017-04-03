@@ -4,9 +4,6 @@ date: 2010-08-24T10:11:30+00:00
 author: fonini
 layout: post
 permalink: /2010/08/24/sfniceditplugin-adicione-um-editor-de-texto-rico-aos-seus-forms-no-symfony/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
   - Plugins

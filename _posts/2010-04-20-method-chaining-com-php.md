@@ -4,9 +4,6 @@ date: 2010-04-20T08:18:49+00:00
 author: fonini
 layout: post
 permalink: /2010/04/20/method-chaining-com-php/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
 ---

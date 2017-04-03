@@ -4,9 +4,6 @@ date: 2013-05-09T10:30:50+00:00
 author: fonini
 layout: post
 permalink: /2013/05/09/snippets-uteis-do-zend-framework/
-categories:
-  - Sem categoria
-  - Web
 tags:
   - PHP
   - Zend Framework

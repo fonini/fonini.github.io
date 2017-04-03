@@ -4,9 +4,6 @@ date: 2010-02-02T10:23:16+00:00
 author: fonini
 layout: post
 permalink: /2010/02/02/as-7-expressoes-regulares-que-devemos-conhecer/
-categories:
-  - Regex
-  - Sem categoria
 tags:
   - Expressão Regular
   - Regex

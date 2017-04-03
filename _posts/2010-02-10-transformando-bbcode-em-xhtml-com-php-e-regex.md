@@ -15,29 +15,29 @@ Atendendo a sugestão do amigo [@Eldius](http://twitter.com/Eldius), da galera d
 {% highlight php %}<?php
 function bbcode($str){
 	$str = preg_replace("@\[b\](.+?)[/b]@i", '<strong>$1</strong>', $str);
-	$str = preg_replace("@\[i\](.+?)[/i]@i", '<em>$1</em>', $str);  
+	$str = preg_replace("@\[i\](.+?)[/i]@i", '<em>$1</em>', $str);
 	$str = preg_replace("@\[u\](.+?)[/u]@i", '<span style="text-decoration:underline">$1</span>', $str);
 	$str = preg_replace("@\[s\](.+?)[/s]@i", '<span style="text-decoration:line-through">$1</span>', $str);
 	$str = preg_replace("@\[img\](.+?)[/img]@i", '<img src="$1" alt="" />', $str);
-	$str = preg_replace("@\[url\](.+?)[/url]@i", '[$1]($1)', $str);  
-	$str = preg_replace("@\[url=(.+?)\](.+?)[/url]@i", '[$2]($1)', $str);  
-	$str = preg_replace("@\[email\](.+?)[/email]@i", '[$1](mailto:$1)', $str);  
-	$str = preg_replace("@\[email=(.+?)\](.+?)[/email]@i", '[$2](mailto:$1)', $str);  
+	$str = preg_replace("@\[url\](.+?)[/url]@i", '<a href="$1">$1</a>', $str);
+ 	$str = preg_replace("@\[url=(.+?)\](.+?)[/url]@i", '<a href="$1">$2</a>', $str);
+ 	$str = preg_replace("@\[email\](.+?)[/email]@i", '<a href="mailto:$1">$1</a>', $str);
+ 	$str = preg_replace("@\[email=(.+?)\](.+?)[/email]@i", '<a href="mailto:$1">$2</a>', $str);
 	$str = preg_replace("@\[size=(.+?)\](.+?)[/size]@i", '<span style="font-size:$1px">$2</span>', $str);
 	$str = preg_replace("@\[color=(.+?)\](.+?)[/color]@i", '<span style="color:$1">$2</span>', $str);
 	$str = preg_replace("@[\*(?:s\*)]s\*([^[]\*)@i", '<li>$1</li>', $str);
-	$str = preg_replace("@\[list(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ul>$1</ul>', $str);  
-	$str = preg_replace("@\[list=1(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol>$1</ol>', $str);  
-	$str = preg_replace("@\[list=a(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol style="list-style-type:lower-alpha">$1</ol>', $str);  
+	$str = preg_replace("@\[list(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ul>$1</ul>', $str);
+	$str = preg_replace("@\[list=1(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol>$1</ol>', $str);
+	$str = preg_replace("@\[list=a(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol style="list-style-type:lower-alpha">$1</ol>', $str);
 	$str = preg_replace("@\[list=i(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol style="list-style-type:lower-roman">$1</ol>' ,$str);  
-	$str = preg_replace("@\[list=I(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol style="list-style-type:upper-roman">$1</ol>' ,$str);  
-	$str = preg_replace("@\[list=A(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol style="list-style-type:upper-alpha">$1</ol>' ,$str); 
-	$str = preg_replace("@\[quote=(.+?)\](.+?)[/quote]@i", '$1 disse: <blockquote>$2</blockquote>', $str);  
-	$str = preg_replace("@\[quote\](.+?)[/quote]@i", 'Citação: <blockquote>$1</blockquote>', $str);  
-	$str = str_replace("n", '<br />', $str);  
-	$str = preg_replace("@\[align=(.+?)\](.+?)[/align]@i", '<div style="text-align:$1">$2</div>', $str);  
-	$str = preg_replace("@\[center\](.+?)[/center]@i", '<div style="text-align:center">$1</div>', $str);  
-	$str = preg_replace("@\[code\](.+?)[/code]@i", '<pre>$1</pre>', $str);  
+	$str = preg_replace("@\[list=I(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol style="list-style-type:upper-roman">$1</ol>' ,$str);
+	$str = preg_replace("@\[list=A(?:s\*)\]((.|n)\*?)[/list(?:s*)]@", '<ol style="list-style-type:upper-alpha">$1</ol>' ,$str);
+	$str = preg_replace("@\[quote=(.+?)\](.+?)[/quote]@i", '$1 disse: <blockquote>$2</blockquote>', $str);
+	$str = preg_replace("@\[quote\](.+?)[/quote]@i", 'Citação: <blockquote>$1</blockquote>', $str);
+	$str = str_replace("n", '<br />', $str);
+	$str = preg_replace("@\[align=(.+?)\](.+?)[/align]@i", '<div style="text-align:$1">$2</div>', $str);
+	$str = preg_replace("@\[center\](.+?)[/center]@i", '<div style="text-align:center">$1</div>', $str);
+	$str = preg_replace("@\[code\](.+?)[/code]@i", '<pre>$1</pre>', $str);
 	$str = str_replace("[br]", '<br />', $str);
 
 	return($str);

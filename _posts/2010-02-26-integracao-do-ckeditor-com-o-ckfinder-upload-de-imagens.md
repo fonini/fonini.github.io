@@ -13,9 +13,9 @@ Na minha carreira de desenvolvedor já testei 3 editores WYSWYG (What You See, W
 
 O objetivo deste post é ensinar como integrar o CKEditor com o CKFinder.
 
-Baixe o <a href="http://www.ckeditor.com" rel="externo">CKEditor</a> e extraia em alguma pasta.
+Baixe o [CKEditor](http://www.ckeditor.com) e extraia em alguma pasta.
   
-Baixe o <a href="http://www.ckfinder.com" rel="externo">CKFinder</a> e extraia dentro da pasta que você extraiu o CKEditor. Eu estou usando a versão para PHP
+Baixe o [CKFinder](http://www.ckfinder.com) e extraia dentro da pasta que você extraiu o CKEditor. Eu estou usando a versão para PHP
 
 Agora, vá até a pasta do CKFinder e edite o arquivo "config.php". A primeira função do arquivo, CheckAuthentication(), deve retornar true para que você possa acessar o painel do CKFinder. Porém, se ela sempre retornar true, qualquer um poderá acessar e modificar suas imagens. A solução, no meu caso, foi usar a própria sessão do usuário para autenticar no CKFinder. Mais ou menos assim: 
 

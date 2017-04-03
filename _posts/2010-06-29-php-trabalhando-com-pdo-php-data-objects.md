@@ -22,7 +22,7 @@ catch (PDOException $e){
 }
 {% endhighlight %}
 
-Este é um exemplo de conexão. Você pode criar uma classe utilizando o padrão <a href="http://pt.wikipedia.org/wiki/Singleton" rel="externo nofollow">Singleton</a>, instanciando apenas uma conexão PDO para a aplicação inteira. Se você quisesse alterar o SGBD para PostgreSQL, bastava apenas substituir a palavra _mysql_ por _pgsql_.
+Este é um exemplo de conexão. Você pode criar uma classe utilizando o padrão [Singleton](http://pt.wikipedia.org/wiki/Singleton), instanciando apenas uma conexão PDO para a aplicação inteira. Se você quisesse alterar o SGBD para PostgreSQL, bastava apenas substituir a palavra _mysql_ por _pgsql_.
 
 Para descobrir quais drivers do PDO você tem disponíveis, execute o código abaixo:
 
@@ -79,6 +79,6 @@ if ($clientes->rowCount() > 0){
 }
 {% endhighlight %}
 
-Para mais detalhes, consulte a <a href="http://br3.php.net/manual/en/book.pdo.php" rel="externo nofollow">documentação oficial</a>.
+Para mais detalhes, consulte a [documentação oficial](http://br3.php.net/manual/en/book.pdo.php).
 
 Espero que tenham gostado do post. Um abraço e até a próxima!

@@ -8,7 +8,7 @@ tags:
   - Doctrine
   - PHP
 ---
-Neste post mostrarei os validadores presentes no <a href="http://www.doctrine-project.org" rel="externo nofollow">Doctrine</a> (usei a versão 1.2.3). O Doctrine facilita a validação dos dados, bastando apenas definir os validadores para cada atributo ao invés de fazer vários malabarismos com funções do PHP e expressões regulares. Você pode definir os validadores na classe que estende a classe base. Dessa maneira, você pode gerar o model novamente e suas alterações não serão perdidas. Primeiro listarei os validadores e ao final mostrarei alguns exemplos. Vamos lá.
+Neste post mostrarei os validadores presentes no [Doctrine](http://www.doctrine-project.org) (usei a versão 1.2.3). O Doctrine facilita a validação dos dados, bastando apenas definir os validadores para cada atributo ao invés de fazer vários malabarismos com funções do PHP e expressões regulares. Você pode definir os validadores na classe que estende a classe base. Dessa maneira, você pode gerar o model novamente e suas alterações não serão perdidas. Primeiro listarei os validadores e ao final mostrarei alguns exemplos. Vamos lá.
 
 <span style="color: rgb(255, 0, 0);">**Importante**
 	  
@@ -220,7 +220,7 @@ $this->hasColumn('idade', 'integer', 3, array(
 
 **usstate**
 
-Checa se a string passada é a sigla válida de um estado americano. Confira a lista completa <a href="http://en.wikipedia.org/wiki/Us_states" rel="externo nofollow">aqui</a>.
+Checa se a string passada é a sigla válida de um estado americano. Confira a lista completa [aqui](http://en.wikipedia.org/wiki/Us_states).
 
 {% highlight php %}<?php
 $this->hasColumn('estado_americano', 'string', 2, array(				  
@@ -233,7 +233,7 @@ $this->hasColumn('estado_americano', 'string', 2, array(
 
 **country**
 
-Checa se a string passada é a sigla válida de um país. Confira a lista completa <a href="http://en.wikipedia.org/wiki/ISO_3166-1" rel="externo nofollow">aqui</a>.
+Checa se a string passada é a sigla válida de um país. Confira a lista completa [aqui](http://en.wikipedia.org/wiki/ISO_3166-1).
 
 {% highlight php %}<?php
 $this->hasColumn('pais', 'string', 2, array(				  

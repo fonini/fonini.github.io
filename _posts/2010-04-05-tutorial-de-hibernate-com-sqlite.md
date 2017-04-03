@@ -30,7 +30,7 @@ O próximo passo será criar a unidade de persistência do projeto. Clique em Ar
 
 <img alt="Criando uma unidade de persistência" src="/images/persistence.jpg" style="width: 604px" />
 
-O SQLite exige um dialeto SQL específico, que não vem incluído no Hibernate. Eu encontrei um no seguinte endereço: <a href="http://hibernate-sqlite.googlecode.com" rel="externo nofollow">http://hibernate-sqlite.googlecode.com</a>. Você pode baixar somente a classe necessária, [clicando aqui](https://www.dropbox.com/s/jyeksq57uy82emk/SQLiteDialect.zip?dl=0). Extraia para a pasta "src" do projeto, ficando assim: "src/util/SQLiteDialect.java". Com a camada de persistência aberta no NetBeans (persistence.xml), clique em XML e adicione a linha do dialeto do SQLite, como mostrado abaixo: 
+O SQLite exige um dialeto SQL específico, que não vem incluído no Hibernate. Eu encontrei um no seguinte endereço: [http://hibernate-sqlite.googlecode.com](http://hibernate-sqlite.googlecode.com). Você pode baixar somente a classe necessária, [clicando aqui](https://www.dropbox.com/s/jyeksq57uy82emk/SQLiteDialect.zip?dl=0). Extraia para a pasta "src" do projeto, ficando assim: "src/util/SQLiteDialect.java". Com a camada de persistência aberta no NetBeans (persistence.xml), clique em XML e adicione a linha do dialeto do SQLite, como mostrado abaixo: 
 
 {% highlight java %}
 	<property name="hibernate.dialect" value="util.SQLiteDialect" />

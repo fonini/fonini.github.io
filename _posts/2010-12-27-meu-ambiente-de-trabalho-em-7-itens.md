@@ -7,7 +7,7 @@ permalink: /2010/12/27/meu-ambiente-de-trabalho-em-7-itens/
 tags:
   - Soudev
 ---
-Recebi 2 convites hoje para descrever o meu ambiente de trabalho em 7 itens, do <a href="http://www.twitter.com/edipofederle" rel="externo nofollow">@edipofederle</a> e do <a href="http://www.twitter.com/fr_prado" rel="externo nofollow">@fr_prado</a>. Uso 2 ambientes, um no trabalho e um no notebook pessoal. Vamos lá:
+Recebi 2 convites hoje para descrever o meu ambiente de trabalho em 7 itens, do [@edipofederle](https://twitter.com/edipofederle) e do [@fr_prado](https://twitter.com/fr_prado). Uso 2 ambientes, um no trabalho e um no notebook pessoal. Vamos lá:
 
 **1) Sistema Operacional** 
 
@@ -41,6 +41,6 @@ Não disponho de entretenimento no trabalho. Em casa, o player de vídeos padrã
 
 No trabalho, tento me concentrar o máximo possível, dando uma escapada no Twitter de vez em quando. Para isso, uso o Twhirl. Em casa, também uso o mesmo cliente, além do Emesene para MSN/GTalk e do Skype.
 
-Convido agora os amigos <a href="http://www.twitter.com/jandersonfc" rel="externo nofollow">@jandersonfc</a>, <a href="http://www.twitter.com/mpbonatti" rel="externo nofollow">@mpbonatti</a>, <a href="http://www.twitter.com/emersonbroga" rel="externo nofollow">@emersonbroga</a>, <a href="http://www.twitter.com/lshenr" rel="externo nofollow">@lshenr</a> e <a href="http://www.twitter.com/felipeborges" rel="externo nofollow">@felipeborges</a> para compartilhar um pouco de seus ambientes.
+Convido agora os amigos [@jandersonfc](https://twitter.com/jandersonfc), [@mpbonatti](https://twitter.com/mpbonatti), [@emersonbroga](https://twitter.com/emersonbroga), [@lshenr](https://twitter.com/lshenr) e [@felipeborges](https://twitter.com/felipeborges) para compartilhar um pouco de seus ambientes.
 
 Abraço e até a próxima!

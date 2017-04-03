@@ -38,7 +38,7 @@ Digite :help 42 e verá uma referência ao Guia do Mochileiro das Galáxias
 **Data Discordiana**
 
 {% highlight shell %}ddate{% endhighlight %}
-Este comando exibe a data de hoje no <a href="http://pt.wikipedia.org/wiki/Calend%C3%A1rio_discordiano" rel="externo nofollow">Calendário Discordiano</a>. Você também pode passar outra data por parâmetro.
+Este comando exibe a data de hoje no [Calendário Discordiano](http://pt.wikipedia.org/wiki/Calend%C3%A1rio_discordiano). Você também pode passar outra data por parâmetro.
 
 **Cowsay**
 

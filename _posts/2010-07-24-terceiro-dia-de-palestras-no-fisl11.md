@@ -25,4 +25,4 @@ Palestra muito descontraída, com o público interagindo muito com o palestrante
 
 **19:00 - Gerenciamento de memória virtual no Kernel Linux (João Eriberto Mota Filho)**
 
-Essa foi uma das palestras que valeram o dia e o FISL. O palestrante explicou claramente como funciona o gerenciamento da memória virtual no Kernel do Linux, além de falar sobre partições, processos na memória e várias ferramentas para monitorar o uso da memória. Simplesmente foda. Aqui está o link para o download da palestra: <a href="http://www.eriberto.pro.br/palestras/memoria_linux.pdf" rel="externo nofollow">http://www.eriberto.pro.br/palestras/memoria_linux.pdf</a>
+Essa foi uma das palestras que valeram o dia e o FISL. O palestrante explicou claramente como funciona o gerenciamento da memória virtual no Kernel do Linux, além de falar sobre partições, processos na memória e várias ferramentas para monitorar o uso da memória. Simplesmente foda. Aqui está o link para o download da palestra: [http://www.eriberto.pro.br/palestras/memoria_linux.pdf](http://www.eriberto.pro.br/palestras/memoria_linux.pdf)

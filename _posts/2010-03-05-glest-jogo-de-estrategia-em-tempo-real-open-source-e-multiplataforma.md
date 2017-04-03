@@ -10,7 +10,7 @@ tags:
 ---
 Glest. Este nome une o útil ao agradável: games + open source. Não sou jogador assíduo, jogo uma vez a cada dois meses, quando não tenho nada para fazer mesmo. Acabei encontrando este game no repositório e resolvi testar.
 
-<a href="http://glest.org" rel="externo, nofollow">Glest</a> é um jogo de estratégia em tempo real, estilo Age of Empires (quem nunca jogou esse?), mantido por uma comunidade de usuários, que está sempre aprimorando o jogo, adicionando novos mapas, funcionalidades etc.
+[Glest](http://glest.org) é um jogo de estratégia em tempo real, estilo Age of Empires (quem nunca jogou esse?), mantido por uma comunidade de usuários, que está sempre aprimorando o jogo, adicionando novos mapas, funcionalidades etc.
 
 Outro ponto importante é que existem versões tanto para Linux como para Windows. O jogo não é uma perfeição, mas garante várias horas de diversão. Veja alguns screenshots do jogo:
 
@@ -22,8 +22,8 @@ Outro ponto importante é que existem versões tanto para Linux como para Window
 
 **Para instalar no Windows:**
   
-<a href="http://glest.org/en/downloads.php" rel="externo, nofollow">Site oficial</a>
+[Site oficial](http://glest.org/en/downloads.php)
 
-Na página do projeto no <a href="http://sourceforge.net/projects/glest/files/" rel="externo, nofollow">SourceForge</a> você pode encontrar mais downloads e também o código fonte do jogo, para também se divertir compilando :p
+Na página do projeto no [SourceForge](http://sourceforge.net/projects/glest/files/) você pode encontrar mais downloads e também o código fonte do jogo, para também se divertir compilando :p
 
 Abraço e até a próxima!

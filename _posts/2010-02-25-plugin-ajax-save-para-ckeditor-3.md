@@ -11,9 +11,9 @@ tags:
 ---
 Eu uso o CKEditor num gerador CRUD que eu desenvolvi em PHP, para gerar o painel de controle do site automaticamente através da modelagem do banco de dados. Ontem um cliente pediu um botão no CKEditor para salvar o texto sem dar refresh na página. Não encontrei nada pronto na Internet e resolvi desenvolver este plugin, o Ajax Save. O plugin adiciona um botão similar ao botão Salvar já existente no CKEditor, porém envia os dados via AJAX, ao contrário do primeiro, que somente submete o formulário onde o editor está contido. Let's work!
 
-Baixe o <a href="http://ckeditor.com/download" rel="externo">CKEditor</a> e extraia numa pasta de sua preferência.
+Baixe o [CKEditor](http://ckeditor.com/download) e extraia numa pasta de sua preferência.
   
-Baixe o <a href="http://jquery.com" rel="externo">jQuery</a>.
+Baixe o [jQuery](http://jquery.com).
 
 Dentro da pasta "plugins" do CKEditor crie uma pasta chamada "ajaxsave". Dentro da pasta "ajaxsave", crie um arquivo chamado "plugin.js", com o seguinte conteúdo: 
 

@@ -9,7 +9,7 @@ tags:
   - Java Script
   - Plugins
 ---
-Como todo mundo deve saber, o atributo "target" não valida no XHTML Strict. A solução que eu uso para contornar este problema é baseada em jQuery. Se o link possuir o atributo rel="externo", o mesmo abrirá em uma nova janela. Porém, o editor que eu uso no painel de controle deste site (<a href="http://www.ckeditor.com" rel="externo">CKEditor 3</a>) não permite adicionar o atributo rel aos links, somente editando o código HTML a mão. Se tiver uns 20 links no post a tarefa se torna um saco.
+Como todo mundo deve saber, o atributo "target" não valida no XHTML Strict. A solução que eu uso para contornar este problema é baseada em jQuery. Se o link possuir o atributo rel="externo", o mesmo abrirá em uma nova janela. Porém, o editor que eu uso no painel de controle deste site ([CKEditor 3](http://www.ckeditor.com)) não permite adicionar o atributo rel aos links, somente editando o código HTML a mão. Se tiver uns 20 links no post a tarefa se torna um saco.
 
 Apesar da falta de café de hoje a tarde aqui na empresa (devidamente solucionada com uma pequena gambiarra na cafeteira), resolvi modificar o plugin responsável por inserir links no CKEditor e estou compartilhando com quem se interessar. Basta extrair o arquivo na pasta **plugins/link/dialogs** e usar.
 

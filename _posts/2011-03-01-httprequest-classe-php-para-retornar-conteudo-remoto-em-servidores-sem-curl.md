@@ -11,6 +11,6 @@ Ataquei de freelancer recentemente, tendo que desenvolver um site. O cliente já
 
 Aonde já se viu um servidor sem cURL? Pois é, ainda fiz uma última tentativa para obter conteúdo remoto (previsão do tempo, infelizmente ainda é uma triste realidade por aqui o cliente exigir isso no site) usando file_get_contents(), mas adivinhem: allow_url_fopen desabilitado.
 
-Felizmente existem os sockets! Dei uma fuçada na net, juntei alguns snippets e criei uma classe para facilitar o serviço. Podem conferir o código e outras informações no meu <a href="http://www.github.com/fonini/HTTPRequest" rel="externo nofollow">Github</a>.
+Felizmente existem os sockets! Dei uma fuçada na net, juntei alguns snippets e criei uma classe para facilitar o serviço. Podem conferir o código e outras informações no meu [Github](https://github.com/fonini/HTTPRequest).
 
 Grande abraço!

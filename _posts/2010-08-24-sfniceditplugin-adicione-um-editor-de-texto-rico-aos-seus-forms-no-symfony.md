@@ -11,9 +11,9 @@ tags:
 ---
 Em meados de 2009 usei o framework Symfony para desenvolver um sistema em PHP para um projeto do qual eu era bolsista. Terminado o projeto, abandonei o framework. Agora reiniciei meus estudos e estou gostando bastante. Tanto que já desenvolvi meu primeiro plugin para compartilhar com a comunidade e já tenho muitos outros em mente.
 
-O nome do plugin é sfNicEditPlugin. Ele adiciona uma instância do editor de texto rico <a href="http://www.nicedit.com" rel="externo nofollow">NicEdit</a> a um textarea. Esta é a primeira versão do plugin, ainda faltam alguns parâmetros que o NicEdit aceita, outros já estão disponíveis.
+O nome do plugin é sfNicEditPlugin. Ele adiciona uma instância do editor de texto rico [NicEdit](http://www.nicedit.com) a um textarea. Esta é a primeira versão do plugin, ainda faltam alguns parâmetros que o NicEdit aceita, outros já estão disponíveis.
 
-Você pode encontrar o plugin no meu <a href="http://github.com/fonini/sfNicEditPlugin" rel="externo nofollow">GitHub</a> ou na <a href="http://www.symfony-project.org/plugins/sfNicEditPlugin" rel="externo nofollow">página de plugins do Symfony</a>. Em ambos os locais você encontra instruções de instalação em inglês. Aqui no blog vou publicar a versão em português.
+Você pode encontrar o plugin no meu [Github](https://github.com/fonini/sfNicEditPlugin) ou na [página de plugins do Symfony](http://www.symfony-project.org/plugins/sfNicEditPlugin). Em ambos os locais você encontra instruções de instalação em inglês. Aqui no blog vou publicar a versão em português.
 
 **Instalação**  
 
@@ -25,7 +25,7 @@ Instalação via Git
 
 {% highlight shell %}git clone git://github.com/fonini/sfNicEditPlugin.git{% endhighlight %}
 
-Ou baixe o plugin <a href="http://plugins.symfony-project.org/get/sfNicEditPlugin/sfNicEditPlugin-1.0.1.tgz" rel="nofollow externo">aqui</a> e extraia para a pasta plugins.
+Ou baixe o plugin [aqui](http://plugins.symfony-project.org/get/sfNicEditPlugin/sfNicEditPlugin-1.0.1.tgz) e extraia para a pasta plugins.
 
 Você deve ativar o plugin, editando o arquivo config/ProjectConfiguration.class.php.
 

@@ -7,7 +7,7 @@ permalink: /2010/09/30/enviando-emails-autenticados-do-gmail-com-php-usando-swif
 tags:
   - PHP
 ---
-O <a href="http://www.swiftmailer.org" rel="externo nofollow">Swift Mailer</a> é uma biblioteca para envio de emails, usando PHP5. Conheci a biblioteca inicialmente no framework <a href="http://www.symfony-project.org" rel="externo nofollow">Symfony</a>, pois a mesma é responsável pela tarefa de enviar emails no framework, pois seu uso é muito simples e a biblioteca é muito poderosa.
+O [Swift Mailer](http://www.swiftmailer.org) é uma biblioteca para envio de emails, usando PHP5. Conheci a biblioteca inicialmente no framework [Symfony](http://www.symfony-project.org), pois a mesma é responsável pela tarefa de enviar emails no framework, pois seu uso é muito simples e a biblioteca é muito poderosa.
 
 Tenho notado que muitas empresas estão adotando cada vez mais o uso do Google Apps como serviço de webmail, dada a facilidade de uso e configuração do sistema. O primeiro exemplo mostra como enviar emails autenticados a partir de uma conta de email do Google (Gmail ou Apps) e os outros tratam do envio de mensagens com anexo. Usei a versão 4.0.6 para o exemplo.
 
@@ -101,6 +101,6 @@ else{
 }
 {% endhighlight %}
 
-Bom, esses foram alguns exemplos bem básicos do uso da biblioteca Swift Mailer. Consulte a <a href="http://swiftmailer.org/docs/introduction" rel="externo nofollow">documentação oficial</a> para mais informações e um guia de referência completo.
+Bom, esses foram alguns exemplos bem básicos do uso da biblioteca Swift Mailer. Consulte a [documentação oficial](http://swiftmailer.org/docs/introduction) para mais informações e um guia de referência completo.
 
 Abraço e até a próxima!

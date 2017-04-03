@@ -10,7 +10,7 @@ tags:
   - PHP
   - Regex
 ---
-Atendendo a sugestão do amigo <a href="http://twitter.com/Eldius" rel="externo">@Eldius</a>, da galera do <a href="http://search.twitter.com/search?q=%23soudev" rel="externo">#soudev</a> do <a href="http://twitter.com/fonini" rel="externo">Twitter</a>, criei uma função que converte texto em BBCode para XHTML, usando PHP e Regex. A função não é lá das mais elegantes, mas cumpre o prometido, lembrando que o BBCode deve estar escrito corretamente para que ela funcione.
+Atendendo a sugestão do amigo [@Eldius](http://twitter.com/Eldius), da galera do [#soudev](http://search.twitter.com/search?q=%23soudev) do [Twitter](http://twitter.com/fonini), criei uma função que converte texto em BBCode para XHTML, usando PHP e Regex. A função não é lá das mais elegantes, mas cumpre o prometido, lembrando que o BBCode deve estar escrito corretamente para que ela funcione.
 
 {% highlight php %}<?php
 function bbcode($str){
@@ -19,10 +19,10 @@ function bbcode($str){
 	$str = preg_replace("@\[u\](.+?)[/u]@i", '<span style="text-decoration:underline">$1</span>', $str);
 	$str = preg_replace("@\[s\](.+?)[/s]@i", '<span style="text-decoration:line-through">$1</span>', $str);
 	$str = preg_replace("@\[img\](.+?)[/img]@i", '<img src="$1" alt="" />', $str);
-	$str = preg_replace("@\[url\](.+?)[/url]@i", '<a href="$1">$1</a>', $str);  
-	$str = preg_replace("@\[url=(.+?)\](.+?)[/url]@i", '<a href="$1">$2</a>', $str);  
-	$str = preg_replace("@\[email\](.+?)[/email]@i", '<a href="mailto:$1">$1</a>', $str);  
-	$str = preg_replace("@\[email=(.+?)\](.+?)[/email]@i", '<a href="mailto:$1">$2</a>', $str);  
+	$str = preg_replace("@\[url\](.+?)[/url]@i", '[$1]($1)', $str);  
+	$str = preg_replace("@\[url=(.+?)\](.+?)[/url]@i", '[$2]($1)', $str);  
+	$str = preg_replace("@\[email\](.+?)[/email]@i", '[$1](mailto:$1)', $str);  
+	$str = preg_replace("@\[email=(.+?)\](.+?)[/email]@i", '[$2](mailto:$1)', $str);  
 	$str = preg_replace("@\[size=(.+?)\](.+?)[/size]@i", '<span style="font-size:$1px">$2</span>', $str);
 	$str = preg_replace("@\[color=(.+?)\](.+?)[/color]@i", '<span style="color:$1">$2</span>', $str);
 	$str = preg_replace("@[\*(?:s\*)]s\*([^[]\*)@i", '<li>$1</li>', $str);
@@ -80,9 +80,9 @@ Essa função engloba os BBCodes mais conhecidos. Segue a lista abaixo:
 
 **[br]** = Quebra de página
   
-Mais informações sobre BBCode podem ser encontradas <a href="http://www.phpbb.com/community/faq.php?mode=bbcode">aqui</a> e <a href="http://pt.wikipedia.org/wiki/BBCode">aqui</a>
+Mais informações sobre BBCode podem ser encontradas [aqui](http://www.phpbb.com/community/faq.php?mode=bbcode) e [aqui](http://pt.wikipedia.org/wiki/BBCode)
 
-Esse código também pode ser modificado facilmente para ser usado em conjunto com o <a href="http://alexgorbatchev.com/wiki/SyntaxHighlighter">SyntaxHighlighter</a>, um script para colorir o código, tornando a visualização mais amigável. Para isso, basta substituir a linha 25 por esta:
+Esse código também pode ser modificado facilmente para ser usado em conjunto com o [SyntaxHighlighter](http://alexgorbatchev.com/wiki/SyntaxHighlighter), um script para colorir o código, tornando a visualização mais amigável. Para isso, basta substituir a linha 25 por esta:
 
 {% highlight php %}<?php	  
 $str = preg_replace("@\[code=(.+?)\](.+?)[/code]@i", '<pre class="brush: $1">$2</pre>', $str);

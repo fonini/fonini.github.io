@@ -8,7 +8,7 @@ tags:
   - PHP
   - Symfony
 ---
-Olá pessoal, o tutorial de hoje mostra como fazer um módulo com formulário de contato e envio dos dados por email usando o framework <a href="http://www.symfony-project.org" rel="nofollow externo">Symfony</a>. Você já deve possuir um projeto criado para poder proseeguir.
+Olá pessoal, o tutorial de hoje mostra como fazer um módulo com formulário de contato e envio dos dados por email usando o framework [Symfony](http://www.symfony-project.org). Você já deve possuir um projeto criado para poder proseeguir.
 
 Primeiro, crie o módulo vazio com o comando abaixo:
 
@@ -84,7 +84,7 @@ Edite o arquivo apps/frontend/modules/contato/templates/indexSucess.php. Faço u
 </form>
 {% endhighlight %}
 
-Você deve ter percebido que a action do formulário está apontando para contato/enviar. Ou seja, ao ser submetido, o método enviar da classe contatoActions será invocado, logo teremos que criá-lo. Volte para o arquivo apps/frontend/modules/contato/actions/actions.class.php e adicione os métodos abaixo, o método que enviará o email e o método que será chamado se o envio for bem sucedido. Mude as configurações para seu servidor de envio. Outros parâmetros na <a href="http://www.swiftmailer.org" rel="externo nofollow">documentação da Swift Mailer</a>.</p> 
+Você deve ter percebido que a action do formulário está apontando para contato/enviar. Ou seja, ao ser submetido, o método enviar da classe contatoActions será invocado, logo teremos que criá-lo. Volte para o arquivo apps/frontend/modules/contato/actions/actions.class.php e adicione os métodos abaixo, o método que enviará o email e o método que será chamado se o envio for bem sucedido. Mude as configurações para seu servidor de envio. Outros parâmetros na [documentação da Swift Mailer](http://www.swiftmailer.org).</p> 
 
 {% highlight php %}<?php // apps/frontend/modules/contato/actions/actions.class.php
 public function executeEnviar(sfWebRequest $request){

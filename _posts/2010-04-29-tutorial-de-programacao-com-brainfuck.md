@@ -95,7 +95,7 @@ Brainfuck é uma linguagem de programação esotérica, praticamente sem fins pr
 
 **Compiladores**
 
-Existem diversos compiladores para a linguagem, inclusive existe um nos repositórios do Ubuntu, o bf. Eu optei por compilar a versão em Assembly disponível <a href="http://www.muppetlabs.com/~breadbox/software/tiny/bf.asm.txt" rel="externo nofollow">aqui</a>. Após escrever o seu código-fonte, o compilador criará um executável binário.
+Existem diversos compiladores para a linguagem, inclusive existe um nos repositórios do Ubuntu, o bf. Eu optei por compilar a versão em Assembly disponível [aqui](http://www.muppetlabs.com/~breadbox/software/tiny/bf.asm.txt). Após escrever o seu código-fonte, o compilador criará um executável binário.
 
 **Codificando**
 

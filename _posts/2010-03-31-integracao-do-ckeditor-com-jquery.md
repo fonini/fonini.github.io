@@ -11,7 +11,7 @@ tags:
 ---
 O jQuery é uma biblioteca fantástica. O CKEditor é o editor mais completo. Por que não juntar os dois? Este tutorial mostra como fazer isso. Um dos grandes ganhos desta integração é que fica muito fácil manipular o "baixo nível" do CKEditor, principalmente se for salvar o conteúdo do editor com AJAX.
 
-Pra começar, baixe a última versão do <a href="http://www.jquery.com" rel="externo nofollow">jQuery</a>. Baixe o <a href="http://www.ckeditor.com" rel="externo nofollow">CKEditor</a>. Extraia o CKEditor para uma pasta e coloque o jQuery na mesma pasta. O CKEditor já vem com um mecanismo que permite essa integração. Ele está localizado na pasta "adapters/jquery.js" e deve ser incluído no HTML da página.
+Pra começar, baixe a última versão do [jQuery](http://www.jquery.com). Baixe o [CKEditor](http://www.ckeditor.com). Extraia o CKEditor para uma pasta e coloque o jQuery na mesma pasta. O CKEditor já vem com um mecanismo que permite essa integração. Ele está localizado na pasta "adapters/jquery.js" e deve ser incluído no HTML da página.
 
 **Instalação básica**
 
@@ -52,7 +52,7 @@ $(document).ready(function(){
 {% endhighlight %}
 
 
-Quando o editor for carregado no exemplo acima, a DIV resposta receberá algum texto. No segundo parâmetros, passamos a largura e altura do editor. Você pode consultar a <a href="http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html" rel="externo nofollow">documentação da API</a> para conhecer as opções de configuração.
+Quando o editor for carregado no exemplo acima, a DIV resposta receberá algum texto. No segundo parâmetros, passamos a largura e altura do editor. Você pode consultar a [documentação da API](http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html) para conhecer as opções de configuração.
 
 
 **Manipulando o editor**
@@ -71,7 +71,7 @@ $(document).ready(function(){
     var data = $('#editor').val();
 
     // Adicionando conteúdo ao editor
-    $('#editor').val('<a href="https://fonini.github.io">fonini.github.io</a>');
+    $('#editor').val('[fonini.github.io](https://fonini.github.io)');
   }, {
     width: 780,
     height: 350

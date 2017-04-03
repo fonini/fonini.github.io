@@ -10,11 +10,11 @@ tags:
 ---
 Por essa nem eu esperava. Estou me aventurando no mundo do Java, depois de tudo que eu falei mal dessa linguagem. Mas fazer o que, não dá pra trabalhar com uma linguagem só :p No fundo, Java é muito legal. Depois de aprender a sintaxe básica do Java, resolvi me aventurar também no SQLite e de quebra, matei dois coelhos com uma pedrada só.
 
-O SQLite é uma biblioteca escrita em C que fornece um banco de dados que dispensa configurações/ajustes. É criado um novo arquivo no disco e a biblioteca se encarrega de todas as operações sobre ele, dispensando um processo separado para o SGBD, como é comum na maioria dos bancos de dados. Para mais informações, consulte o site oficial (<a href="http://sqlite.org" rel="externo">http://sqlite.org</a>).
+O SQLite é uma biblioteca escrita em C que fornece um banco de dados que dispensa configurações/ajustes. É criado um novo arquivo no disco e a biblioteca se encarrega de todas as operações sobre ele, dispensando um processo separado para o SGBD, como é comum na maioria dos bancos de dados. Para mais informações, consulte o site oficial ([http://sqlite.org](http://sqlite.org)).
 
 O exemplo abaixo é extremamente básico, pois ainda estou aprendendo as manhas. Let's work!
 
-Para começar, baixe a biblioteca do SQLite <a href="http://www.zentus.com/sqlitejdbc" rel="externo">aqui</a>. O .jar disponível funciona tanto em Linux, como em Windows e Mac. Inclua a biblioteca em seu projeto. No caso do <a href="http://netbeans.org" rel="externo">NetBeans</a>, procure a aba Projetos, selecione seu projeto, vá em Bibliotecas, botão direito e selecione Adicionar JAR/Pasta, informando a localização do arquivo baixado.
+Para começar, baixe a biblioteca do SQLite [aqui](http://www.zentus.com/sqlitejdbc). O .jar disponível funciona tanto em Linux, como em Windows e Mac. Inclua a biblioteca em seu projeto. No caso do [NetBeans](http://netbeans.org), procure a aba Projetos, selecione seu projeto, vá em Bibliotecas, botão direito e selecione Adicionar JAR/Pasta, informando a localização do arquivo baixado.
 
 O exemplo baseia-se em um cadastro de pessoas, contendo nome e idade. São três classes: Pessoa (o "The book is on the table" da orientação a objetos, todo mundo que está aprendendo OO faz essa classe), SQLite, onde estão implementados os métodos para inserção e listagem e a classe Exemplo, a classe principal do projeto.
 

@@ -7,7 +7,7 @@ permalink: /2010/01/28/encurtando-urls-com-a-api-do-bitly/
 tags:
   - PHP
 ---
-Este é o primeiro post do site e espero que gostem. Hoje vamos aprender como encurtar URL's com PHP usando a API do <a href="http://www.bit.ly" rel="externo">Bit.ly</a>. 
+Este é o primeiro post do site e espero que gostem. Hoje vamos aprender como encurtar URL's com PHP usando a API do [Bit.ly](http://www.bit.ly). 
 O Bit.ly é um dos serviços de redução de URL's mais populares da internet, tanto que o Twitter também usa esse serviço em sua página.
 
 Para começar você deve possuir a biblioteca cURL instalada em seu servidor e também deve criar uma conta no Bit.ly, onde será fornecida uma API Key que será usada nesse script. Criei esse código primeiramente pra usar aqui no site e resolvi disponibilizar para vocês.

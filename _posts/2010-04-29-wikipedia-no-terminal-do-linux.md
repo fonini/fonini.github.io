@@ -8,7 +8,7 @@ tags:
   - Linux
   - Terminal
 ---
-Tem louco pra tudo. É possível ver trechos de artigos da Wikipedia através de um lookup DNS em um servidor criado por <a href="https://dgl.cx/" rel="externo nofollow">David Leadbeater</a>. Por exemplo, para ler um trecho do artigo sobre Linux, digite o comando abaixo no terminal:
+Tem louco pra tudo. É possível ver trechos de artigos da Wikipedia através de um lookup DNS em um servidor criado por [David Leadbeater](https://dgl.cx/). Por exemplo, para ler um trecho do artigo sobre Linux, digite o comando abaixo no terminal:
 
 {% highlight shell %}dig +short txt Linux.wp.dg.cx{% endhighlight %}
 

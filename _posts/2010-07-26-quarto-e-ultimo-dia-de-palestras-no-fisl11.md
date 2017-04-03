@@ -9,7 +9,7 @@ tags:
   - FISL11
   - Software Livre
 ---
-Último dia do FISL11. No geral, o fórum valeu muito a pena, muitas palestras legais, algumas nem tanto, mas o que importa é a contribuição de cada um dos palestrantes com o software livre. O evento foi muito bem organizado, exceto a infra-estrutura wireless que decepcionou todo mundo novamente. Mas nem tudo é perfeito e ainda assim quero muito voltar no ano que vem. Ganhei uma camiseta do iG preenchendo um cadastro (sem validação nenhuma, por sinal). Destaque também para os adesivos muito legais do iG, alguns com os Ditados Populares (<a href="http://goncin.wordpress.com/2010/06/21/ditados-populares-em-php/" rel="externo nofollow">parte 1</a>, <a href="http://goncin.wordpress.com/2010/06/29/ditados-populares-em-php-parte-2/" rel="externo nofollow">parte 2</a>, <a href="http://goncin.wordpress.com/2010/07/22/ditados-populares-em-php-parte-3-a-batelada-final/" rel="externo nofollow">parte 3</a>), criação do Fausto Cintra (<a href="http://twitter.com/g0nc1n" rel="externo nofollow">@g0nc1n</a>), alguns reescritos em Ruby e Python, além de algumas frases legais em Shell Script.
+Último dia do FISL11. No geral, o fórum valeu muito a pena, muitas palestras legais, algumas nem tanto, mas o que importa é a contribuição de cada um dos palestrantes com o software livre. O evento foi muito bem organizado, exceto a infra-estrutura wireless que decepcionou todo mundo novamente. Mas nem tudo é perfeito e ainda assim quero muito voltar no ano que vem. Ganhei uma camiseta do iG preenchendo um cadastro (sem validação nenhuma, por sinal). Destaque também para os adesivos muito legais do iG, alguns com os Ditados Populares ([parte 1](http://goncin.wordpress.com/2010/06/21/ditados-populares-em-php), [parte 2](http://goncin.wordpress.com/2010/06/29/ditados-populares-em-php-parte-2), [parte 3](http://goncin.wordpress.com/2010/07/22/ditados-populares-em-php-parte-3-a-batelada-final)), criação do Fausto Cintra ([@g0nc1n](http://twitter.com/g0nc1n)), alguns reescritos em Ruby e Python, além de algumas frases legais em Shell Script.
 
 **09:00 - Testes automatizados para o desenvolvimento colaborativo (Rodrigo Damazio)**
 
@@ -29,7 +29,7 @@ A palestra abordou como os dojos podem ajudar que quer aprender a programar ou d
 
 **15:00 - Criando soluções inteligentes com Shell Script (Rafael de Carvalho Farias)**
 
-Shell Script é muito massa. O palestrante mostrou como criar um script para configuração de servidores Linux, evitando tarefas repetitivas e automatizando algumas outras. Você pode ajudar e acompanhar o desenvolvimento do script no site do palestrante e desenvolvedor: <a href="http://www.rafaelfarias.com" rel="externo nofollow">http://www.rafaelfarias.com</a> 
+Shell Script é muito massa. O palestrante mostrou como criar um script para configuração de servidores Linux, evitando tarefas repetitivas e automatizando algumas outras. Você pode ajudar e acompanhar o desenvolvimento do script no site do palestrante e desenvolvedor: [http://www.rafaelfarias.com](http://www.rafaelfarias.com) 
 
 **16:00 - Depurando o kernel Linux de forma interativa com KGDB (Edjunior Barbosa Machado, Breno Leitão)**
 
@@ -47,4 +47,4 @@ Usando o Fedora como base, o palestrante mostrou como criar um ambiente confiáv
 
 É isso ai gurizadinha, terminou mais um FISL que valeu muito a pena, apesar de ser muito cansativo, mas tentaremos estar aqui novamente no ano que vem. 
 
-Veja <a href="http://www.flickr.com/photos/39474373@N05/sets/72157624461156003/" rel="externo nofollow">aqui</a> algumas fotos do evento. Obrigado por terem paciência de ler estes posts. Grande abraço!
+Veja [aqui](http://www.flickr.com/photos/39474373@N05/sets/72157624461156003/) algumas fotos do evento. Obrigado por terem paciência de ler estes posts. Grande abraço!

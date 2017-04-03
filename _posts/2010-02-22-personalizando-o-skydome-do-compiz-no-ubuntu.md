@@ -7,7 +7,7 @@ permalink: /2010/02/22/personalizando-o-skydome-do-compiz-no-ubuntu/
 tags:
   - Ubuntu
 ---
-Esse tutorial ensina como alterar o Skydome, o fundo do Compiz no Ubuntu. O skydome pode ser visualizado quando você ativa o efeito do cubo 3D, é aquela parte que aparece ao fundo. Você pode inserir uma imagem nesse fundo, como as deste <a href="http://skydomes.blogspot.com/" rel="externo">site</a>, feitas especialmente para esse fim.
+Esse tutorial ensina como alterar o Skydome, o fundo do Compiz no Ubuntu. O skydome pode ser visualizado quando você ativa o efeito do cubo 3D, é aquela parte que aparece ao fundo. Você pode inserir uma imagem nesse fundo, como as deste [site](http://skydomes.blogspot.com/), feitas especialmente para esse fim.
 
 Você deve ter o Gerenciador de Configurações do CompizConfig instalado. Se não tiver, instale com o seguinte comando:
 

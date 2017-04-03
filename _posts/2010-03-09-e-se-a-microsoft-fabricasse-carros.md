@@ -7,7 +7,7 @@ permalink: /2010/03/09/e-se-a-microsoft-fabricasse-carros/
 tags:
   - Humor
 ---
-Vi essa no <a href="http://focalinux.cipsga.org.br/" rel="externo nofollow">Guia Foca GNU/Linux</a> e achei legal.
+Vi essa no [Guia Foca GNU/Linux](http://focalinux.cipsga.org.br/) e achei legal.
 
 Numa feira de informática (COMDEX), Bill Gates fez uma infeliz comparação da Indústria de computadores com a automobilística e declarou:
 

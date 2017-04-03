@@ -17,7 +17,7 @@ Para instalar:
 
 {% highlight shell %}sudo apt-get install webhttrack{% endhighlight %}
 
-Para usuários de outras distros, existem mais versões no <a href="http://www.httrack.com/page/2/en/index.html" rel="externo">site oficial</a>.
+Para usuários de outras distros, existem mais versões no [site oficial](http://www.httrack.com/page/2/en/index.html).
 
 O programa estará disponível no menu Aplicativos/Internet/WebHTTrack Website Copier. O programa foi escrito em C e roda diretamente no browser.
 

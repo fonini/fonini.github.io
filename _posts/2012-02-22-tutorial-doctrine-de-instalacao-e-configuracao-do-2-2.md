@@ -13,7 +13,7 @@ Olá! Esta é a primeira vez que arrumo tempo para testar a versão 2 deste famo
 
 ### Download e Instalação
 
-<a href="http://www.doctrine-project.org/downloads/DoctrineORM-2.2.0-full.tar.gz" rel="nofollow">Baixe a última versão</a> (no momento em que escrevo é a 2.2): Crie uma pasta no seu servidor e extraia o conteúdo do arquivo recém baixado para dentro dela. Sua estrutura deverá ficar mais ou menos assim:
+[Baixe a última versão](http://www.doctrine-project.org/downloads/DoctrineORM-2.2.0-full.tar.gz) (no momento em que escrevo é a 2.2): Crie uma pasta no seu servidor e extraia o conteúdo do arquivo recém baixado para dentro dela. Sua estrutura deverá ficar mais ou menos assim:
 
 {% highlight shell %}>sua_pasta
 |-- bin

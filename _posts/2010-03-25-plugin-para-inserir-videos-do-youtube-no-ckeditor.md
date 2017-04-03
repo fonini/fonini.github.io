@@ -15,7 +15,7 @@ Também é possível gerar código XHTML válido ao inserir um vídeo via URL. Q
 
 **Instalação**
 
-Baixe o <a href="http://www.ckeditor.com" rel="externo nofollow">CKEditor</a>, extraia para alguma pasta, baixe o [Plugin](https://www.dropbox.com/s/05sfqp9xvcfvuo9/ckeditor-youtube.zip?dl=0) e extraia para a pasta plugins do CKEditor. Feito isso, você deve informar ao sistema para usar esse plugin. No arquivo "config.js", localizado na pasta do CKEditor, adicione a seguinte linha:
+Baixe o [CKEditor](http://www.ckeditor.com), extraia para alguma pasta, baixe o [Plugin](https://www.dropbox.com/s/05sfqp9xvcfvuo9/ckeditor-youtube.zip?dl=0) e extraia para a pasta plugins do CKEditor. Feito isso, você deve informar ao sistema para usar esse plugin. No arquivo "config.js", localizado na pasta do CKEditor, adicione a seguinte linha:
 
 {% highlight js %}
 config.extraPlugins = "youtube";

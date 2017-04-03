@@ -28,6 +28,6 @@ Habilite o plugin Removedor de Voz no menu Opções/Preferências/Plugins de Efe
 
 Obs: Foi meio chato aqui pra executar esse programa. Tive que fechar todos os programas que fizessem uso da placa de som.
   
-Se você usa outras versões do Ubuntu, use os repositórios disponíveis <a href="http://www.pvv.ntnu.no/~knuta/xmms/" rel="externo">aqui</a>.
+Se você usa outras versões do Ubuntu, use os repositórios disponíveis [aqui](http://www.pvv.ntnu.no/~knuta/xmms/).
 
 Abraços e até a próxima

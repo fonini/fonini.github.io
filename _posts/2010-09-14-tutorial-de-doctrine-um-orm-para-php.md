@@ -8,11 +8,11 @@ tags:
   - Doctrine
   - PHP
 ---
-O <a href="http://www.doctrine-project.org" rel="externo nofollow">Doctrine</a> é um mapeador objeto-relacional (ORM) para PHP, aos moldes do Hibernate para Java. Este ORM elimina a tarefa de escrever consultas SQL básicas, além de facilitar a conexão com o banco de dados, através da extensão PDO. O Doctrine permite que você crie seu model escrevendo suas classes em PHP (seguindo alguns padrões pré-definidos), através de arquivos YAML ou ele se encarrega da geração do model através das tabelas já criadas no banco de dados. Uma vez que o model está criado, você pode definir validadores para campos específicos da tabela realizando essas alterações na classe gerada que estende cada model. Dessa forma, seu model fica preservado, você apenas altera a classe estendida, tornando fácil desfazer modificações.
+O [Doctrine](http://www.doctrine-project.org) é um mapeador objeto-relacional (ORM) para PHP, aos moldes do Hibernate para Java. Este ORM elimina a tarefa de escrever consultas SQL básicas, além de facilitar a conexão com o banco de dados, através da extensão PDO. O Doctrine permite que você crie seu model escrevendo suas classes em PHP (seguindo alguns padrões pré-definidos), através de arquivos YAML ou ele se encarrega da geração do model através das tabelas já criadas no banco de dados. Uma vez que o model está criado, você pode definir validadores para campos específicos da tabela realizando essas alterações na classe gerada que estende cada model. Dessa forma, seu model fica preservado, você apenas altera a classe estendida, tornando fácil desfazer modificações.
 
 **Instalação**
 
-Baixe a última versão estável no <a href="http://www.doctrine-project.org/projects/orm/download" rel="externo nofollow">site do projeto</a>. No momento em que escrevo este post, a última versão estável é a 1.2.3. A versão 2 escontra-se em fase beta. Quem sabe quando ela for lançada sai mais um post. Crie uma pasta para seu projeto no seu webserver e dentro dela crie uma pasta lib. Após criar a pasta, extraia o Doctrine para ela. A estrutura deverá ficar semelhante a esta:
+Baixe a última versão estável no [site do projeto](http://www.doctrine-project.org/projects/orm/download). No momento em que escrevo este post, a última versão estável é a 1.2.3. A versão 2 escontra-se em fase beta. Quem sabe quando ela for lançada sai mais um post. Crie uma pasta para seu projeto no seu webserver e dentro dela crie uma pasta lib. Após criar a pasta, extraia o Doctrine para ela. A estrutura deverá ficar semelhante a esta:
 
 {% highlight shell %}
 seu_projeto/lib/Doctrine
@@ -28,7 +28,7 @@ seu_projeto/models
 
 **Configuração**
 
-Crie um arquivo na pasta raíz do projeto chamado "bootstrap.php". Esse arquivo irá conter as configurações e parâmetros de funcionamento do Doctrine. Abaixo está o arquivo que eu uso. Você pode definir outros parâmetros consultando a <a href="http://www.doctrine-project.org/projects/orm/1.2/docs/en" rel="externo nofollow">documentação oficial</a>.
+Crie um arquivo na pasta raíz do projeto chamado "bootstrap.php". Esse arquivo irá conter as configurações e parâmetros de funcionamento do Doctrine. Abaixo está o arquivo que eu uso. Você pode definir outros parâmetros consultando a [documentação oficial](http://www.doctrine-project.org/projects/orm/1.2/docs/en).
 
 {% highlight php %}<?php // seu_projeto/bootstrap.php
 
@@ -112,7 +112,7 @@ ALTER TABLE ONLY pessoa ADD CONSTRAINT pessoa_id_cidade_cidade_id FOREIGN KEY (i
 
 _**Gerando as classes através de um arquivo YAML**_
 
-Um arquivo YAML (extensão .yml) é um arquivo semelhante a um arquivo XML e eu diria muito mais poderoso (minha opinião). Ao invés de tags, os dados são representados pela identação dos atributos e seus valores (o pessoal do Python ama isso). A identação deve ser feita com **espaços** e não com tabulações. Para mais informações, consulte a <a href="http://en.wikipedia.org/wiki/YAML" rel="externo nofollow">Wikipédia</a>.
+Um arquivo YAML (extensão .yml) é um arquivo semelhante a um arquivo XML e eu diria muito mais poderoso (minha opinião). Ao invés de tags, os dados são representados pela identação dos atributos e seus valores (o pessoal do Python ama isso). A identação deve ser feita com **espaços** e não com tabulações. Para mais informações, consulte a [Wikipédia](http://en.wikipedia.org/wiki/YAML).
 	  
 Esta forma permite representar seus models no arquivo YAML.
 	  
@@ -281,6 +281,4 @@ $pessoa->delete();
 
 **Conclusão**
 
-O Doctrine facilita muito a manipulação do banco de dados em PHP, poupando a você o trabalho de escrever consultas SQL. Incremente ainda mais seus estudos estudando o framework <a href="http://www.symfony-project.org" rel="externo nofollow">Symfony</a>, um dos mais completos da atualizade e que faz uso do Doctrine. Pretendo criar mais posts sobre o Doctrine em breve.
-	  
-Grande abraço a todos e até a próxima.
+O Doctrine facilita muito a manipulação do banco de dados em PHP, poupando a você o trabalho de escrever consultas SQL. Incremente ainda mais seus estudos estudando o framework [Symfony](http://www.symfony-project.org), um dos mais completos da atualizade e que faz uso do Doctrine. Pretendo criar mais posts sobre o Doctrine em breve.

@@ -13,9 +13,9 @@ De 21 a 24 de julho de 2010, será realizado o 11º Fórum Internacional do Soft
 
 Participei na edição de 2008 e posso dizer que realmente vale muito a pena. É um evento onde você encontra empresários, estudantes, programadores, enfim, entusiastas do software livre, tem a oportunidade de assistir inúmeras palestras gratuitas, inclusive de celebridades internacionais do software livre, participar dos mini-cursos e fazer novos amigos e até contatos profissionais.
 
-O FISL11 será realizado no Centro de Eventos da Pontifícia Universidade Católica do Rio Grande do Sul (PUC-RS) de 21 a 24 de julho de 2010. Esta edição conta até agora com 153 palestras selecionadas. A grade de horários está sendo montada aos poucos, conforme os palestrantes confirmam a participação. Você pode acompanhar este processo <a href="http://verdi.softwarelivre.org/papers_ng/public/fast_grid" rel="externo nofollow">aqui</a>.
+O FISL11 será realizado no Centro de Eventos da Pontifícia Universidade Católica do Rio Grande do Sul (PUC-RS) de 21 a 24 de julho de 2010. Esta edição conta até agora com 153 palestras selecionadas. A grade de horários está sendo montada aos poucos, conforme os palestrantes confirmam a participação. Você pode acompanhar este processo [aqui](http://verdi.softwarelivre.org/papers_ng/public/fast_grid).
 
-Para mais informações, consulte o site oficial do evento (<a href="http://www.fisl.org.br" rel="externo nofollow">http://www.fisl.org.br</a>).
+Para mais informações, consulte o site oficial do evento ([http://www.fisl.org.br](http://www.fisl.org.br)).
 
 ![](/images/FISL11_big.png)
 

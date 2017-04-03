@@ -9,7 +9,7 @@ tags:
   - FISL11
   - Software Livre
 ---
-O dia da abertura do FISL11 foi extremamente cansativo. Cheguei aqui em Porto Alegre às 10:20 da manhã, após 5 horas de viagem de ônibus, com a caravana organizada pelo <a href="http://www.infosoft.inf.br" rel="externo nofollow">Amilton</a>.
+O dia da abertura do FISL11 foi extremamente cansativo. Cheguei aqui em Porto Alegre às 10:20 da manhã, após 5 horas de viagem de ônibus, com a caravana organizada pelo [Amilton](http://www.infosoft.inf.br).
 
 É impressionante a quantidade de palestras interessantes, nem almocei direito para assistir a uma delas. Abaixo uma breve descrição de cada uma.
 
@@ -29,7 +29,7 @@ A sala mais lotada do dia. Palestrante abordando a web, desde a versão 1.0, pas
 
 Excelente palestra sobre o Spring, framework muito poderoso para a linguagem Java. Breve introdução sobre as características do Spring, bem como algumas ferramentas e componentes, como Spring Roo, Grails, CloudFoundry, entre outros.
 	  
-Link para os slides da apresentação: <a href="http://www.slideshare.net/julioviegas/ecosistema-spring-aplataformaenterprisejav" rel="externo nofollow">http://www.slideshare.net/julioviegas/ecosistema-spring-aplataformaenterprisejav</a>
+Link para os slides da apresentação: [http://www.slideshare.net/julioviegas/ecosistema-spring-aplataformaenterprisejav](http://www.slideshare.net/julioviegas/ecosistema-spring-aplataformaenterprisejav)
 
 **16:00 - O caminho ágil entre requisitos e testes (Cesar Vianna)**
 

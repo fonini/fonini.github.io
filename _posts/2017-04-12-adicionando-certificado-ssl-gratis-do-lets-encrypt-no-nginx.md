@@ -26,7 +26,7 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	server_name meusite.com;
+	server_name meusite.com www.meusite.com;
 
 	location ~ ^/.well-known {
 		root /var/www/meusite;
@@ -51,7 +51,7 @@ Agora você vai rodar o comando que irá validar seu domínio e obter o certific
 sudo ./certbot-auto certonly --webroot -w /var/www/meusite -d meusite.com.br -d www.meusite.com.br
 {% endhighlight %}
 
-Se o processo for concluído com sucesso, adiciona mais uma diretiva ao seu arquivo de configuração,
+Se o processo for concluído com sucesso, adicione mais uma diretiva ao seu arquivo de configuração,
 que será responsável por servir a versão https do seu site:
 
 {% highlight shell %}
@@ -59,10 +59,10 @@ server {
 	listen 443 ssl;
 	listen [::]:443;
 
-	server_name meusite.com.br www.meusite.com.br;
+	server_name meusite.com www.meusite.com;
 
-	ssl_certificate /etc/letsencrypt/live/meusite.com.br/fullchain.pem;
-	ssl_certificate_key /etc/letsencrypt/live/meusite.com.br/privkey.pem;
+	ssl_certificate /etc/letsencrypt/live/meusite.com/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/meusite.com/privkey.pem;
 
 	location ~ ^/.well-known {
 		root /var/www/meusite;

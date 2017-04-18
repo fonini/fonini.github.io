@@ -12,45 +12,45 @@ Continuando a série sobre expressões regulares iniciada [aqui](/2010/02/09/exp
 
 **Encontra números inteiros, incluindo negativos**
 {% highlight regex %}
-^[-+]?d*$
+^[-+]?\d*$
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&#038;regex=^[-%2B]%3Fd*%24&#038;input=-409)
+[Testar](https://regex101.com/r/xuU4g7/1)
 
 **Encontra números inteiros e de ponto flutuante (float, double), incluindo negativos** 
 {% highlight regex %}
-^[-+]?d\*.?d\*$
+^[-+]?\d*.?\d*$
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&#038;regex=^[-%2B]%3Fd*.%3Fd*%24&#038;input=30.903)
+[Testar](https://regex101.com/r/M2eNjY/1)
 
 **Encontra qualquer número real** 
 {% highlight regex %}
-^[-+]?d+(.d+)?$
+^[-+]?\d+(.\d+)?$
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&#038;regex=^[-%2B]%3Fd%2B%28.d%2B%29%3F%24&#038;input=45345.34534534)
+[Testar](https://regex101.com/r/Exvj3m/1)
 
 **Encontra representações de dinheiro em dólar** 
 {% highlight regex %}
-^$(d{1,3}(,d{3})*|(d+))(.d{2})?$
+^\$(\d{1,3}(,\d{3})*|(\d+))(.\d{2})?$
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&#038;regex=^%24%28d{1%2C3}%28%2Cd{3}%29*|%28d%2B%29%29%28.d{2}%29%3F%24&#038;input=%2489%2C787.00)
+[Testar](https://regex101.com/r/puNaar/1)
 
 **Encontra representações de dinheiro em reais** 
 {% highlight regex %}
-^R$ ?([1-9]{1}[d]{0,2}(.[d]{3})*(,[d]{0,2})?|[1-9]{1}[d]{0,}(,[d]{0,2})?|0(,[d]{0,2})?|(,[d]{1,2})?)$
+^R\$ ?([1-9]{1}[\d]{0,2}(.[\d]{3})*(,[\d]{0,2})?|[1-9]{1}[\d]{0,}(,[\d]{0,2})?|0(,[\d]{0,2})?|(,[\d]{1,2})?)$
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&#038;regex=^R%24%20%3F%28[1-9]{1}[d]{0%2C2}%28.[d]{3}%29*%28%2C[d]{0%2C2}%29%3F|[1-9]{1}[d]{0%2C}%28%2C[d]{0%2C2}%29%3F|0%28%2C[d]{0%2C2}%29%3F|%28%2C[d]{1%2C2}%29%3F%29%24&#038;input=R%24%2090.876%2C34)
+[Testar](https://regex101.com/r/68kVEp/1)
 
 **Encontra inteiros positivos**
 {% highlight regex %}
-^d+$
+^\d+$
 {% endhighlight %}
   
-[Testar](http://regexpal.com/?flags=&#038;regex=^d%2B%24&#038;input=76548)
+[Testar](https://regex101.com/r/9kvUSQ/1)
 
 **Encontra porcentagens, positivas ou negativas, com 2 casas decimais** 
 {% highlight regex %}

@@ -14,14 +14,14 @@ Crie a seguinte função no banco de dados que você quer desativar as triggers:
 create or replace function fn_trigger_all(enable boolean) returns void as 
 $body$
 declare
-table record;
+table_name record;
 begin
-  for table in select relname from pg_class where relhastriggers = true and not relname like 'pg_%'
+  for table_name in select relname from pg_class where relhastriggers = true and not relname like 'pg_%'
   loop
     if enable then
-      execute 'alter table ' || table.relname || ' enable trigger all';
+      execute 'alter table ' || table_name.relname || ' enable trigger all';
     else
-      execute 'alter table ' || table.relname || ' disable trigger all';
+      execute 'alter table ' || table_name.relname || ' disable trigger all';
     end if;
   end loop;
 

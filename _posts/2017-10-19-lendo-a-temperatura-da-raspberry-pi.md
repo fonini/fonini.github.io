@@ -12,10 +12,12 @@ Utilize o seguinte comando:
 
 {% highlight shell %}
 cat /sys/class/thermal/thermal_zone0/temp
+--saída: 54768
 {% endhighlight %}
 
 Para formatar a saída em graus Celsius, utilize o seguinte comando:
 
 {% highlight shell %}
 awk '{printf("%.1f °C\n",$1/1e3)}' /sys/class/thermal/thermal_zone0/temp
+--saída: 54.8 °C
 {% endhighlight %}

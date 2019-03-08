@@ -17,13 +17,13 @@ Adicione o script ao seu .bashrc ou crie um .sh e coloque no $PATH.
 Para criar um novo post:
 
 {% highlight shell %}
-create-post "Meu novo post"
+create_post "Meu novo post"
 {% endhighlight %}
 
 Ou simplesmente:
 
 {% highlight shell %}
-create-post
+create_post
 {% endhighlight %}
 
 O script irá pedir alguns dados e criará o arquivo .md.

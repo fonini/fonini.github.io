@@ -8,7 +8,6 @@ tags:
   - golang
 ---
 
-[Doctrine](http://www.doctrine-project.org)
 [Custom Validator](https://godoc.org/github.com/go-playground/validator#hdr-Custom_Validation_Functions) para datas padrão [ISO 8601](https://pt.wikipedia.org/wiki/ISO_8601) para [Go](https://golang.org/), utilizando o pacote [go-playground/validator](https://github.com/go-playground/validator).
 
 {% highlight go %}package main

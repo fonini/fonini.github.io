@@ -8,21 +8,21 @@ tags:
   - git
 ---
 
-##### Desfazer o último commit, preservando as alterações nos arquivos
+#### Desfazer o último commit, preservando as alterações nos arquivos
 
 {% highlight shell %}
 git reset --soft HEAD~1
 {% endhighlight %}
 
 
-##### Desfazer o último commit, **não** preservando as alterações nos arquivos
+#### Desfazer o último commit, **não** preservando as alterações nos arquivos
 
 {% highlight shell %}
 git reset --hard HEAD~1
 {% endhighlight %}
 
 
-##### Criar branch a partir do stash
+#### Criar branch a partir do stash
 
 {% highlight shell %}
 git stash branch testchanges

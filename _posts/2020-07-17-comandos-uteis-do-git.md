@@ -15,6 +15,13 @@ git reset --soft HEAD~1
 {% endhighlight %}
 
 
+#### Desfazer o primeiro commit, preservando as alterações nos arquivos
+
+{% highlight shell %}
+git update-ref -d HEAD
+{% endhighlight %}
+
+
 #### Desfazer o último commit, **não** preservando as alterações nos arquivos
 
 {% highlight shell %}

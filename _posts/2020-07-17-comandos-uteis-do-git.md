@@ -34,3 +34,9 @@ git reset --hard HEAD~1
 {% highlight shell %}
 git stash branch testchanges
 {% endhighlight %}
+
+#### Desfazer alterações em um único arquivo (sem commit)
+
+{% highlight shell %}
+git checkout HEAD -- my-file.txt
+{% endhighlight %}
